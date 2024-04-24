@@ -219,6 +219,46 @@ body {
   letter-spacing: 0.25px;
 }
 
+
+input[type="file"]{
+  display: none;
+}
+
+.upload-file:hover{
+  background-color: #ff695f;
+}
+
+.upload-file{
+  display: inline-block;
+  background-color: #03a4ed;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+}
+
+.upload-file-hover a {
+  display: inline-block;
+  margin: auto;
+  background-color: #03a4ed;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  transition: all .3s;
+}
+
+.upload-file-hover a:hover{
+  animation: bubble 0.2s ease-out;
+  background-color: #ff695f;
+}
+
 .main-blue-button-hover a {
   display: inline-block;
   background-color: #03a4ed;
@@ -1459,6 +1499,42 @@ Subscribe
   color: #afafaf;
 }
 
+.subscribe .inner-content form label {
+  display: inline-block;
+  background-color: #03a4ed;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  width: 20%;
+  margin-left: 40px;
+  margin-top: 15px;
+  margin-right: 10px;
+  text-transform: capitalize;
+  padding: 12px 20px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  text-align: center;
+  transition: all .3s;
+}
+.subscribe .inner-content form ins {
+  width: 38.5%;
+  margin-left: 40px;
+  margin-top: 20px;
+  line-height: 40px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0px 20px;
+  font-size: 15px;
+  color: #afafaf;
+}
+
+.subscribe .inner-content form label:hover {
+  background-color: #ff695f;
+}
+
+
 .subscribe .inner-content form button {
   display: inline-block;
   background-color: #03a4ed;
@@ -1475,6 +1551,7 @@ Subscribe
   text-align: center;
   transition: all .3s;
 }
+
 
 .subscribe .inner-content form button:hover {
   background-color: #ff695f;
@@ -1776,6 +1853,60 @@ form#contact button:hover {
 }
 
 
+form#contact-t {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 60px 120px;
+  border-radius: 20px;
+}
+
+form#contact-t input {
+  width: 100%;
+  height: 46px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #9bdbf8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 0px;
+  margin-bottom: 35px;
+}
+
+form#contact-t input::placeholder {
+  color: #afafaf;
+}
+
+form#contact-t button {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-t button:hover {
+  background-color: #03a4ed;
+}
+
+
+
 /* 
 ---------------------------------------------
 Footer Style
@@ -2022,4 +2153,86 @@ responsive
   .contact-us .info span {
     margin-bottom: 20px;
   }
+}
+
+
+.popup {
+  display: none;
+  background-color: #fefefe;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  background-color: #fefefe;
+  border-radius: 10px;
+  margin: 10% auto; /* Adjust margin to center the popup vertically */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Adjust width of the popup */
+  height: auto; /* Set height to auto or adjust as needed */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.popup-t {
+  display: none;
+  background-color: #fefefe;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content-t {
+  background-color: #fefefe;
+  border-radius: 10px;
+  margin: 10% auto; /* Adjust margin to center the popup vertically */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%; /* Adjust width of the popup */
+  height: auto; /* Set height to auto or adjust as needed */
+}
+
+.close-t {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-t:hover,
+.close-t:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.map-doc {
+  border-radius: 20px;
+  position: static;
 }
