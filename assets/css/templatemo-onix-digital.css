@@ -1125,12 +1125,12 @@ About
 }
 
 .about-us .section-heading p {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .about-us .fact-item .icon {
-  width: 45px;
-  height: 45px;
+  width: 60px;
+  height: 60px;
 }
 
 .about-us .fact-item {
@@ -1808,8 +1808,13 @@ form#contact {
   background-position: center center;
   background-size: cover;
   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
-  padding: 60px 120px;
+  padding: 60px 80px;
   border-radius: 20px;
+}
+
+form#contact h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
 }
 
 form#contact input {
@@ -1861,8 +1866,13 @@ form#contact-t {
   background-position: center center;
   background-size: cover;
   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
-  padding: 60px 120px;
+  padding: 60px 80px;
   border-radius: 20px;
+}
+
+form#contact-t h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
 }
 
 form#contact-t input {
@@ -1906,6 +1916,616 @@ form#contact-t button:hover {
 }
 
 
+form#contact-f1 {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 60px 80px;
+  border-radius: 20px;
+}
+
+form#contact-f1 h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+form#contact-f1 input {
+  width: 100%;
+  height: 46px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #9bdbf8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 0px;
+  margin-bottom: 35px;
+}
+
+form#contact-f1 input::placeholder {
+  color: #afafaf;
+}
+
+form#contact-f1 button {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-f1 button:hover {
+  background-color: #03a4ed;
+}
+
+
+
+form#contact-del {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 60px 80px;
+  border-radius: 20px;
+}
+
+form#contact-del h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+form#contact-del input[type="text"] {
+  width: 100%;
+  height: 46px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #9bdbf8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 0px;
+  margin-bottom: 35px;
+}
+
+form#contact-del input::placeholder {
+  color: #afafaf;
+}
+
+form#contact-del button {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-del button:hover {
+  background-color: #03a4ed;
+}
+
+/* Hide the default radio button */
+form#contact-del input[type="radio"] {
+  display: none;
+}
+
+/* Style the custom radio button */
+form#contact-del input[type="radio"] + label {
+  position: relative;
+  display: inline-block;
+  padding-left: 30px; /* Adjust according to your design */
+  cursor: pointer;
+}
+
+/* Style the ball of the custom radio button */
+form#contact-del input[type="radio"] + label::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 20px; /* Adjust the size of the ball */
+  height: 20px; /* Adjust the size of the ball */
+  border-radius: 50%;
+  background-color: #fefefe; /* Default color of the ball */
+  border: 1px solid #ccc;
+}
+
+/* Change the color of the ball when the radio button is checked */
+form#contact-del input[type="radio"]:checked + label::before {
+  background-color: #ff695f; /* Color of the ball when checked */
+}
+
+form#contact-f2 {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 60px 80px;
+  border-radius: 20px;
+}
+
+form#contact-f2 h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+form#contact-f2 input {
+  width: 100%;
+  height: 46px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #9bdbf8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 0px;
+  margin-bottom: 35px;
+}
+
+form#contact-f2 input::placeholder {
+  color: #afafaf;
+}
+
+form#contact-f2 button {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-f2 button:hover {
+  background-color: #03a4ed;
+}
+
+
+form#contact-f3 {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 60px 80px;
+  border-radius: 20px;
+}
+
+form#contact-f3 h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+form#contact-f3 input {
+  width: 100%;
+  height: 46px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #9bdbf8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 0px;
+  margin-bottom: 35px;
+}
+
+form#contact-f3 input::placeholder {
+  color: #afafaf;
+}
+
+form#contact-f3 button {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-f3 button:hover {
+  background-color: #03a4ed;
+}
+
+form#contact-c1 {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 60px 80px;
+  border-radius: 20px;
+}
+
+form#contact-c1 h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+form#contact-c1 input {
+  width: 100%;
+  height: 46px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #9bdbf8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 0px;
+  margin-bottom: 35px;
+}
+
+form#contact-c1 input::placeholder {
+  color: #afafaf;
+}
+
+form#contact-c1 button {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-c1 button:hover {
+  background-color: #03a4ed;
+}
+
+
+form#contact-v1 {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 60px 80px;
+  border-radius: 20px;
+}
+
+form#contact-v1 h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+form#contact-v1 input {
+  width: 100%;
+  height: 46px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #9bdbf8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 0px;
+  margin-bottom: 35px;
+}
+
+form#contact-v1 input::placeholder {
+  color: #afafaf;
+}
+
+form#contact-v1 button {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-v1 button:hover {
+  background-color: #03a4ed;
+}
+
+
+form#contact-c2 {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 60px 80px;
+  border-radius: 20px;
+}
+
+form#contact-c2 h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+form#contact-c2 input {
+  width: 100%;
+  height: 46px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #9bdbf8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 0px;
+  margin-bottom: 35px;
+}
+
+form#contact-c2 input::placeholder {
+  color: #afafaf;
+}
+
+form#contact-c2 button {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-c2 button:hover {
+  background-color: #03a4ed;
+}
+
+
+form#contact-c3 {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 60px 80px;
+  border-radius: 20px;
+}
+
+form#contact-c3 h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+form#contact-c3 input {
+  width: 100%;
+  height: 46px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #9bdbf8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 0px;
+  margin-bottom: 35px;
+}
+
+form#contact-c3 input::placeholder {
+  color: #afafaf;
+}
+
+form#contact-c3 button {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-c3 button:hover {
+  background-color: #03a4ed;
+}
+
+form#contact-v2 {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 60px 80px;
+  border-radius: 20px;
+}
+
+form#contact-v2 h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+form#contact-v2 input {
+  width: 100%;
+  height: 46px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #9bdbf8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 0px;
+  margin-bottom: 35px;
+}
+
+form#contact-v2 input::placeholder {
+  color: #afafaf;
+}
+
+form#contact-v2 button {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-v2 button:hover {
+  background-color: #03a4ed;
+}
+
+
+form#contact-b {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 60px 80px;
+  border-radius: 20px;
+}
+
+form#contact-b h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+form#contact-b input {
+  width: 100%;
+  height: 46px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #9bdbf8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 0px;
+  margin-bottom: 35px;
+}
+
+form#contact-b input::placeholder {
+  color: #afafaf;
+}
+
+form#contact-b button {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-b button:hover {
+  background-color: #03a4ed;
+}
+
+
 
 /* 
 ---------------------------------------------
@@ -1944,6 +2564,12 @@ footer .about a {
 footer .about ul {
   margin-top: 20px;
 }
+
+footer .about img {
+  width: 100%;
+  height: auto;
+}
+
 
 footer .about ul li {
   display: inline-block !important;
@@ -2283,6 +2909,7 @@ responsive
   padding: 12px 25px;
   border-radius: 23px;
   letter-spacing: 0.25px;
+  border: none;
   
 }
 
@@ -2321,3 +2948,69 @@ responsive
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #ff695f;}
+
+
+
+
+/* Dates */
+
+ul.dates {
+  list-style: none;
+  padding-left: 0;
+}
+
+  ul.dates li {
+    position: relative;
+    border-top: solid 1px #ddd;
+    padding: 1.3em 0 1.3em 6.75em;
+  }
+
+  ul.dates .date {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 1.3em;
+    background-color: #ff695f;
+    height: 3.5em;
+    text-align: center;
+    color: #fff;
+    line-height: 1em;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 0.5em 0.75em 0 1em;
+  }
+
+    ul.dates .date:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: -1.2em;
+      border-left: solid 1.25em #ff695f;
+      border-top: solid 1.8em transparent;
+      border-bottom: solid 1.8em transparent;
+    }
+
+    ul.dates .date strong {
+      display: block;
+      font-size: 1.75em;
+      padding-top: 0.15em;
+    }
+
+  ul.dates h3 {
+    font-weight: 700;
+    font-size: 1.1em;
+  }
+
+  ul.dates p {
+    margin: 0;
+  }
+
+  ul.dates li:first-child {
+    border-top: 0;
+    padding-top: 0;
+  }
+
+    ul.dates li:first-child .date {
+      top: 0;
+    }
+
