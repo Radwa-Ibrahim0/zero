@@ -1148,6 +1148,10 @@ About
   font-size: 15px;
   color: #ff695f;
 }
+.about-us .fact-item .count-title2 {
+  font-size: 20px;
+  color: #ff695f;
+}
 
 .about-us .fact-item p {
   margin-top: 20px;
