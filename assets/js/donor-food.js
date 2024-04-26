@@ -151,7 +151,7 @@ function closePopupC1() {
 }
 function closePopupC2() {
   var popup = document.getElementById("popup-c2");
-  var popupForm = document.getElementById('contact-c1');
+  var popupForm = document.getElementById('contact-c2');
   popup.style.display = "none";
   popupForm.reset();
 }
