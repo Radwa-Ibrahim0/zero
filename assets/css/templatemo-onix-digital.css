@@ -1279,11 +1279,11 @@ Portfolio
   line-height: 46px;
   border-radius: 50%;
   color: #fff;
-  content: '\f104';
-  font-size: 22px;
+  content: '\2B05';
+  font-size: 30px;
   font-family: 'FontAwesome';
   transition: all .5s;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .owl-portfolio .owl-nav .owl-next span {
@@ -1303,11 +1303,11 @@ Portfolio
   line-height: 46px;
   border-radius: 50%;
   color: #fff;
-  content: '\f105';
-  font-size: 22px;
+  content: '\27A1';
+  font-size: 30px;
   font-family: 'FontAwesome';
   transition: all .5s;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .owl-portfolio .owl-dots {
@@ -1442,7 +1442,8 @@ Subscribe
 */
 
 .subscribe {
-  margin-top: 120px;
+  padding-top: 150px;
+  margin-bottom: 100px;
 }
 
 .subscribe .inner-content {
@@ -1560,6 +1561,135 @@ Subscribe
 .subscribe .inner-content form button:hover {
   background-color: #ff695f;
 }
+
+/* 
+---------------------------------------------
+Subscribe3
+--------------------------------------------- 
+*/
+
+.subscribe3 {
+  display: none;
+  margin-top: 70px;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.subscribe3 .inner-content {
+  background-image: url(../images/subscribe-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 20px;
+  padding: 60px 0px;
+  width: 100%;
+  position: relative;
+}
+
+.subscribe3 .inner-content:after {
+  content: '';
+  position: absolute;
+  width: 195px;
+  height: 138px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  right: -20px;
+  top: -20px;
+}
+
+.subscribe3 .inner-content h2 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.subscribe3 .inner-content form {
+  width: 100%;
+  height: 80px;
+  border-radius: 40px;
+  background-color: #fff;
+}
+
+.subscribe3 .inner-content form input {
+  width: 38.5%;
+  margin-top: 20px;
+  line-height: 40px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0px 20px;
+  font-size: 15px;
+  color: #2a2a2a;
+}
+
+.subscribe3 .inner-content form input#website {
+  border-right: 1px solid #eee;
+}
+
+.subscribe3 .inner-content form input::placeholder {
+  color: #afafaf;
+}
+
+.subscribe3 .inner-content form label {
+  display: inline-block;
+  background-color: #03a4ed;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  width: 20%;
+  margin-left: 40px;
+  margin-top: 15px;
+  margin-right: 10px;
+  text-transform: capitalize;
+  padding: 12px 20px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  text-align: center;
+  transition: all .3s;
+}
+.subscribe3 .inner-content form ins {
+  width: 38.5%;
+  margin-left: 40px;
+  margin-top: 20px;
+  line-height: 40px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0px 20px;
+  font-size: 15px;
+  color: #afafaf;
+}
+
+.subscribe3 .inner-content form label:hover {
+  background-color: #ff695f;
+}
+
+
+.subscribe3 .inner-content form button {
+  display: inline-block;
+  background-color: #03a4ed;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  width: 20%;
+  margin-right: 10px;
+  text-transform: capitalize;
+  padding: 12px 20px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  text-align: center;
+  transition: all .3s;
+}
+
+
+.subscribe3 .inner-content form button:hover {
+  background-color: #ff695f;
+}
+
 
 
 /* 
@@ -1860,6 +1990,83 @@ form#contact button {
 form#contact button:hover {
   background-color: #03a4ed;
 }
+
+
+form#contact-td {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/video-thumb-01.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 0px 60px 40px 0px;
+  border-radius: 20px;
+}
+
+form#contact-td h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+
+form#contact-td button {
+  display: inline-block;
+  background-color: #ff695f ;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 20px 0 20px 0;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-td button:hover {
+  background-color: #03a4ed;
+}
+
+
+form#contact-td2 {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/video-thumb-02.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 0px 60px 40px 0px;
+  border-radius: 20px;
+}
+
+form#contact-td2 h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+
+form#contact-td2 button {
+  display: inline-block;
+  background-color: #ff695f ;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 20px 0 20px 0;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-td2 button:hover {
+  background-color: #03a4ed;
+}
+
 
 
 form#contact-t {
@@ -2734,6 +2941,12 @@ footer .about a {
   color: #afafaf;
   font-weight: 300;
 }
+
+.logo-img{
+  width: 50%;
+  height: auto;
+}
+
 
 footer .about ul {
   margin-top: 20px;
