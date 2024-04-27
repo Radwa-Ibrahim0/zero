@@ -148,7 +148,149 @@ function closePopupZ() {
   popupForm.reset();
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+  var popup = document.getElementById('popup-c1');
+  var popupForm = document.getElementById('contact-c1');
 
+  popupForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+    popup.style.display = 'none';
+    popupForm.reset();
+    alert('Thank you for your donation!');
+  });
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var popup = document.getElementById('popup-c2');
+    var popupForm = document.getElementById('contact-c2');
+  
+    popupForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+      popup.style.display = 'none';
+      popupForm.reset();
+      alert('Thank you for your donation!');
+    });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var popup = document.getElementById('popup-c3');
+      var popupForm = document.getElementById('contact-c3');
+    
+      popupForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+        popup.style.display = 'none';
+        popupForm.reset();
+        alert('Thank you for your donation!');
+      });
+      });
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var popup = document.getElementById('popup-f1');
+        var popupForm = document.getElementById('contact-f1');
+      
+        popupForm.addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent form submission
+          popup.style.display = 'none';
+          popupForm.reset();
+          alert('Thank you for your donation!');
+        });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+          var popup = document.getElementById('popup-f2');
+          var popupForm = document.getElementById('contact-f2');
+        
+          popupForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            popup.style.display = 'none';
+            popupForm.reset();
+            alert('Thank you for your donation!');
+          });
+          });
+
+          document.addEventListener('DOMContentLoaded', function() {
+            var popup = document.getElementById('popup-f3');
+            var popupForm = document.getElementById('contact-f3');
+          
+            popupForm.addEventListener('submit', function(event) {
+              event.preventDefault(); // Prevent form submission
+              popup.style.display = 'none';
+              popupForm.reset();
+              alert('Thank you for your donation!');
+            });
+            });
+
+            document.addEventListener('DOMContentLoaded', function() {
+              var popup = document.getElementById('popup-v1');
+              var popupForm = document.getElementById('contact-v1');
+            
+              popupForm.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent form submission
+                popup.style.display = 'none';
+                popupForm.reset();
+                alert('Thank you for your donation!');
+              });
+              });
+
+              document.addEventListener('DOMContentLoaded', function() {
+                var popup = document.getElementById('popup-v2');
+                var popupForm = document.getElementById('contact-v2');
+              
+                popupForm.addEventListener('submit', function(event) {
+                  event.preventDefault(); // Prevent form submission
+                  popup.style.display = 'none';
+                  popupForm.reset();
+                  alert('Thank you for your donation!');
+                });
+                });
+
+                document.addEventListener('DOMContentLoaded', function() {
+                  var popup = document.getElementById('popup-x');
+                  var popupForm = document.getElementById('contact-x');
+                
+                  popupForm.addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevent form submission
+                    popup.style.display = 'none';
+                    popupForm.reset();
+                    alert('Thank you for your donation!');
+                  });
+                  });
+
+                  document.addEventListener('DOMContentLoaded', function() {
+                    var popup = document.getElementById('popup-y');
+                    var popupForm = document.getElementById('contact-y');
+                  
+                    popupForm.addEventListener('submit', function(event) {
+                      event.preventDefault(); // Prevent form submission
+                      popup.style.display = 'none';
+                      popupForm.reset();
+                      alert('Thank you for your donation!');
+                    });
+                    });
+
+                    document.addEventListener('DOMContentLoaded', function() {
+                      var popup = document.getElementById('popup-z');
+                      var popupForm = document.getElementById('contact-z');
+                    
+                      popupForm.addEventListener('submit', function(event) {
+                        event.preventDefault(); // Prevent form submission
+                        popup.style.display = 'none';
+                        popupForm.reset();
+                        alert('Thank you for your donation!');
+                      });
+                      });
+
+                      document.addEventListener('DOMContentLoaded', function() {
+                        var popup = document.getElementById('popup-b');
+                        var popupForm = document.getElementById('contact-b');
+                      
+                        popupForm.addEventListener('submit', function(event) {
+                          event.preventDefault(); // Prevent form submission
+                          popup.style.display = 'none';
+                          popupForm.reset();
+                          alert('Thank you for your donation!');
+                        });
+                        });
 
 document.addEventListener('DOMContentLoaded', function() {
   var popupForm = document.getElementById('subscribe');
