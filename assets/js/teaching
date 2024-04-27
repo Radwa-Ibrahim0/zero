@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <a href="#english" onclick="stopPropagation(event)">English</a>
         <a href="#social" onclick="stopPropagation(event)">Social Studies</a>
       `;
-      secondDropbtn.textContent = "Filter by Hospital";
+      secondDropbtn.textContent = "Filter by Subject";
     } else if (option === "Option 2") {
       secondDropdownContent.innerHTML += `
       <a href="#alex" onclick="stopPropagation(event)">Alexandria</a>
