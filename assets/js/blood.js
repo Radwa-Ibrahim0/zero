@@ -200,3 +200,50 @@ document.addEventListener('DOMContentLoaded', function() {
   function stopPropagation(event) {
     event.stopPropagation(); // Prevent event from bubbling up
   }
+
+
+  
+  var eventTriggered = false;
+
+  function isInViewport(element) {
+    var rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+   // Event listener for scroll event
+   window.addEventListener('scroll', function() {
+    executeOnScroll();
+  });
+  
+  // Function to execute when the target div is scrolled into view
+  function executeOnScroll() {
+    if(!eventTriggered){
+    var targetDiv = document.getElementById('counter');
+    if (isInViewport(targetDiv)) {
+      var counter = document.getElementById('counter');
+      var count = 0;
+    
+      function updateCounter() {
+        if (count < 9586) {
+          count += Math.floor(Math.random() * 100) + 1; 
+          counter.textContent = count;
+          setTimeout(updateCounter, 10); 
+        } else {
+          counter.textContent = 9586;
+          eventTriggered = true;
+        }
+      }
+    
+        updateCounter();
+      }
+    }
+  }
+  
+
+
+  

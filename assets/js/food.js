@@ -252,4 +252,132 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
+  var eventTriggered = false;
+  var eventTriggered1 = false;
+  var eventTriggered2 = false;
+  var eventTriggered3 = false;
+
+  function isInViewport(element) {
+    var rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+   // Event listener for scroll event
+   window.addEventListener('scroll', function() {
+    executeOnScroll();
+  });
+  
+  // Function to execute when the target div is scrolled into view
+  function executeOnScroll() {
+    if(!eventTriggered){
+    var targetDiv = document.getElementById('counter');
+    if (isInViewport(targetDiv)) {
+      var counter = document.getElementById('counter');
+      var count = 0;
+    
+      function updateCounter() {
+        if (count < 9673) {
+          count += Math.floor(Math.random() * 100) + 1; 
+          counter.textContent = count;
+          setTimeout(updateCounter, 5); 
+        } else {
+          counter.textContent = 9673;
+          eventTriggered = true;
+        }
+      }
+    
+        updateCounter();
+      }
+    }
+  }
+  
+
+ // Event listener for scroll event
+ window.addEventListener('scroll', function() {
+  executeOnScroll2();
+});
+
+  function executeOnScroll2() {
+    if(!eventTriggered2){
+    var targetDiv = document.getElementById('counter2');
+    if (isInViewport(targetDiv)) {
+      var counter = document.getElementById('counter2');
+      var count = 0;
+    
+      function updateCounter() {
+        if (count < 6217) {
+          count += Math.floor(Math.random() * 100) + 1;
+          counter.textContent = count;
+          setTimeout(updateCounter, 5); 
+        } else {
+          counter.textContent = 6217; 
+          eventTriggered2 = true;
+        }
+      }
+
+      updateCounter();
+    }
+  }
+  }
+  
+ 
+
+  window.addEventListener('scroll', function() {
+    executeOnScroll1();
+  });
+
+  function executeOnScroll1() {
+    if(!eventTriggered1){
+    var targetDiv = document.getElementById('counter1');
+    if (isInViewport(targetDiv)) {
+      var counter = document.getElementById('counter1');
+      var count = 0;
+    
+      function updateCounter() {
+        if (count < 8952) {
+          count += Math.floor(Math.random() * 100) + 1; 
+          counter.textContent = count;
+          setTimeout(updateCounter, 5); 
+        } else {
+          counter.textContent = 8952; 
+          eventTriggered1 = true;
+        }
+      }
+  
+        updateCounter();
+      }
+    }
+  }
+  
+  window.addEventListener('scroll', function() {
+    executeOnScroll3();
+  });
+
+  function executeOnScroll3() {
+    if(!eventTriggered3){
+    var targetDiv = document.getElementById('counter3');
+    if (isInViewport(targetDiv)) {
+      var counter = document.getElementById('counter3');
+      var count = 0;
+    
+      function updateCounter() {
+        if (count < 8965) {
+          count += Math.floor(Math.random() * 100) + 1; 
+          counter.textContent = count;
+          setTimeout(updateCounter, 5); 
+        } else {
+          counter.textContent = 9865; 
+          eventTriggered3 = true;
+        }
+      }
+  
+        updateCounter();
+      }
+    }
+  }
 
