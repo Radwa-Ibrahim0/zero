@@ -138,9 +138,18 @@
             <br> 
             <div class="dropdown">
               <button class="dropbtn">Filter</button>
-              <div class="dropdown-content">
-                <a href="#Books">Books</a>
-                <a href="#Stationary">Stationary</a>
+              <div class="dropdown-content" id="first-dropdown">
+                <a href="#" onclick="showSecondDropdown(event, 'Option 1')">Books</a>
+                <a href="#" onclick="showSecondDropdown(event, 'Option 2')">Stationary</a>
+                <br>
+              </div>
+            </div>
+            <br>
+            <br>
+            <div id="second-dropdown" class="dropdown" style="display: none;">
+              <button class="dropbtn" id="second-dropbtn">Second Dropdown</button>
+              <div class="dropdown-content" onclick="stopPropagation(event)">
+                <!-- Options for the second dropdown will be added dynamically -->
               </div>
             </div>
           </div>
@@ -158,10 +167,34 @@
               </div>
             </div>
             <div class="item">
+              <h4>Case ID 17498</h4>
+              <div class="icon"><img src="assets/images/stationary.jpg" alt=""></div>
+              <p>Stationary</p>
+              <div class="main-red-button-hover" onclick="FurtherInfoX()">
+                <a href="#portfolio">More info</a>
+              </div>
+            </div>
+            <div class="item">
+              <h4>Case ID 546</h4>
+              <div class="icon"><img src="assets/images/books.jpg" alt=""></div>
+              <p>Books</p>
+              <div class="main-red-button-hover" onclick="FurtherInfoY()">
+                <a href="#portfolio">More info</a>
+              </div>
+            </div>
+            <div class="item">
               <h4>Case ID 601</h4>
               <div class="icon"><img src="assets/images/books.jpg" alt=""></div>
               <p>Books</p>
               <div class="main-red-button-hover" onclick="FurtherInfoV1()">
+                <a href="#portfolio">More info</a>
+              </div>
+            </div>
+            <div class="item">
+              <h4>Case ID 235</h4>
+              <div class="icon"><img src="assets/images/stationary.jpg" alt=""></div>
+              <p>Stationary</p>
+              <div class="main-red-button-hover" onclick="FurtherInfoF3()">
                 <a href="#portfolio">More info</a>
               </div>
             </div>
@@ -214,10 +247,26 @@
               </div>
             </div>
             <div class="item">
-              <h4>Case ID 235</h4>
-              <div class="icon"><img src="assets/images/stationary.jpg" alt=""></div>
-              <p>Stationary</p>
-              <div class="main-red-button-hover" onclick="FurtherInfoF3()">
+              <h4>Case ID 20034</h4>
+              <div class="icon"><img src="assets/images/books.jpg" alt=""></div>
+              <p>Books</p>
+              <div class="main-red-button-hover" onclick="FurtherInfoZ()">
+                <a href="#portfolio">More info</a>
+              </div>
+            </div>
+            <div class="item">
+              <h4>Case ID 50087</h4>
+              <div class="icon"><img src="assets/images/books.jpg" alt=""></div>
+              <p>Books</p>
+              <div class="main-red-button-hover" onclick="FurtherInfoA()">
+                <a href="#portfolio">More info</a>
+              </div>
+            </div>
+            <div class="item">
+              <h4>Case ID 4</h4>
+              <div class="icon"><img src="assets/images/books.jpg" alt=""></div>
+              <p>Books</p>
+              <div class="main-red-button-hover" onclick="FurtherInfoJ()">
                 <a href="#portfolio">More info</a>
               </div>
             </div>
@@ -227,7 +276,7 @@
     </div>
   </div>
 
-  <div id="Books" class="pricing-tables">
+  <div id="edu" class="pricing-tables">
     <div class="tables-left-dec">
       <img src="assets/images/tables-left-dec.png" alt="">
     </div>
@@ -238,7 +287,7 @@
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <div class="section-heading">
-            <h2>Book <em>Requests</em> <span></span></h2>
+            <h2>Educational Books <em>Requests</em> <span></span></h2>
             <br>
             <div class="main-blue-button-hover">
               <a href="#Cases">Back</a>
@@ -255,7 +304,7 @@
               <li>Science</li>
             </ul>
             <div class="main-blue-button-hover" onclick="FurtherInfoV1()">
-              <a href="#Books">More Info</a>
+              <a href="#edu">More Info</a>
             </div>
           </div>
         </div>
@@ -267,7 +316,7 @@
               <li>Math</li>
             </ul>
             <div class="main-blue-button-hover" onclick="FurtherInfoF1()">
-              <a href="#Books">More Info</a>
+              <a href="#edu">More Info</a>
             </div>
           </div>
         </div>
@@ -279,28 +328,18 @@
               <li>History</li>
             </ul>
             <div class="main-blue-button-hover" onclick="FurtherInfoC2()">
-              <a href="#Books">More Info</a>
+              <a href="#edu">More Info</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4">
           <br>
-          <div class="item third-item">
-            <h4>Case ID:67</h4>
-            <span>Books</span>
-            <ul>
-              <li>Geography</li>
-            </ul>
-            <div class="main-blue-button-hover" onclick="FurtherInfoF2()">
-              <a href="#Books">More Info</a>
-            </div>
-          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div id="Stationary" class="pricing-tables">
+  <div id="fic" class="pricing-tables">
     <div class="tables-left-dec">
       <img src="assets/images/tables-left-dec.png" alt="">
     </div>
@@ -311,7 +350,121 @@
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <div class="section-heading">
-            <h2>Stationary <em>Requests</em> <span></span></h2>
+            <h2>Fictional and Comic Books <em>Requests</em> <span></span></h2>
+            <br>
+            <div class="main-blue-button-hover">
+              <a href="#Cases">Back</a>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="item third-item">
+            <h4>Case ID:20034</h4>
+            <span>Books</span>
+            <ul>
+              <li>Batman Comic</li>
+            </ul>
+            <div class="main-blue-button-hover" onclick="FurtherInfoZ()">
+              <a href="#fic">More Info</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item first-item">
+            <h4>Case ID:546</h4>
+            <span>Books</span>
+            <ul>
+              <li>Sci-Fi</li>
+            </ul>
+            <div class="main-blue-button-hover" onclick="FurtherInfoY()">
+              <a href="#fic">More Info</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item second-item">
+            <h4>Case ID:67</h4>
+            <span>Books</span>
+            <ul>
+              <li>X-Men Comic</li>
+            </ul>
+            <div class="main-blue-button-hover" onclick="FurtherInfoF2()">
+              <a href="#fic">More Info</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="reli" class="pricing-tables">
+    <div class="tables-left-dec">
+      <img src="assets/images/tables-left-dec.png" alt="">
+    </div>
+    <div class="tables-right-dec">
+      <img src="assets/images/tables-right-dec.png" alt="">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            <h2>Religious Books <em>Requests</em> <span></span></h2>
+            <br>
+            <div class="main-blue-button-hover">
+              <a href="#Cases">Back</a>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="item third-item">
+            <h4>Case ID:50087</h4>
+            <span>Books</span>
+            <ul>
+              <li>The Holy Bible</li>
+            </ul>
+            <div class="main-blue-button-hover" onclick="FurtherInfoA()">
+              <a href="#Books">More Info</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item first-item">
+            <h4>Case ID:4</h4>
+            <span>Books</span>
+            <ul>
+              <li>Quran</li>
+            </ul>
+            <div class="main-blue-button-hover" onclick="FurtherInfoJ()">
+              <a href="#Books">More Info</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="pen" class="pricing-tables">
+    <div class="tables-left-dec">
+      <img src="assets/images/tables-left-dec.png" alt="">
+    </div>
+    <div class="tables-right-dec">
+      <img src="assets/images/tables-right-dec.png" alt="">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            <h2>Writing Instruments <em>Requests</em> <span></span></h2>
             <br>
             <div class="main-blue-button-hover">
               <a href="#Cases">Back</a>
@@ -325,11 +478,11 @@
             <h4>Case ID:500 </h4>
             <span>Stationary</span>
             <ul>
-              <li>Colour pencils</li>
+              <li>Colour Pencils</li>
               <li>Board Markers</li>
             </ul>
             <div class="main-blue-button-hover" onclick="FurtherInfoC1()">
-              <a href="#Stationary">More Info</a>
+              <a href="#pen">More Info</a>
             </div>
           </div>
         </div>
@@ -338,40 +491,50 @@
             <h4>Case ID:2341 </h4>
             <span>Stationary</span>
             <ul>
-              <li>Files</li>
               <li>Crayons</li>
               <li>Pencils</li>
+              <li>Erasers</li>
             </ul>
             <div class="main-blue-button-hover" onclick="FurtherInfoV2()">
-              <a href="#Stationary">More Info</a>
+              <a href="#pen">More Info</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="item first-item">
-            <h4>Case ID:4373 </h4>
-            <span>Stationary</span>
-            <ul>
-              <li>Pens</li>
-              <li>Glue</li>
-              <li>Stapler</li>
-            </ul>
-            <div class="main-blue-button-hover" onclick="FurtherInfoB()">
-              <a href="#Stationary">More Info</a>
-            </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="note" class="pricing-tables">
+    <div class="tables-left-dec">
+      <img src="assets/images/tables-left-dec.png" alt="">
+    </div>
+    <div class="tables-right-dec">
+      <img src="assets/images/tables-right-dec.png" alt="">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            <h2>Notebook <em>Requests</em> <span></span></h2>
+            <br>
+            <div class="main-blue-button-hover">
+              <a href="#Cases">Back</a>
+          </div>
           </div>
         </div>
+      </div>
+      <div class="row">
         <div class="col-lg-4">
           <br>
           <div class="item first-item">
             <h4>Case ID:1987 </h4>
-            <span>Stationary</span>
+            <span>NoteBooks</span>
             <ul>
-              <li>A4 Copy Book</li>
-              <li>Highlighter</li>
+              <li>Graph NoteBook</li>
+              <li>Small CopyBooks</li>
             </ul>
             <div class="main-blue-button-hover" onclick="FurtherInfoC3()">
-              <a href="#Stationary">More Info</a>
+              <a href="#note">More Info</a>
             </div>
           </div>
         </div>
@@ -379,13 +542,64 @@
           <br>
           <div class="item first-item">
             <h4>Case ID:235 </h4>
-            <span>Stationary</span>
+            <span>NoteBooks</span>
             <ul>
-              <li>Geometry set</li>
-              <li>Small CopyBooks</li>
+              <li>A4 CopyBook</li>
+              <li>Blank NoteBook</li>
             </ul>
             <div class="main-blue-button-hover" onclick="FurtherInfoF3()">
-              <a href="#Stationary">More Info</a>
+              <a href="#note">More Info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="tools" class="pricing-tables">
+    <div class="tables-left-dec">
+      <img src="assets/images/tables-left-dec.png" alt="">
+    </div>
+    <div class="tables-right-dec">
+      <img src="assets/images/tables-right-dec.png" alt="">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            <h2>Math Tools <em>Requests</em> <span></span></h2>
+            <br>
+            <div class="main-blue-button-hover">
+              <a href="#Cases">Back</a>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="item first-item">
+            <h4>Case ID:17498 </h4>
+            <span>Math Tools</span>
+            <ul>
+              <li>Rulers</li>
+              <li>Protractor</li>
+            </ul>
+            <div class="main-blue-button-hover" onclick="FurtherInfoX()">
+              <a href="#tools">More Info</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item first-item">
+            <h4>Case ID:4373 </h4>
+            <span>Math Tools</span>
+            <ul>
+              <li>Compass</li>
+              <li>Calculator</li>
+              <li>Set Square</li>
+            </ul>
+            <div class="main-blue-button-hover" onclick="FurtherInfoB()">
+              <a href="#tools">More Info</a>
             </div>
           </div>
         </div>
@@ -436,14 +650,14 @@
                         <br>
                     </div>
                     <div class="col-lg-12">
-                      <label for ="clothes">Type: Files </label>
+                      <label for ="clothes">Type: Erasers </label>
                     </div>
                     <div class="col-lg-12">
                       <label for ="clothes">Amount Needed: 4</label>
                     </div>
                     <div class="col-lg-12">
                       <fieldset>
-                        <input type="number" name="Amount" id="amount" placeholder="Amount of files you can donate" autocomplete="on" required min="0">
+                        <input type="number" name="Amount" id="amount" placeholder="Amount of erasers you can donate" autocomplete="on" required min="0">
                       </fieldset>
                     </div>
                     <div class="col-lg-12">
@@ -551,7 +765,7 @@
                       <br>
                     </div>
                     <div class="col-lg-12">
-                      <label for ="clothes">Type: Coloured Pencils</label>
+                      <label for ="clothes">Type: Colouring Pencils</label>
                     </div>
                     <div class="col-lg-12">
                       <label for ="clothes">Amount Needed: 24 Packs</label>
@@ -603,7 +817,7 @@
                         <br>
                       </div>
                       <div class="col-lg-8 offset-lg-2">
-                        <img src="assets/images/selah.jpg">
+                        <img src="assets/images/selah1.jpg">
                       </div>
                       <div class="col-lg-12">
                         <label for ="clothes">Book Name: Selah El-telmeez 1st Prep History </label>
@@ -666,14 +880,14 @@
                           </fieldset>
                         </div>
                         <div class="col-lg-12">
-                          <label for ="clothes">Type: Highlighter</label>
+                          <label for ="clothes">Type: Graph NoteBook</label>
                         </div>
                         <div class="col-lg-12">
                           <label for ="clothes">Amount Needed: 4</label>
                         </div>
                         <div class="col-lg-12">
                           <fieldset>
-                            <input type="number" name="Amount" id="amount" placeholder="Amount of highlighters you can donate" autocomplete="on" required min="0">
+                            <input type="number" name="Amount" id="amount" placeholder="Amount of notebooks you can donate" autocomplete="on" required min="0">
                           </fieldset>
                         </div>
                       <div class="col-lg-12">
@@ -758,25 +972,25 @@
                           <br>
                         </div>
                         <div class="col-lg-12">
-                          <label for ="clothes">Type: Geometry Set </label>
+                          <label for ="clothes">Type: Blank NoteBook </label>
                         </div>
                         <div class="col-lg-12">
                           <label for ="clothes">Amount Needed: 3</label>
                         </div>
                         <div class="col-lg-12">
                           <fieldset>
-                            <input type="number" name="Amount" id="amount" placeholder="Amount of geometry sets you can donate" autocomplete="on" required min="0">
+                            <input type="number" name="Amount" id="amount" placeholder="Amount of notebooks you can donate" autocomplete="on" required min="0">
                           </fieldset>
                         </div>
                         <div class="col-lg-12">
-                          <label for ="clothes">Type: Small CopyBook </label>
+                          <label for ="clothes">Type: A4 CopyBook </label>
                         </div>
                         <div class="col-lg-12">
                           <label for ="clothes">Amount Needed: 6</label>
                         </div>
                         <div class="col-lg-12">
                           <fieldset>
-                            <input type="number" name="Amount" id="amount" placeholder="Amount of small copybooks you can donate" autocomplete="on" required min="0">
+                            <input type="number" name="Amount" id="amount" placeholder="Amount of copybooks you can donate" autocomplete="on" required min="0">
                           </fieldset>
                         </div>
                       <div class="col-lg-12">
@@ -808,23 +1022,23 @@
                           <h3>Case ID:67</h3>
                           <br>
                         </div>
-                        <div class="col-lg-8 offset-lg-2">
-                          <img src="assets/images/selah (2).jpg">
+                        <div class="col-lg-6 offset-lg-3">
+                          <img src="assets/images/xmen.jpg">
                         </div>
                         <div class="col-lg-12">
-                          <label for ="clothes">Book Name: Selah El-telmeez 1st Prep Geography </label>
+                          <label for ="clothes">Book Name: X-Men vs. Apocalypse Vol.1 </label>
                         </div>
                         <div class="col-lg-12">
-                          <label for ="clothes">Author: Selah El-telmeez</label>
+                          <label for ="clothes">Author: Chris Claremont</label>
                         </div>
                         <div class="col-lg-12">
-                          <label for ="clothes">Language: Arabic</label>
+                          <label for ="clothes">Language: English</label>
                         </div>
                         <div class="col-lg-12">
                           <label for ="clothes">Edition: 2nd Edition</label>
                         </div>
                         <div class="col-lg-12">
-                          <label for ="clothes">Short Summary: Explanation and Excercises for 1st Prep Geography Course</label>
+                          <label for ="clothes">Short Summary: X-Men must strike a temporary truce with Magneto to battle the warlord's forces</label>
                         </div>
                         <div class="col-lg-12">
                           <fieldset>
@@ -861,29 +1075,29 @@
                             <br>
                           </div>
                           <div class="col-lg-12">
-                            <label for ="clothes">Type: Pens </label>
+                            <label for ="clothes">Type: Compass </label>
                           </div>
                           <div class="col-lg-12">
                             <label for ="clothes">Amount Needed: 7 </label>
                           </div>
                           <div class="col-lg-12">
                             <fieldset>
-                              <input type="number" name="Amount" id="amount" placeholder="Amount of pens you can donate" autocomplete="on" required min="0">
+                              <input type="number" name="Amount" id="amount" placeholder="Amount of compasses you can donate" autocomplete="on" required min="0">
                             </fieldset>
                           </div>
                           <div class="col-lg-12">
-                            <label for ="clothes">Type: Glue </label>
+                            <label for ="clothes">Type: Calculator </label>
                           </div>
                           <div class="col-lg-12">
                             <label for ="clothes">Amount Needed: 3 </label>
                           </div>
                           <div class="col-lg-12">
                             <fieldset>
-                              <input type="number" name="Amount" id="amount" placeholder="Loafs of glue you can donate" autocomplete="on" required min="0">
+                              <input type="number" name="Amount" id="amount" placeholder="No. of Calculators you can donate" autocomplete="on" required min="0">
                             </fieldset>
                           </div>
                           <div class="col-lg-12">
-                            <label for ="clothes">Type: Stapler </label>
+                            <label for ="clothes">Type: Set Square </label>
                           </div>
                           <div class="col-lg-12">
                             <label for ="clothes">Amount Needed: 2 </label>
@@ -892,7 +1106,7 @@
                           </div>
                           <div class="col-lg-12">
                             <fieldset>
-                              <input type="number" name="Amount" id="amount" placeholder="Packets of staplers you can donate" autocomplete="on" required min="0">
+                              <input type="number" name="Amount" id="amount" placeholder="No. of set squares you can donate" autocomplete="on" required min="0">
                             </fieldset>
                           </div>
                         <div class="col-lg-12">
@@ -903,12 +1117,252 @@
                         </div>
                       </form>
                     </div>
-  
-                    
                     </div>
                   </div>
                 </div>
             </div>
+
+            <div id="popup-x" class="popup-c">
+              <div class="popup-content-c">
+                  <div class="pop-up-c">
+                    <span class="close-c" id="close-popup-x" onclick="closePopupX()">&times;</span>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="section-heading">
+                        </div>
+                      </div>
+                      <div class="col-lg-12 align-self-center">
+                        <form id="contact-x" action="" method="get">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <h3>Case ID:17498</h3>
+                              <br>
+                            </div>
+                            <div class="col-lg-12">
+                              <label for ="clothes">Type: Ruler </label>
+                            </div>
+                            <div class="col-lg-12">
+                              <label for ="clothes">Amount Needed: 7 </label>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <input type="number" name="Amount" id="amount" placeholder="Amount of rulers you can donate" autocomplete="on" required min="0">
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <label for ="clothes">Type: Protractor </label>
+                            </div>
+                            <div class="col-lg-12">
+                              <label for ="clothes">Amount Needed: 3 </label>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <input type="number" name="Amount" id="amount" placeholder="No. of Protractors you can donate" autocomplete="on" required min="0">
+                              </fieldset>
+                            </div>
+                          <div class="col-lg-12">
+                            <div class="main-red-button-hover">
+                              <button type="submit" id="form-submit">Give Now &#x1F90D;</button>
+                            </div>
+                          </div>
+                          </div>
+                        </form>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div id="popup-y" class="popup-c">
+                <div class="popup-content-c">
+                    <div class="pop-up-c">
+                      <span class="close-c" id="close-popup-y" onclick="closePopupY()">&times;</span>
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="section-heading">
+                          </div>
+                        </div>
+                        <div class="col-lg-12 align-self-center">
+                          <form id="contact-y" action="" method="get">
+                            <div class="row">
+                              <div class="col-lg-12">
+                                <h3>Case ID:546</h3>
+                                <br>
+                              </div>
+                              <div class="col-lg-6 offset-lg-3">
+                                <img src="assets/images/cat.jpg">
+                              </div>
+                              <div class="col-lg-12">
+                                <label for ="clothes">Book Name: Cats VS. Robots </label>
+                              </div>
+                              <div class="col-lg-12">
+                                <label for ="clothes">Author: Margret Stohl</label>
+                              </div>
+                              <div class="col-lg-12">
+                                <label for ="clothes">Language: English</label>
+                              </div>
+                              <div class="col-lg-12">
+                                <label for ="clothes">Edition: 1st Edition</label>
+                              </div>
+                              <div class="col-lg-12">
+                                <label for ="clothes">Short Summary: Cats and Robots go to war!</label>
+                              </div>
+                              <div class="col-lg-12">
+                                <fieldset>
+                                  <input type="number" name="Amount" id="amount" placeholder="Amount of books you can donate" autocomplete="on" required min="0">
+                                </fieldset>
+                              </div>
+                            <div class="col-lg-12">
+                              <div class="main-red-button-hover">
+                                <button type="submit" id="form-submit">Give Now &#x1F90D;</button>
+                              </div>
+                            </div>
+                            </div>
+                          </form>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div id="popup-z" class="popup-c">
+                  <div class="popup-content-c">
+                      <div class="pop-up-c">
+                        <span class="close-c" id="close-popup-z" onclick="closePopupZ()">&times;</span>
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="section-heading">
+                            </div>
+                          </div>
+                          <div class="col-lg-12 align-self-center">
+                            <form id="contact-z" action="" method="get">
+                              <div class="row">
+                                <div class="col-lg-12">
+                                  <h3>Case ID:20034</h3>
+                                  <br>
+                                </div>
+                                <div class="col-lg-6 offset-lg-3">
+                                  <img src="assets/images/batman.jpg">
+                                </div>
+                                <div class="col-lg-12">
+                                  <label for ="clothes">Book Name: Batman NightFall Vol.3 </label>
+                                </div>
+                                <div class="col-lg-12">
+                                  <label for ="clothes">Author: Chuck Dixon</label>
+                                </div>
+                                <div class="col-lg-12">
+                                  <label for ="clothes">Language: English</label>
+                                </div>
+                                <div class="col-lg-12">
+                                  <label for ="clothes">Edition: 1st Edition</label>
+                                </div>
+                                <div class="col-lg-12">
+                                  <label for ="clothes">Short Summary: Bruce defeats Jean and reclaims his legendary cape.</label>
+                                </div>
+                                <div class="col-lg-12">
+                                  <fieldset>
+                                    <input type="number" name="Amount" id="amount" placeholder="Amount of books you can donate" autocomplete="on" required min="0">
+                                  </fieldset>
+                                </div>
+                              <div class="col-lg-12">
+                                <div class="main-red-button-hover">
+                                  <button type="submit" id="form-submit">Give Now &#x1F90D;</button>
+                                </div>
+                              </div>
+                              </div>
+                            </form>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div id="popup-a" class="popup-c">
+                    <div class="popup-content-c">
+                        <div class="pop-up-c">
+                          <span class="close-c" id="close-popup-a" onclick="closePopupA()">&times;</span>
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="section-heading">
+                              </div>
+                            </div>
+                            <div class="col-lg-12 align-self-center">
+                              <form id="contact-a" action="" method="get">
+                                <div class="row">
+                                  <div class="col-lg-12">
+                                    <h3>Case ID:50087</h3>
+                                    <br>
+                                  </div>
+                                  <div class="col-lg-6 offset-lg-3">
+                                    <img src="assets/images/bible.jpg">
+                                  </div>
+                                  <div class="col-lg-12">
+                                    <label for ="clothes">Book Name: The Holy Bible</label>
+                                  </div>
+                                  <div class="col-lg-12">
+                                    <label for ="clothes">Language: Arabic</label>
+                                  </div>
+                                  <div class="col-lg-12">
+                                    <fieldset>
+                                      <input type="number" name="Amount" id="amount" placeholder="Amount of books you can donate" autocomplete="on" required min="0">
+                                    </fieldset>
+                                  </div>
+                                <div class="col-lg-12">
+                                  <div class="main-red-button-hover">
+                                    <button type="submit" id="form-submit">Give Now &#x1F90D;</button>
+                                  </div>
+                                </div>
+                                </div>
+                              </form>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div id="popup-j" class="popup-c">
+                      <div class="popup-content-c">
+                          <div class="pop-up-c">
+                            <span class="close-c" id="close-popup-j" onclick="closePopupJ()">&times;</span>
+                            <div class="row">
+                              <div class="col-lg-12">
+                                <div class="section-heading">
+                                </div>
+                              </div>
+                              <div class="col-lg-12 align-self-center">
+                                <form id="contact-j" action="" method="get">
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <h3>Case ID:4</h3>
+                                      <br>
+                                    </div>
+                                    <div class="col-lg-6 offset-lg-3">
+                                      <img src="assets/images/quran.jpg">
+                                    </div>
+                                    <div class="col-lg-12">
+                                      <label for ="clothes">Book Name: Quran</label>
+                                    </div>
+                                    <div class="col-lg-12">
+                                      <label for ="clothes">Language: Arabic</label>
+                                    </div>
+                                    <div class="col-lg-12">
+                                      <fieldset>
+                                        <input type="number" name="Amount" id="amount" placeholder="Amount of books you can donate" autocomplete="on" required min="0">
+                                      </fieldset>
+                                    </div>
+                                  <div class="col-lg-12">
+                                    <div class="main-red-button-hover">
+                                      <button type="submit" id="form-submit">Give Now &#x1F90D;</button>
+                                    </div>
+                                  </div>
+                                  </div>
+                                </form>
+                              </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+
             <div id="popup-del" class="popup-c">
               <div class="popup-content-c">
                   <div class="pop-up-c">
