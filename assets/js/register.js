@@ -121,18 +121,24 @@ function FurtherInfoC1() {
     });
     });
   
-  document.addEventListener('DOMContentLoaded', function() {
+  function checkPass() {
     var popup = document.getElementById('popup-f1');
     var popupForm = document.getElementById('contact-f1');
-    var popupDel = document.getElementById('popup-del');
-  
-    popupForm.addEventListener('submit', function(event) {
+    var x = document.getElementById('new').value;
+    var y = document.getElementById('check').value;
+     
+      if(x==y){
+        alert('Password Changed Successfully');
+        popup.style.display = 'none';
+        popupForm.reset();
+      }else{
+        alert('Password Mismatch');
+      }
       event.preventDefault(); // Prevent form submission
-      popup.style.display = 'none';
-      popupForm.reset();
-      popupDel.style.display = 'block';
-    });
-    });
+      
+      
+
+    }
   
     document.addEventListener('DOMContentLoaded', function() {
     var popup = document.getElementById('popup-f2');
@@ -238,6 +244,11 @@ function FurtherInfoC1() {
       popupDel.style.display = 'block';
     });
     });
+
+    function updateInfo(){
+      alert("Information updated successfully");
+    }
+
   
   
   document.addEventListener('DOMContentLoaded', function() {

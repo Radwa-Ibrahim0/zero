@@ -49,9 +49,9 @@ https://templatemo.com/tm-565-onix-digital
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="#cases">Account Info</a></li>
-              <li class="scroll-to-section"><a href="#cases">Saved Address</a></li>
+              <li class="scroll-to-section"><a href="donorMain.html" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#info">Account Info</a></li>
+              <li class="scroll-to-section"><a href="#add">Saved Address</a></li>
               <li class="scroll-to-section"><a href="#cases">My Cases</a></li>
               <li class="scroll-to-section"><a href="#subscribe2">Subscribe</a></li> 
               <li class="scroll-to-section"><div class="main-red-button-hover"><a href="#footer">Contact Us Now</a></div></li> 
@@ -67,203 +67,223 @@ https://templatemo.com/tm-565-onix-digital
   </header>
   <!-- ***** Header Area End ***** -->
 
-  <div class="main-banner" id="top">
+  <div class="container">
+    <div class="owl-carousel owl-banner">
+      <div class="item header-text">
+        <div class="down-buttons">
+        </div>
+</div>
+</div>
+</div>
+
+
+  <div id="info" class="contact-us section">
     <div class="container">
       <div class="row">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-10">
         <div class="col-lg-12">
-          <div class="row">
-            <div class="col-lg-6 align-self-center">
-              <div class="owl-carousel owl-banner">
-                <div class="item header-text">
-                  <h6>Welcome to Onix Digital</h6>
-                  <h2>Build <em>your website</em> the best in <span>SEO</span>?</h2>
-                  <p>This is a professional looking HTML Bootstrap 5 website template brought to you by TemplateMo website.</p>
-                  <div class="down-buttons">
-                    <div class="main-blue-button-hover">
-                      <a href="#contact">Message Us Now</a>
-                    </div>
-                    <div class="call-button">
-                      <a href="#"><i class="fa fa-phone"></i> 010-020-0340</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="item header-text">
-                  <h6>Online Marketing</h6>
-                  <h2>Get the <em>best ideas</em> for <span>your website</span></h2>
-                  <p>You are NOT allowed to redistribute this template ZIP file on any Free CSS collection websites. Contact us for more info. Thank you.</p>
-                  <div class="down-buttons">
-                    <div class="main-blue-button-hover">
-                      <a href="#services">Our Services</a>
-                    </div>
-                    <div class="call-button">
-                      <a href="#"><i class="fa fa-phone"></i> 090-080-0760</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="item header-text">
-                  <h6>Video Tutorials</h6>
-                  <h2>Watch <em>our videos</em> for your <span>projects</span></h2>
-                  <p>Please <a rel="nofollow" href="https://www.paypal.me/templatemo" target="_blank">support us</a> a little via PayPal if this digital marketing HTML template is useful for you. Thank you.</p>
-                  <div class="down-buttons">
-                    <div class="main-blue-button-hover">
-                      <a href="#video">Watch Videos</a>
-                    </div>
-                    <div class="call-button">
-                      <a href="#"><i class="fa fa-phone"></i> 050-040-0320</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="section-heading">
+            <br>
+            <br>
+            <h2>My <span>Account</span> Information</h2>
           </div>
         </div>
+        <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="row">
+                  <div class="col-lg-2">
+                   <div class="infoLabel"> First Name</div>
+                    </div>
+                    <div class="col-lg-6 ">
+                      <div class="name-box" contenteditable="true" id="name">John </div>
+                    </div>
+                    <div class="col-lg-4 ">
+                      <div class="update">
+                        <button type="submit" class="updateInfo" onclick="updateInfo()">Update </button>
+                      </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-12">
+                <div class="row">
+                  <div class="col-lg-2">
+                   <div class="infoLabel"> Last Name</div>
+                    </div>
+                    <div class="col-lg-6 ">
+                      <div class="name-box" contenteditable="true" id="name"> Doe</div>
+                    </div>
+                    <div class="col-lg-4 ">
+                      <div class="update">
+                        <button type="submit" class="updateInfo" onclick="FurtherInfoF1()">Change Password </button>
+                      </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-12">
+                <div class="row">
+                  <div class="col-lg-2">
+                   <div class="infoLabel"> Email</div>
+                    </div>
+                    <div class="col-lg-6 ">
+                      <div class="name-box" contenteditable="true" id="name">JohnDoe@yahoo.com</div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-12">
+                <div class="row">
+                  <div class="col-lg-2">
+                   <div class="infoLabel">Phone Number</div>
+                    </div>
+                    <div class="col-lg-6 ">
+                      <div class="name-box" contenteditable="true" id="name">+20 01550604196</div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-12">
+                <div class="row">
+                  <div class="col-lg-2">
+                   <div class="infoLabel"> Gender</div>
+                    </div>
+                    <div class="col-lg-6 ">
+                      <div class="gender-selection">
+                        <div class="radio-button">
+                          <input type="radio" id="male" name="gender" value="male">
+                          <label for="male">Male</label>
+                        </div>
+                        <div class="radio-button2">
+                          <input type="radio" id="female" name="gender" value="female">
+                          <label for="female">Female </label>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                </div>
+                    </div>
+            </div>
+        </div>
       </div>
+    </div>
+    <div class="contact-dec">
+      <img src="assets/images/contact-dec.png" alt="">
     </div>
   </div>
 
-  <div id="cases" class="our-services section">
-    <div class="services-right-dec">
-      <img src="assets/images/services-right-dec.png" alt="">
-    </div>
+  <div id="add" class="contact-us section">
     <div class="container">
-      <div class="services-left-dec">
-        <img src="assets/images/services-left-dec.png" alt="">
-      </div>
       <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading">
-            <h2>Thank you for helping! <em></em>View the cases you've donated to<span> below</span></h2>
-          </div>
+        <div class="col-lg-1">
         </div>
-      </div>
-      <div class="row">
+        <div class="col-lg-10">
         <div class="col-lg-12">
-          <div class="owl-carousel owl-services">
-            <div class="item">
-              <h4>Case ID 792</h4>
-              <div class="icon"><img src="assets/images/winter.jpg" alt=""></div>
-              <p>Winter Clothes</p>
-              <div class="main-red-button-hover" onclick="FurtherInfoV2()">
-                <a href="#portfolio">More info</a>
-              </div>
-            </div>
-            <div class="item">
-              <h4>Case ID 4753</h4>
-              <div class="icon"><img src="assets/images/summer.jpg" alt=""></div>
-              <p>Summer Clothes</p>
-              <div class="main-red-button-hover" onclick="FurtherInfoY()">
-                <a href="#portfolio">More info</a>
-              </div>
-            </div>
-            <div class="item">
-              <h4>Case ID 512679</h4>
-              <div class="icon"><img src="assets/images/meds.jpg" alt=""></div>
-              <p>Medication</p>
-              <div class="main-red-button-hover" onclick="FurtherInfoJ()">
-                <a href="#portfolio">More info</a>
-              </div>
-            </div>
-            <div class="item">
-              <h4>Case ID 720</h4>
-              <div class="icon"><img src="assets/images/ME.jpg" alt=""></div>
-              <p>Medical Equipment</p>
-              <div class="main-red-button-hover" onclick="FurtherInfoR()">
-                <a href="#portfolio">More info</a>
-              </div>
-            </div>
-            <div class="item">
-              <h4>Case ID 875</h4>
-              <div class="icon"><img src="assets/images/meds.jpg" alt=""></div>
-              <p>Medication</p>
-              <div class="main-red-button-hover" onclick="FurtherInfoA()">
-                <a href="#portfolio">More info</a>
-              </div>
-            </div>
-            <div class="item">
-              <h4>Case ID 45</h4>
-              <div class="icon"><img src="assets/images/playH.jpg" alt=""></div>
-              <p>Outdoor Game</p>
-              <div class="main-red-button-hover" onclick="FurtherInfoX()">
-                <a href="#portfolio">More info</a>
-              </div>
-            </div>
-            <div class="item">
-              <h4>Case ID 85629</h4>
-              <div class="icon"><img src="assets/images/doll.jpg" alt=""></div>
-              <p>Dolls</p>
-              <div class="main-red-button-hover" onclick="FurtherInfoZ()">
-                <a href="#portfolio">More info</a>
-              </div>
-            </div>
-            <div class="item">
-              <h4>Case ID 498</h4>
-              <div class="icon"><img src="assets/images/sport.jpg" alt=""></div>
-              <p>Sport Game</p>
-              <div class="main-red-button-hover" onclick="FurtherInfoB()">
-                <a href="#portfolio">More info</a>
-              </div>
-            </div>
-            <div class="item">
-              <h4>Case ID 450</h4>
-              <div class="icon"><img src="assets/images/canned.jpg" alt=""></div>
-              <p>Canned Food</p>
-              <div class="main-red-button-hover" onclick="FurtherInfoC1()">
-                <a href="#portfolio">More info</a>
-              </div>
-            </div>
-            <div class="item">
-              <h4>Case ID 7032</h4>
-              <div class="icon"><img src="assets/images/veg.jpg" alt=""></div>
-              <p>Fruits and Vegetables</p>
-              <div class="main-red-button-hover" onclick="FurtherInfoV1()">
-                <a href="#portfolio">More info</a>
-              </div>
-            </div>
-            <div class="item">
-              <h4>Case ID 5300</h4>
-              <div class="icon"><img src="assets/images/fresh.jpg" alt=""></div>
-              <p>Fresh Meals</p>
-              <div class="main-red-button-hover" onclick="FurtherInfoF1()">
-                <a href="#portfolio">More info</a>
-              </div>
-            </div>
-            <div class="item">
-              <h4>Case ID 7532</h4>
-              <div class="icon"><img src="assets/images/books.jpg" alt=""></div>
-              <p>Books</p>
-              <div class="main-red-button-hover" onclick="FurtherInfoC2()">
-                <a href="#portfolio">More info</a>
-              </div>
-            </div>
-            <div class="item">
-              <h4>Case ID 235</h4>
-              <div class="icon"><img src="assets/images/stationary.jpg" alt=""></div>
-              <p>Stationary</p>
-              <div class="main-red-button-hover" onclick="FurtherInfoF3()">
-                <a href="#portfolio">More info</a>
-              </div>
-            </div>
-            <div class="item">
-              <h4>Case ID 358</h4>
-              <div class="icon"><img src="assets/images/blood.jpg" alt=""></div>
-              <p>Blood Donation</p>
-              <div class="main-red-button-hover" onclick="FurtherInfoC3()">
-                <a href="#portfolio">More info</a>
-              </div>
-            </div>
-            <div class="item">
-              <h4>Case ID 6198</h4>
-              <div class="icon"><img src="assets/images/blood.jpg" alt=""></div>
-              <p>Blood Donation</p>
-              <div class="main-red-button-hover" onclick="FurtherInfoF2()">
-                <a href="#portfolio">More info</a>
-              </div>
-            </div>
+          <div class="section-heading">
+            <br>
+            <br>
+            <h2>My <span>Address</span></h2>
           </div>
         </div>
+                <div class="col-lg-12">
+                  <div class="row">
+                    <div class="col-lg-3">
+                     <div class="infoLabel">Governorate</div>
+                      </div>
+                      <div class="col-lg-6 ">
+                        <div class="name-box" contenteditable="true" id="name"> Cairo</div>
+                      </div>
+                      <div class="col-lg-2">
+                        <div class="update">
+                          <button type="submit" class="updateInfo" onclick="updateInfo()">Update </button>
+                        </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="row">
+                      <div class="col-lg-3">
+                       <div class="infoLabel"> Address Type</div>
+                        </div>
+                        <div class="col-lg-6 ">
+                          <div class="gender-selection">
+                            <div class="radio-button">
+                              <input type="radio" id="male" name="gender" value="male">
+                              <label for="male">Apartment <i class="fas fa-building"></i>
+                              </label>
+                            </div>
+                            <div class="radio-button3">
+                              <input type="radio" id="female" name="gender" value="female">
+                              <label for="female">House <i class="fas fa-home"></i>
+                              </label>
+                            </div>
+                            <div class="radio-button2">
+                              <input type="radio" id="female" name="gender" value="female">
+                              <label for="female">Office <i class="fas fa-city"></i> </label>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    </div>
+                <div class="col-lg-12">
+                <div class="row">
+                  <div class="col-lg-3">
+                   <div class="infoLabel">Street</div>
+                    </div>
+                    <div class="col-lg-6 ">
+                      <div class="name-box" contenteditable="true" id="name"> 90th street</div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="row">
+                    <div class="col-lg-3">
+                     <div class="infoLabel">Building No./Name</div>
+                      </div>
+                      <div class="col-lg-6 ">
+                        <div class="name-box" contenteditable="true" id="name"> SamaComplex</div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="row">
+                      <div class="col-lg-3">
+                       <div class="infoLabel">Floor</div>
+                        </div>
+                        <div class="col-lg-6 ">
+                          <div class="name-box" contenteditable="true" id="name">  3rd floor</div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="row">
+                        <div class="col-lg-3">
+                         <div class="infoLabel">Apartment Number</div>
+                          </div>
+                          <div class="col-lg-6 ">
+                            <div class="name-box" contenteditable="true" id="name">5</div>
+                          </div>
+                      </div>
+                      </div>
+                <div class="col-lg-12">
+                <div class="row">
+                  <div class="col-lg-3">
+                   <div class="infoLabel">Nearest LandMark</div>
+                    </div>
+                    <div class="col-lg-6 ">
+                      <div class="name-box" contenteditable="true" id="name">Infront of Al-Rahma Mosque</div>
+                    </div>
+                </div>
+                </div>
+                    </div>
+            </div>
+        </div>
       </div>
-    </div>
+      <div class="contact-left-dec">
+        <img src="assets/images/videos-left-dec.png" alt="">
+      </div>
+      </div>
   </div>
+ 
 
   <div id="popup-del" class="popup-c">
     <div class="popup-content-c">
@@ -298,7 +318,7 @@ https://templatemo.com/tm-565-onix-digital
                     <input type="date" id="meeting-date" name="meeting-date" required>
                     <br>
                     <br>
-                    <label for="start-time">Select a tmie for pickup</label>
+                    <label for="start-time">Select a time for pickup</label>
                     <br>
                     <label for="start-time">From  </label>
                     <input type="time" id="start-time" name="start-time" required>
@@ -662,25 +682,27 @@ https://templatemo.com/tm-565-onix-digital
                   <form id="contact-f1" action="" method="get">
                     <div class="row">
                       <div class="col-lg-12">
-                        <h3>Case ID:5300</h3>
+                        <h3>Change Password</h3>
                         <br>
                       </div>
                       <div class="col-lg-12">
-                        <label for ="clothes">Item Name: Molokhia</label>
-                      </div>
-                      <div class="col-lg-12">
-                        <label for ="clothes">Amount Needed: 5 Meals</label>
-                      </div>
-                      <div class="col-lg-12">
+                        <fieldset>
+                          <input type="password"  id="old" placeholder="Old Password" autocomplete="on" required min="0" >
+                        </fieldset>
                       </div>
                       <div class="col-lg-12">
                         <fieldset>
-                          <input type="number" name="Amount" id="amount" placeholder="Amount of molokhia you can donate" autocomplete="on" required min="0" >
+                          <input type="password"  id="new" placeholder="New Password" autocomplete="on" required min="0" >
+                        </fieldset>
+                      </div>
+                      <div class="col-lg-12">
+                        <fieldset>
+                          <input type="password"  id="check" placeholder="Verify New Password" autocomplete="on" required min="0" >
                         </fieldset>
                       </div>
                     <div class="col-lg-12">
                       <div class="main-red-button-hover">
-                        <button type="submit" id="form-submit">Give Now &#x1F90D;</button>
+                        <button type="submit" id="form-submit" onclick="checkPass()" >Update Now</button>
                       </div>
                     </div>
                     </div>
@@ -1100,164 +1122,82 @@ https://templatemo.com/tm-565-onix-digital
         </div>
     </div>
 
-    <div id="organizations" class="pricing-tables2">
+    <div id="cases" class="pricing-tables2">
       <div class="tables-left-dec">
         <img src="assets/images/tables-left-dec.png" alt="">
       </div>
       <div class="tables-right-dec">
         <img src="assets/images/tables-right-dec.png" alt="">
       </div>
-      <div class="container">
+      <div class="container" >
         <div class="row">
           <div class="col-lg-6 offset-lg-3">
             <div class="section-heading">
-              <h2>Your <em></em><span>Donations</span></h2>
+             
+              <h2>My <em>Donations</em><span></span></h2>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-6">
-        <div class="search-container">
-          <input type="text" id="searchBox" placeholder="Search..." class="search-input" autocomplete="on">
-          <button onclick="performSearch()" class="search-button">Search</button>
+        <div class="progress-bar col-lg-12">
+          <ol  style="--length: 4" role="list">
+            <li style="--i: 1">
+              <h3>Awaiting Pickup Date</h3>
+              <div class="row">
+              <div class="col-lg-3">
+              <h4>Case Id 7032 </h4>
+              <h5>Fruits And Vegetables </h5>
+              <p>Eggplant (7kg)</p>
+              <p>Bananas (3kg)</p>
+              <p>Tomatoes (10kg)</p>
+            </div>
+            <div class="col-lg-3 offset-lg-4">
+                <img src="assets/images/stage1.png" alt="" class="stage1">
+            </div>
+          </div>
+            </li>
+            <li style="--i: 3">
+              <h3>Driver Is 10-15 Minutes Away</h3>
+              <div class="row">
+              <div class="col-lg-3">
+              <h4>Case Id 792 </h4>
+              <h5>Winter Clothes</h5>
+              <p>0-24m Baby Sleepers (9)</p>
+            </div>
+            <div class="col-lg-2 offset-lg-4">
+                <img src="assets/images/stage3.png" alt="" class="stage3">
+            </div>
+          </div>
+            </li>
+            <li style="--i: 2">
+              <h3>Driver Is On The Way</h3>
+              <div class="row">
+              <div class="col-lg-3">
+              <h4>Case Id 498 </h4>
+              <h5>Toys</h5>
+              <p>BasketBall Hoop (1)</p>
+            </div>
+            <div class="col-lg- offset-lg-2">
+                <img src="assets/images/stage2.png" alt="" class="stage2">
+            </div>
+          </div>
+            </li>
+            <li style="--i: 4">
+              <h3>Successful PickUp</h3>
+              <div class="row">
+              <div class="col-lg-3">
+              <h4>Case Id 235 </h4>
+              <h5>Math Tools</h5>
+              <p>Geometry Set (3)</p>
+              <p>Protractor (5)</p>
+            </div>
+            <div class="col-lg-3 offset-lg-4">
+                <img src="assets/images/stage4.png" alt="" class="stage4">
+            </div>
+          </div>
+            </li>
+          </ol>
+        </div>
       </div>
-    </div>
-  </div>
-
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="item first-item" id="first-item">
-              <div class="row">
-                <div class="col-lg-2">
-                  <img src="assets/images/misr-el-kheir.jpg">
-                </div>
-                <div class="col-lg-8">
-                  <h4>Case ID 7032</h4>
-                  <ul>
-                    <li>Eggplant (7kg)</li>
-                    <li>Bananas (2kg)</li>
-                    <li>Tomatoes (10kg)</li>
-                  </ul>
-                </div>
-              <div class="col-lg-2">
-                <br>
-                <div class="main-blue-button-hover">
-                  <a href="#">View Delivery Details</a>
-                </div>
-            </div>
-            </div>
-            </div>
-          </div>
-          <div class="col-lg-12">
-            <div class="item second-item" id="second-item">
-              <div class="row">
-                <div class="col-lg-2">
-                  <img src="assets/images/57357.png">
-                </div>
-                <div class="col-lg-8">
-                  <h4>Case ID 792</h4>
-                  <ul>
-                    <li>0-24m Baby Sleepers (9)</li>
-                </div>
-              <div class="col-lg-2">
-                <div class="main-blue-button-hover">
-                  <a href="#">View Delivery Details</a>
-                </div>
-            </div>
-            </div>
-            </div>
-          </div>
-          <div class="col-lg-12">
-            <div class="item third-item" id="third-item">
-              <div class="row">
-                <div class="col-lg-2">
-                  <img src="assets/images/red-crescent.png">
-                </div>
-                <div class="col-lg-8">
-                  <h4>Case ID 498</h4>
-                  <ul>
-                    <li>Mini BasketBall Hoop (1)</li>
-                  </ul>
-                </div>
-              <div class="col-lg-2">
-                <br>
-                <div class="main-blue-button-hover">
-                  <a href="#">View Delivery Details</a>
-                </div>
-            </div>
-            </div>
-            </div>
-          </div>
-          <div class="col-lg-12">
-            <div class="item forth-item" id="forth-item">
-              <div class="row">
-                <div class="col-lg-2">
-                  <img src="assets/images/food-bank.jpg">
-                </div>
-                <div class="col-lg-8">
-                  <h4>Egyptian Food Bank</h4>
-                  <ul>
-                    <li>The EFB was founded in 2006 by a group of businessmen with the aim of serving the society and 
-                      helping those in need by specializing in Hunger under the name of Egyptian Food Bank that would 
-                      be converted to a national project that serves all governorates in Egypt.</li>
-                  </ul>
-                </div>
-              <div class="col-lg-2">
-                <br>
-                <div class="main-blue-button-hover">
-                  <a href="#">View Details</a>
-                </div>
-            </div>
-            </div>
-            </div>
-          </div>
-          <div class="col-lg-12">
-            <div class="item fifth-item" id="fifth-item">
-              <div class="row">
-                <div class="col-lg-2">
-                  <img src="assets/images/resala.jpeg">
-                </div>
-                <div class="col-lg-8">
-                  <h4>Resala</h4>
-                  <ul>
-                    <li>Resala was established in 1999. It is powered by over 1,500,000 volunteers spanning 67 branches all over Egypt. 
-                      It provides activities including: caring for orphans, helping the blind, the deaf, and children with special needs,
-                       blood donations; poverty alleviation; and literacy training.</li>
-                  </ul>
-                </div>
-              <div class="col-lg-2">
-                <br>
-                <div class="main-blue-button-hover">
-                  <a href="#">View Details</a>
-                </div>
-            </div>
-            </div>
-            </div>
-          </div>
-          <div class="col-lg-12">
-            <div class="item sixth-item" id="sixth-item">
-              <div class="row">
-                <div class="col-lg-2">
-                  <img src="assets/images/al-orman.png">
-                </div>
-                <div class="col-lg-8">
-                  <h4>Al-Orman</h4>
-                  <ul>
-                    <li>Al Orman is an Egyptian non-profit organization. It was founded in 1993. The organization is serving those 
-                      in need without any religious or political bias. It depends primarily on financial funds from Egyptians whether 
-                      living in Egypt or abroad.</li>
-                  </ul>
-                </div>
-              <div class="col-lg-2">
-                <br>
-                <div class="main-blue-button-hover">
-                  <a href="#">View Details</a>
-                </div>
-            </div>
-            </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -1265,7 +1205,7 @@ https://templatemo.com/tm-565-onix-digital
     <div class="col-lg-8 offset-lg-1">
       <br>
       <br>
-<br>
+      <br>
   </div>
     <div class="container">
       <div class="row">
@@ -1365,6 +1305,84 @@ https://templatemo.com/tm-565-onix-digital
     </div>
 
 
+    <div id="info" class="contact-us section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+          </div>
+          <div class="col-lg-8">
+          <div class="col-lg-12">
+            <div class="section-heading">
+              <h2>My <span>Account</span> Information</h2>
+            </div>
+          </div>
+          <div class="col-lg-12">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="row">
+                    <div class="col-lg-3">
+                     <label for="name">Email</label>
+                      </div>
+                      <div class="col-lg-6 ">
+                      <fieldset>
+                    <input type="name" name="name" id="name" placeholder="Email" autocomplete="on" required>
+                      </fieldset>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="row">
+                      <div class="col-lg-3">
+                       <label for="name">First Name</label>
+                        </div>
+                        <div class="col-lg-6 ">
+                        <fieldset>
+                      <input type="name" name="name" id="name" placeholder="First Name" autocomplete="on" required>
+                        </fieldset>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="row">
+                        <div class="col-lg-3">
+                         <label for="name">Last Name</label>
+                          </div>
+                          <div class="col-lg-6 ">
+                          <fieldset action="/url" method="">
+                        <input type="text" name="name" id="name" placeholder="getName()" autocomplete="on" required>
+                          </fieldset>
+                        </div>
+                      </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="row">
+                          <div class="col-lg-3">
+                           <label for="name">Gender</label>
+                            </div>
+                            <div class="col-lg-3 ">
+                            <fieldset>
+                              <input type="radio" id="truck" name="vehicle" value="truck" required>
+                              <label for="truck">Female</label><br>
+                            
+                              <input type="radio" id="car" name="vehicle" value="car" required>
+                              <label for="car">Male</label><br>
+                             </fieldset>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-dec">
+        <img src="assets/images/contact-dec.png" alt="">
+      </div>
+      <div class="contact-left-dec">
+        <img src="assets/images/contact-left-dec.png" alt="">
+      </div>
+    </div>
+
   <div class="footer-dec">
     <img src="assets/images/footer-dec.png" alt="">
   </div>
@@ -1454,7 +1472,7 @@ https://templatemo.com/tm-565-onix-digital
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/custom.js"></script>
-  <script src="assets/js/donor.js"></script>
+  <script src="assets/js/register.js"></script>
 
   <script>
   // Acc
