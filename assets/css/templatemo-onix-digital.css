@@ -1329,13 +1329,14 @@ Portfolio
   height: 10px;
 }
 
+
 /* 
 ---------------------------------------------
-Pricing
+Organizations
 --------------------------------------------- 
 */
 
-.pricing-tables .tables-left-dec img {
+.pricing-tables2 .tables-left-dec img {
   width: 418px;
   height: 851px;
   left: 0;
@@ -1344,28 +1345,28 @@ Pricing
   z-index: 1;
 }
 
-.pricing-tables .tables-right-dec img {
+.pricing-tables2 .tables-right-dec img {
   width: 359px;
   height: 848px;
   right: 0;
   top: 45px;
   position: absolute;
-  z-index: 1
+  z-index: 1;
 }
 
-.pricing-tables {
+.pricing-tables2 {
   z-index: 2;
   position: relative;
   padding-top: 120px;
   margin-top: 0px;
 }
 
-.pricing-tables .section-heading {
+.pricing-tables2 .section-heading {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
-.pricing-tables .section-heading h2 {
+.pricing-tables2 .section-heading h2 {
   text-align: center;
   margin: 0px 60px 0px 60px;
   margin-bottom: -5px;
@@ -1373,66 +1374,102 @@ Pricing
   z-index: 1;
 }
 
-.pricing-tables .item {
+.pricing-tables2 .item {
   position: relative;
   z-index: 2;
   background-repeat: no-repeat;
-  background-size: cover;
-  padding: 60px;
-  text-align: center;
+  padding: 30px;
+  text-align: left;
   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
   border-radius: 45px;
 }
+.pricing-tables2 .item img{
+ width: 50%;
+ float: right;
+}
 
-.pricing-tables .item h4 {
+.pricing-tables2 .item h4 {
   font-size: 20px;
   font-weight: 700;
   color: #2a2a2a;
 }
 
-.pricing-tables .item em {
-  color: #ff695f;
-  font-size: 15px;
-  display: block;
-  margin-top: 25px;
-  text-decoration: line-through;
-  font-style: normal;
+.pricing-tables2 .item ul {
+  margin-top: 10px;
 }
 
-.pricing-tables .item span {
-  font-size: 44px;
-  color: #ff695f;
-  font-weight: 700;
-  display: block;
-  margin-top: -5px;
-}
-
-.pricing-tables .item ul {
-  margin-top: 30px;
-}
-
-.pricing-tables .item ul li {
+.pricing-tables2 .item ul li {
   display: block;
   font-size: 15px;
   color: #7a7a7a;
   margin-bottom: 20px;
 }
 
-.pricing-tables .item .main-blue-button {
+.pricing-tables2 .item .main-blue-button {
   margin-top: 40px;
 }
 
-.pricing-tables .first-item {
+.pricing-tables2 .first-item {
   background-image: url(../images/first-plan-bg.png);
 }
 
-.pricing-tables .second-item {
+.pricing-tables2 .second-item {
+  margin-top: 20px;
   background-image: url(../images/second-plan-bg.png);
 }
 
-.pricing-tables .third-item {
-  background-image: url(../images/third-plan-bg.png);
+.pricing-tables2 .third-item {
+  margin-top: 20px;
+  background-image: url(../images/first-plan-bg.png);
 }
+
+.pricing-tables2 .forth-item {
+  margin-top: 20px;
+  background-image: url(../images/second-plan-bg.png);
+}
+
+.pricing-tables2 .fifth-item {
+  margin-top: 20px;
+  background-image: url(../images/first-plan-bg.png);
+}
+
+.pricing-tables2 .sixth-item {
+  margin-top: 20px;
+  background-image: url(../images/second-plan-bg.png);
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 50px 0 0 50px;
+  width: 400px;
+  outline: none;
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #03a4ed;
+  background-color: #03a4ed;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 50px 50px 0;
+  outline: none;
+}
+
+.search-button:hover {
+  background-color: #ff695f;
+}
+
 
 
 /* 

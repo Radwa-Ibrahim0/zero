@@ -656,4 +656,72 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
   }
+
+
+  function performSearch() {
+    var searchTerm = document.getElementById('searchBox').value;
+    var firstItem = document.getElementById('first-item');
+    var secondItem = document.getElementById('second-item');
+    var thirdItem = document.getElementById('third-item');
+    var forthItem = document.getElementById('forth-item');
+    var fifthItem = document.getElementById('fifth-item');
+    var sixthItem = document.getElementById('sixth-item');
+
+    if(searchTerm === ''){
+      firstItem.style.display = 'block';
+      secondItem.style.display = 'block';
+      thirdItem.style.display = 'block';
+      forthItem.style.display = 'block';
+      fifthItem.style.display = 'block';
+      sixthItem.style.display = 'block';
+    }
+   else if (searchTerm.includes('orman')) { 
+     firstItem.style.display = 'none';
+      secondItem.style.display = 'none';
+      thirdItem.style.display = 'none';
+      forthItem.style.display = 'none';
+      fifthItem.style.display = 'none';
+      sixthItem.style.display = 'block';
+    } 
+    else if (searchTerm.includes('57357')) { 
+      firstItem.style.display = 'none';
+       secondItem.style.display = 'block';
+       thirdItem.style.display = 'none';
+       forthItem.style.display = 'none';
+       fifthItem.style.display = 'none';
+       sixthItem.style.display = 'none';
+     }
+     else if (searchTerm.includes('misr el')) { 
+      firstItem.style.display = 'block';
+       secondItem.style.display = 'none';
+       thirdItem.style.display = 'none';
+       forthItem.style.display = 'none';
+       fifthItem.style.display = 'none';
+       sixthItem.style.display = 'none';
+     }
+     else if (searchTerm.includes('food bank')) { 
+      firstItem.style.display = 'none';
+       secondItem.style.display = 'none';
+       thirdItem.style.display = 'none';
+       forthItem.style.display = 'block';
+       fifthItem.style.display = 'none';
+       sixthItem.style.display = 'none';
+     }
+     else if (searchTerm.includes('resala')) { 
+      firstItem.style.display = 'none';
+       secondItem.style.display = 'none';
+       thirdItem.style.display = 'none';
+       forthItem.style.display = 'none';
+       fifthItem.style.display = 'block';
+       sixthItem.style.display = 'none';
+     }
+     else if (searchTerm.includes('red')) { 
+      firstItem.style.display = 'none';
+       secondItem.style.display = 'none';
+       thirdItem.style.display = 'block';
+       forthItem.style.display = 'none';
+       fifthItem.style.display = 'none';
+       sixthItem.style.display = 'none';
+     }
+}
   
