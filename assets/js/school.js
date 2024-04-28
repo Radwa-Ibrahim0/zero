@@ -47,6 +47,35 @@ function FurtherInfoF3() {
     document.getElementById('popup-f3').style.display = 'block';
 }
 
+function FurtherInfoX() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-x').style.display = 'block';
+}
+function FurtherInfoY() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-y').style.display = 'block';
+}
+
+function FurtherInfoZ() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-z').style.display = 'block';
+}
+
+function FurtherInfoA() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-a').style.display = 'block';
+}
+
+function FurtherInfoJ() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-j').style.display = 'block';
+}
+
 function closePopupC1() {
   var popup = document.getElementById("popup-c1");
   var popupForm = document.getElementById('contact-c1');
@@ -98,6 +127,40 @@ function closePopupF2() {
 function closePopupF3() {
   var popup = document.getElementById("popup-f3");
   var popupForm = document.getElementById('contact-f3');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+function closePopupX() {
+  var popup = document.getElementById("popup-x");
+  var popupForm = document.getElementById('contact-x');
+  popup.style.display = 'none';
+  popupForm.reset();
+}
+
+function closePopupY() {
+  var popup = document.getElementById("popup-y");
+  var popupForm = document.getElementById('contact-y');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+
+function closePopupZ() {
+  var popup = document.getElementById("popup-z");
+  var popupForm = document.getElementById('contact-z');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+
+function closePopupA() {
+  var popup = document.getElementById("popup-a");
+  var popupForm = document.getElementById('contact-a');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+
+function closePopupJ() {
+  var popup = document.getElementById("popup-j");
+  var popupForm = document.getElementById('contact-j');
   popup.style.display = "none";
   popupForm.reset();
 }
@@ -239,6 +302,71 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   });
 
+  document.addEventListener('DOMContentLoaded', function() {
+    var popup = document.getElementById('popup-x');
+    var popupForm = document.getElementById('contact-x');
+    var popupDel = document.getElementById('popup-del');
+  
+    popupForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+      popup.style.display = 'none';
+      popupForm.reset();
+      popupDel.style.display = 'block';
+    });
+    });
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var popup = document.getElementById('popup-y');
+    var popupForm = document.getElementById('contact-y');
+    var popupDel = document.getElementById('popup-del');
+  
+    popupForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+      popup.style.display = 'none';
+      popupForm.reset();
+      popupDel.style.display = 'block';
+    });
+    });
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var popup = document.getElementById('popup-z');
+    var popupForm = document.getElementById('contact-z');
+    var popupDel = document.getElementById('popup-del');
+  
+    popupForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+      popup.style.display = 'none';
+      popupForm.reset();
+      popupDel.style.display = 'block';
+    });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var popup = document.getElementById('popup-a');
+      var popupForm = document.getElementById('contact-a');
+      var popupDel = document.getElementById('popup-del');
+    
+      popupForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+        popup.style.display = 'none';
+        popupForm.reset();
+        popupDel.style.display = 'block';
+      });
+      });
+  
+      document.addEventListener('DOMContentLoaded', function() {
+        var popup = document.getElementById('popup-j');
+        var popupForm = document.getElementById('contact-j');
+        var popupDel = document.getElementById('popup-del');
+      
+        popupForm.addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent form submission
+          popup.style.display = 'none';
+          popupForm.reset();
+          popupDel.style.display = 'block';
+        });
+        });
+
 
 document.addEventListener('DOMContentLoaded', function() {
   var popupForm = document.getElementById('subscribe');
@@ -250,7 +378,32 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   });
 
-
+  function showSecondDropdown(event, option) {
+    event.preventDefault(); // Prevent default behavior of anchor tag
+    var secondDropdown = document.getElementById("second-dropdown");
+    var secondDropdownContent = secondDropdown.querySelector(".dropdown-content");
+    var secondDropbtn = document.getElementById("second-dropbtn");
+    // Clear existing options
+    secondDropdownContent.innerHTML = "";
+    // Populate options based on the selected option from the first dropdown
+    if (option === "Option 1") {
+      secondDropdownContent.innerHTML += `
+        <a href="#edu" onclick="stopPropagation(event)">Educational</a>
+        <a href="#fic" onclick="stopPropagation(event)">Fiction/Comics</a>
+        <a href="#reli" onclick="stopPropagation(event)">Religious</a>
+      `;
+      secondDropbtn.textContent = "Filter by Books";
+    } else if (option === "Option 2") {
+      secondDropdownContent.innerHTML += `
+        <a href="#pen" onclick="stopPropagation(event)">Writing Instruments</a>
+        <a href="#note" onclick="stopPropagation(event)">NoteBooks</a>
+        <a href="#tools" onclick="stopPropagation(event)">Math Tools</a>
+      `;
+      secondDropbtn.textContent = "Filter by Stationary";
+    } 
+    // Show the second dropdown
+    secondDropdown.style.display = "inline-block";
+  }
 
 
   var eventTriggered = false;
