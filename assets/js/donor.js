@@ -139,6 +139,12 @@ function redirectSchool(){
 function redirectBlood(){
   window.location.href = "blood.html";
 }
+function redirectTeaching(){
+  window.location.href = "teaching.html";
+}
+function redirectDoctor(){
+  window.location.href = "Doctor.html";
+}
 
 
 
@@ -224,6 +230,42 @@ function FurtherInfoR() {
   // Prevent the default form submission behavior
   event.preventDefault();
     document.getElementById('popup-r').style.display = 'block';
+}
+
+function FurtherInfoO1() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-o1').style.display = 'block';
+}
+
+function FurtherInfoO2() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-o2').style.display = 'block';
+}
+
+function FurtherInfoO3() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-o3').style.display = 'block';
+}
+
+function FurtherInfoO4() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-o4').style.display = 'block';
+}
+
+function FurtherInfoO5() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-o5').style.display = 'block';
+}
+
+function FurtherInfoO6() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-o6').style.display = 'block';
 }
 
 function closePopupC1() {
@@ -329,6 +371,36 @@ function closePopupR() {
   var popupForm = document.getElementById('contact-r');
   popup.style.display = "none";
   popupForm.reset();
+}
+
+function closePopupO1() {
+  var popup = document.getElementById("popup-o1");
+  popup.style.display = "none";
+}
+
+function closePopupO2() {
+  var popup = document.getElementById("popup-o2");
+  popup.style.display = "none";
+}
+
+function closePopupO3() {
+  var popup = document.getElementById("popup-o3");
+  popup.style.display = "none";
+}
+
+function closePopupO4() {
+  var popup = document.getElementById("popup-o4");
+  popup.style.display = "none";
+}
+
+function closePopupO5() {
+  var popup = document.getElementById("popup-o5");
+  popup.style.display = "none";
+}
+
+function closePopupO6() {
+  var popup = document.getElementById("popup-o6");
+  popup.style.display = "none";
 }
 
 function closePopupDel() {
@@ -723,5 +795,185 @@ document.addEventListener('DOMContentLoaded', function() {
        fifthItem.style.display = 'none';
        sixthItem.style.display = 'none';
      }
+     else{
+      firstItem.style.display = 'none';
+      secondItem.style.display = 'none';
+      thirdItem.style.display = 'none';
+      forthItem.style.display = 'none';
+      fifthItem.style.display = 'none';
+      sixthItem.style.display = 'none';
+     }
 }
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var popupForm = document.getElementById('subscribe');
+
+  popupForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+    popupForm.reset();
+    alert('Thank you for subscribing to our Newsletter!');
+  });
+  });
+
+  function showSecondDropdown(event, option) {
+    event.preventDefault(); // Prevent default behavior of anchor tag
+    var secondDropdown = document.getElementById("second-dropdown");
+    var secondDropdownContent = secondDropdown.querySelector(".dropdown-content");
+    var secondDropbtn = document.getElementById("second-dropbtn");
+    // Clear existing options
+    secondDropdownContent.innerHTML = "";
+    // Populate options based on the selected option from the first dropdown
+    if (option === "Option 1") {
+      secondDropdownContent.innerHTML += `
+        <a href="#health" onclick="filterHealthcare(event)">Healthcare Organizations</a>
+        <a href="#education" onclick="filterEducation(event)">Education Organizations</a>
+        <a href="#humanitarian" onclick="filterHumanitarian(event)">Humanitarian Aid Organizations</a>
+        <a href="#food-bank" onclick="filterBanks(event)">Food Banks</a>
+      `;
+      secondDropbtn.textContent = "Filter by Organization Type";
+    } else if (option === "Option 2") {
+      secondDropdownContent.innerHTML += `
+      <a href="#alex" onclick="filterAlex(event)">Alexandria</a>
+      <a href="#cairo" onclick="filterCairo(event)">Cairo</a>
+      <a href="#fayoum" onclick="filterFayoum(event)">Fayoum</a>
+      `;
+      secondDropbtn.textContent = "Filter by Governorate";
+    } else if (option === "Option 3") {
+      secondDropdownContent.innerHTML += `
+        <a href="#gleem" onclick="filterGleem(event)">Gleem</a>
+        <a href="#maadi" onclick="filterMaadi(event)">Maadi</a>
+        <a href="#nasr" onclick="filterNasr(event)">Madinet Nasr</a>
+        <a href="#tirsa" onclick="filterTirsa(event)">Tirsa</a>
+      `;
+      secondDropbtn.textContent = "Filter by Area";
+    }
+    // Show the second dropdown
+    secondDropdown.style.display = "inline-block";
+
+  }
   
+  function stopPropagation(event) {
+    event.stopPropagation(); // Prevent event from bubbling up
+  }
+
+  function removeFilter() {
+    document.getElementById('first-item').style.display = 'block';
+    document.getElementById('second-item').style.display = 'block';
+    document.getElementById('third-item').style.display = 'block';
+    document.getElementById('forth-item').style.display = 'block';
+    document.getElementById('fifth-item').style.display = 'block';
+    document.getElementById('sixth-item').style.display = 'block';
+  }
+  function filterHealthcare(event) {
+    event.stopPropagation();
+    document.getElementById('first-item').style.display = 'block';
+    document.getElementById('second-item').style.display = 'block';
+    document.getElementById('third-item').style.display = 'block';
+    document.getElementById('forth-item').style.display = 'none';
+    document.getElementById('fifth-item').style.display = 'block';
+    document.getElementById('sixth-item').style.display = 'none';
+}
+
+function filterHumanitarian(event) {
+  event.stopPropagation();
+  document.getElementById('first-item').style.display = 'block';
+  document.getElementById('second-item').style.display = 'none';
+  document.getElementById('third-item').style.display = 'block';
+  document.getElementById('forth-item').style.display = 'none';
+  document.getElementById('fifth-item').style.display = 'none';
+  document.getElementById('sixth-item').style.display = 'none';
+}
+
+function filterBanks(event) {
+  event.stopPropagation();
+  document.getElementById('first-item').style.display = 'block';
+  document.getElementById('second-item').style.display = 'none';
+  document.getElementById('third-item').style.display = 'none';
+  document.getElementById('forth-item').style.display = 'block';
+  document.getElementById('fifth-item').style.display = 'none';
+  document.getElementById('sixth-item').style.display = 'block';
+}
+
+function filterEducation(event) {
+  event.stopPropagation();
+  document.getElementById('first-item').style.display = 'block';
+  document.getElementById('second-item').style.display = 'none';
+  document.getElementById('third-item').style.display = 'none';
+  document.getElementById('forth-item').style.display = 'none';
+  document.getElementById('fifth-item').style.display = 'block';
+  document.getElementById('sixth-item').style.display = 'block';
+}
+
+function filterAlex(event) {
+  event.stopPropagation();
+  document.getElementById('first-item').style.display = 'block';
+  document.getElementById('second-item').style.display = 'none';
+  document.getElementById('third-item').style.display = 'block';
+  document.getElementById('forth-item').style.display = 'none';
+  document.getElementById('fifth-item').style.display = 'none';
+  document.getElementById('sixth-item').style.display = 'block';
+}
+
+function filterGleem(event) {
+  event.stopPropagation();
+  document.getElementById('first-item').style.display = 'block';
+  document.getElementById('second-item').style.display = 'none';
+  document.getElementById('third-item').style.display = 'block';
+  document.getElementById('forth-item').style.display = 'none';
+  document.getElementById('fifth-item').style.display = 'none';
+  document.getElementById('sixth-item').style.display = 'block';
+}
+
+function filterCairo(event) {
+  event.stopPropagation();
+  document.getElementById('first-item').style.display = 'block';
+  document.getElementById('second-item').style.display = 'block';
+  document.getElementById('third-item').style.display = 'block';
+  document.getElementById('forth-item').style.display = 'block';
+  document.getElementById('fifth-item').style.display = 'block';
+  document.getElementById('sixth-item').style.display = 'block';
+}
+
+function filterNasr(event) {
+  event.stopPropagation();
+  document.getElementById('first-item').style.display = 'block';
+  document.getElementById('second-item').style.display = 'block';
+  document.getElementById('third-item').style.display = 'block';
+  document.getElementById('forth-item').style.display = 'none';
+  document.getElementById('fifth-item').style.display = 'none';
+  document.getElementById('sixth-item').style.display = 'none';
+}
+
+function filterMaadi(event) {
+  event.stopPropagation();
+  document.getElementById('first-item').style.display = 'none';
+  document.getElementById('second-item').style.display = 'none';
+  document.getElementById('third-item').style.display = 'none';
+  document.getElementById('forth-item').style.display = 'block';
+  document.getElementById('fifth-item').style.display = 'block';
+  document.getElementById('sixth-item').style.display = 'block';
+}
+
+function filterFayoum(event) {
+  event.stopPropagation();
+  document.getElementById('first-item').style.display = 'block';
+  document.getElementById('second-item').style.display = 'none';
+  document.getElementById('third-item').style.display = 'none';
+  document.getElementById('forth-item').style.display = 'none';
+  document.getElementById('fifth-item').style.display = 'none';
+  document.getElementById('sixth-item').style.display = 'none';
+}
+
+function filterTirsa(event) {
+  event.stopPropagation();
+  document.getElementById('first-item').style.display = 'block';
+  document.getElementById('second-item').style.display = 'none';
+  document.getElementById('third-item').style.display = 'none';
+  document.getElementById('forth-item').style.display = 'none';
+  document.getElementById('fifth-item').style.display = 'none';
+  document.getElementById('sixth-item').style.display = 'none';
+}
+ 
+ 
