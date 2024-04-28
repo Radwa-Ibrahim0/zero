@@ -422,9 +422,39 @@ header
   color: #fff !important;
 }
 
+.header-area .main-nav .nav li .account-btn a ,
+.background-header .main-nav .nav li .account-btn a {
+  color: #fff !important;
+  padding: 0px 20px;
+  font-weight: 400;
+}
+
+.header-area .main-nav .nav li:last-child a:hover,
+.header-area .main-nav .nav li:last-child a.active {
+  color: #fff !important;
+}
+
+.header-area .main-nav .nav li .account-btn a {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+  padding: 0px 8px 0px 8px;
+  border-radius: 60px 60px 60px 60px;
+  letter-spacing: 0.25px;
+  transition: all .3s;
+}
+
 .header-area .main-nav .nav li:last-child .main-red-button-hover a:hover,
 .background-header .main-nav .nav li:last-child .main-red-button-hover a:hover {
   background-color: #03a4ed !important;
+}
+
+.header-area .main-nav .nav li .account-btn a:hover,
+.background-header .main-nav .nav li .account-btn a:hover {
+  background-color: #03a4ed !important;
+  color: #fff;
 }
 
 .header-area .main-nav .nav li a {
@@ -449,13 +479,19 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #ff685f!important;
+  color: #ff685f;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #ff685f!important;
+  color: #ff685f;
   opacity: 1;
+}
+
+.header-area .main-nav .nav li .account-btn a:hover,
+.header-area .main-nav .nav li .account-btn a.active {
+  background-color: #03a4ed!important;
+  color: #fff;
 }
 
 .header-area .main-nav .nav li.submenu {
@@ -513,6 +549,7 @@ header
   font-weight: 400;
   border-bottom: 1px solid #eee;
 }
+
 
 .header-area .main-nav .nav li.submenu ul li a:hover {
   background: #fff;
@@ -1523,8 +1560,7 @@ Organizations
 }
 
 .pricing-tables2 .first-item {
-  
-  
+  background-image: url(../images/first-plan-bg.png);
 }
 
 .pricing-tables2 .second-item {
@@ -2337,7 +2373,9 @@ form#contact-f1 button:hover {
   background-color: #03a4ed;
 }
 
-form#contact-x,form#contact-a,form#contact-j,form#contact-r {
+form#contact-x,form#contact-a,form#contact-j,form#contact-r,
+form#contact-o1,form#contact-o2,form#contact-o3,form#contact-o4,
+form#contact-o5,form#contact-o6 {
   position: relative;
   z-index: 2;
   background-image: url(../images/contact-form-bg.png);
@@ -2349,12 +2387,16 @@ form#contact-x,form#contact-a,form#contact-j,form#contact-r {
   border-radius: 20px;
 }
 
-form#contact-x h3,form#contact-a h3,form#contact-j h3,form#contact-r h3 {
+form#contact-x h3,form#contact-a h3,form#contact-j h3,form#contact-r h3,
+form#contact-o1 h3,form#contact-o2 h3,form#contact-o3 h3,form#contact-o4 h3,
+form#contact-o5 h3,form#contact-o6 h3,form {
   font-weight: bold; /* Make the text bold */
   text-align: center; /* Center-align the text */
 }
 
-form#contact-x input,form#contact-a input,form#contact-j input,form#contact-r input {
+form#contact-x input,form#contact-a input,form#contact-j input,form#contact-r input,
+form#contact-o1 input,form#contact-o2 input,form#contact-o3 input,form#contact-o4 input,
+form#contact-o5 input,form#contact-o6 input {
   width: 100%;
   height: 46px;
   border-radius: 0px;
@@ -2372,11 +2414,16 @@ form#contact-x input,form#contact-a input,form#contact-j input,form#contact-r in
 }
 
 form#contact-x input::placeholder,form#contact-a input::placeholder,
-form#contact-j input::placeholder,form#contact-r input::placeholder {
+form#contact-j input::placeholder,form#contact-r input::placeholder,
+form#contact-o1 input::placeholder,form#contact-o2 input::placeholder,
+form#contact-o3 input::placeholder,form#contact-o4 input::placeholder,
+form#contact-o5 input::placeholder,form#contact-o6 input::placeholder {
   color: #afafaf;
 }
 
-form#contact-x button,form#contact-a button,form#contact-j button,form#contact-r button {
+form#contact-x button,form#contact-a button,form#contact-j button,form#contact-r button,
+form#contact-o1 button,form#contact-o2 button,form#contact-o3 button,form#contact-o4 button,
+form#contact-o5 button,form#contact-o6 button {
   display: inline-block;
   background-color: #ff695f;
   font-size: 15px;
@@ -2391,7 +2438,9 @@ form#contact-x button,form#contact-a button,form#contact-j button,form#contact-r
   transition: all .3s;
 }
 
-form#contact-x button:hover,form#contact-a button:hover,form#contact-j button:hover,form#contact-r button:hover {
+form#contact-x button:hover,form#contact-a button:hover,form#contact-j button:hover,form#contact-r button:hover,
+form#contact-o1 button:hover,form#contact-o2 button:hover,form#contact-o3 button:hover,form#contact-o4 button:hover,
+form#contact-o5 button:hover,form#contact-o6 button:hover {
   background-color: #03a4ed;
 }
 
