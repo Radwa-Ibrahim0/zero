@@ -107,6 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
     popupTeacher.style.display = 'block'
   });
 
+  
   popupFormDoctor.addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form submission
     popupTeacher.style.display = 'none';
@@ -117,6 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
     popupDoctor.style.display = 'block';
   });
 });
+
 
 
 
