@@ -878,6 +878,31 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('fifth-item').style.display = 'none';
   }
 
+  function verify1() {
+    document.getElementById('seventh-item').style.display = 'block';
+  }
+
+  function verify2() {
+    document.getElementById('eighth-item').style.display = 'block';
+  }
+
+  function verify3() {
+    document.getElementById('nineth-item').style.display = 'block';
+  }
+
+  function verify4() {
+    document.getElementById('tenth-item').style.display = 'block';
+  }
+
+  function verify5() {
+    document.getElementById('eleventh-item').style.display = 'block';
+  }
+
+  document.getElementById("seventh-item").onclick = function() {
+    document.getElementById("seventh-item").style.display = "none";
+}
+
+
   function removeFilter() {
     document.getElementById('first-item').style.display = 'block';
     document.getElementById('second-item').style.display = 'block';
