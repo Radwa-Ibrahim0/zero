@@ -1,96 +1,3 @@
-/*
--------------------Donor Main------------------
-*/
-function checkFilesTeacher(event) {
-  // Prevent the default form submission behavior
-  event.preventDefault();
-  var input = document.getElementById('file-upload-t');
-  if (input.files && input.files.length > 0) {
-    // Files were uploaded
-    alert('Files were uploaded successfully! You are now verified as a teacher.');
-    document.getElementById('popup-t').style.display = 'block';
-  } else {
-    // No files were uploaded
-    alert('No files were uploaded.');
-  }
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-  var button = document.getElementById('check-button-teacher');
-  button.addEventListener('click', function(event) {
-    checkFilesTeacher(event); // Pass the event to the function
-  });
-});
-
-function checkFilesDoctor(event) {
-  // Prevent the default form submission behavior
-  event.preventDefault();
-var input = document.getElementById('file-upload');
-if (input.files && input.files.length > 0) {
-  // Files were uploaded
-  alert('Files were uploaded successfully! You are now verified as a doctor.');
-  document.getElementById('popup').style.display = 'block';
-} else {
-  // No files were uploaded
-  alert('No files were uploaded.');
-}
-}
-
-// Attach an event listener to the button
-document.addEventListener('DOMContentLoaded', function() {
-var button = document.getElementById('check-button-doctor');
-button.addEventListener('click', function(event) {
-  checkFilesDoctor(event); // Pass the event to the function
-});
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-var closePopupButton = document.getElementById('close-popup');
-var popup = document.getElementById('popup');
-
-closePopupButton.addEventListener('click', function() {
-  popup.style.display = 'none';
-});
-
-window.addEventListener('click', function(event) {
-  if (event.target === popup) {
-    popup.style.display = 'none';
-  }
-});
-
-var popupForm = document.getElementById('contact');
-popupForm.addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent form submission
-  popup.style.display = 'none';
-  popupForm.reset();
-  alert('Thank you for submitting a form!');
-});
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-var closePopupButton = document.getElementById('close-popup-t');
-var popup = document.getElementById('popup-t');
-
-closePopupButton.addEventListener('click', function() {
-  popup.style.display = 'none';
-});
-
-window.addEventListener('click', function(event) {
-  if (event.target === popup) {
-    popup.style.display = 'none';
-  }
-});
-
-var popupForm = document.getElementById('contact-t');
-popupForm.addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent form submission
-  popup.style.display = 'none';
-  popupForm.reset();
-  alert('Thank you for submitting a form!');
-});
-});
-
-
 document.addEventListener('DOMContentLoaded', function() {
   var popupFormTeacher = document.getElementById('contact-td');
   var popupFormDoctor = document.getElementById('contact-td2');
@@ -118,6 +25,24 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+function checkPass() {
+  var popup = document.getElementById('popup-f1');
+  var popupForm = document.getElementById('contact-f1');
+  var x = document.getElementById('new').value;
+  var y = document.getElementById('check').value;
+   
+    if(x==y){
+      alert('Password Changed Successfully');
+      popup.style.display = 'none';
+      popupForm.reset();
+    }else{
+      alert('Password Mismatch');
+    }
+    event.preventDefault(); // Prevent form submission
+    
+    
+
+  }
 
 
 
@@ -730,81 +655,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
 
-  function performSearch() {
-    var searchTerm = document.getElementById('searchBox').value;
-    var firstItem = document.getElementById('first-item');
-    var secondItem = document.getElementById('second-item');
-    var thirdItem = document.getElementById('third-item');
-    var forthItem = document.getElementById('forth-item');
-    var fifthItem = document.getElementById('fifth-item');
-    var sixthItem = document.getElementById('sixth-item');
-
-    if(searchTerm === ''){
-      firstItem.style.display = 'block';
-      secondItem.style.display = 'block';
-      thirdItem.style.display = 'block';
-      forthItem.style.display = 'block';
-      fifthItem.style.display = 'block';
-      sixthItem.style.display = 'block';
-    }
-   else if (searchTerm.includes('orman')) { 
-     firstItem.style.display = 'none';
-      secondItem.style.display = 'none';
-      thirdItem.style.display = 'none';
-      forthItem.style.display = 'none';
-      fifthItem.style.display = 'none';
-      sixthItem.style.display = 'block';
-    } 
-    else if (searchTerm.includes('57357')) { 
-      firstItem.style.display = 'none';
-       secondItem.style.display = 'block';
-       thirdItem.style.display = 'none';
-       forthItem.style.display = 'none';
-       fifthItem.style.display = 'none';
-       sixthItem.style.display = 'none';
-     }
-     else if (searchTerm.includes('misr el')) { 
-      firstItem.style.display = 'block';
-       secondItem.style.display = 'none';
-       thirdItem.style.display = 'none';
-       forthItem.style.display = 'none';
-       fifthItem.style.display = 'none';
-       sixthItem.style.display = 'none';
-     }
-     else if (searchTerm.includes('food bank')) { 
-      firstItem.style.display = 'none';
-       secondItem.style.display = 'none';
-       thirdItem.style.display = 'none';
-       forthItem.style.display = 'block';
-       fifthItem.style.display = 'none';
-       sixthItem.style.display = 'none';
-     }
-     else if (searchTerm.includes('resala')) { 
-      firstItem.style.display = 'none';
-       secondItem.style.display = 'none';
-       thirdItem.style.display = 'none';
-       forthItem.style.display = 'none';
-       fifthItem.style.display = 'block';
-       sixthItem.style.display = 'none';
-     }
-     else if (searchTerm.includes('red')) { 
-      firstItem.style.display = 'none';
-       secondItem.style.display = 'none';
-       thirdItem.style.display = 'block';
-       forthItem.style.display = 'none';
-       fifthItem.style.display = 'none';
-       sixthItem.style.display = 'none';
-     }
-     else{
-      firstItem.style.display = 'none';
-      secondItem.style.display = 'none';
-      thirdItem.style.display = 'none';
-      forthItem.style.display = 'none';
-      fifthItem.style.display = 'none';
-      sixthItem.style.display = 'none';
-     }
-}
-
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -858,49 +708,94 @@ document.addEventListener('DOMContentLoaded', function() {
     event.stopPropagation(); // Prevent event from bubbling up
   }
 
-  function reject1() {
-    document.getElementById('first-item').style.display = 'none';
+  function verifyDon1(event) {
+    event.preventDefault();
+    alert('Doctor Verified and added to Verified Doctors!');
+    document.getElementById('first-item-don').style.display = 'none';
+    document.getElementById('seventh-item-doc').style.display = 'block';
+    verifyFirst = true;
   }
 
-  function reject2() {
-    document.getElementById('second-item').style.display = 'none';
+  function verifyDon2(event) {
+    event.preventDefault();
+    alert('Teacher Verified and added to Verified Teachers!');
+    document.getElementById('second-item-don').style.display = 'none';
+    document.getElementById('seventh-item-tech').style.display = 'block';
+    verifySecond = true;
   }
 
-  function reject3() {
-    document.getElementById('third-item').style.display = 'none';
+  function verifyDon3(event) {
+    event.preventDefault();
+    alert('Teacher Verified and added to Verified Teachers!');
+    document.getElementById('third-item-don').style.display = 'none';
+    document.getElementById('eighth-item-tech').style.display = 'block';
+    verifyThird = true;
   }
 
-  function reject4() {
-    document.getElementById('forth-item').style.display = 'none';
+  
+  function rejectDon1(event) {
+    event.preventDefault();
+    alert('Doctor Rejected!');
+    document.getElementById('first-item-don').style.display = 'none';
   }
 
-  function reject5() {
-    document.getElementById('fifth-item').style.display = 'none';
+  function rejectDon2(event) {
+    event.preventDefault();
+    alert('Teacher Rejected!');
+    document.getElementById('second-item-don').style.display = 'none';
   }
 
-  function verify1() {
+  function rejectDon3(event) {
+    event.preventDefault();
+    alert('Teacher Rejected!');
+    document.getElementById('third-item-don').style.display = 'none';
+  }
+
+  function reject1(event) {
+    event.preventDefault();
+    alert('Organization Rejected!');
+    document.getElementById('first-item-reg').style.display = 'none';
+  }
+
+  function reject2(event) {
+    event.preventDefault();
+    alert('Organization Rejected!');
+    document.getElementById('second-item-reg').style.display = 'none';
+  }
+
+  function reject3(event) {
+    event.preventDefault();
+    alert('Organization Rejected!');
+    document.getElementById('third-item-reg').style.display = 'none';
+  }
+
+var verifyFirst = false;
+var verifySeond = false;
+var verifySecond = false;
+
+  function verify1(event) {
+    event.preventDefault();
+    alert('Organization Verified and added to Verified Organizations!');
+    document.getElementById('first-item-reg').style.display = 'none';
     document.getElementById('seventh-item').style.display = 'block';
+    verifyFirst = true;
   }
 
-  function verify2() {
+  function verify2(event) {
+    event.preventDefault();
+    alert('Organization Verified and added to Verified Organizations!');
+    document.getElementById('second-item-reg').style.display = 'none';
     document.getElementById('eighth-item').style.display = 'block';
+    verifySecond = true;
   }
 
-  function verify3() {
+  function verify3(event) {
+    event.preventDefault();
+    alert('Organization Verified and added to Verified Organizations!');
+    document.getElementById('third-item-reg').style.display = 'none';
     document.getElementById('nineth-item').style.display = 'block';
+    verifyThird = true;
   }
-
-  function verify4() {
-    document.getElementById('tenth-item').style.display = 'block';
-  }
-
-  function verify5() {
-    document.getElementById('eleventh-item').style.display = 'block';
-  }
-
-  document.getElementById("seventh-item").onclick = function() {
-    document.getElementById("seventh-item").style.display = "none";
-}
 
 
   function removeFilter() {
@@ -910,6 +805,15 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('forth-item').style.display = 'block';
     document.getElementById('fifth-item').style.display = 'block';
     document.getElementById('sixth-item').style.display = 'block';
+    if(verifyFirst){
+      document.getElementById('seventh-item').style.display = 'block';
+    }
+    if(verifySecond){
+      document.getElementById('eighth-item').style.display = 'block';
+    }
+    if(verifyThird){
+      document.getElementById('nineth-item').style.display = 'block';
+    }
   }
   function filterHealthcare(event) {
     event.stopPropagation();
@@ -919,6 +823,15 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('forth-item').style.display = 'none';
     document.getElementById('fifth-item').style.display = 'block';
     document.getElementById('sixth-item').style.display = 'none';
+    if(verifyFirst){
+      document.getElementById('seventh-item').style.display = 'none';
+    }
+    if(verifySecond){
+      document.getElementById('eighth-item').style.display = 'block';
+    }
+    if(verifyThird){
+      document.getElementById('nineth-item').style.display = 'block';
+    }
 }
 
 function filterHumanitarian(event) {
@@ -929,6 +842,15 @@ function filterHumanitarian(event) {
   document.getElementById('forth-item').style.display = 'none';
   document.getElementById('fifth-item').style.display = 'none';
   document.getElementById('sixth-item').style.display = 'none';
+  if(verifyFirst){
+    document.getElementById('seventh-item').style.display = 'none';
+  }
+  if(verifySecond){
+    document.getElementById('eighth-item').style.display = 'none';
+  }
+  if(verifyThird){
+    document.getElementById('nineth-item').style.display = 'none';
+  }
 }
 
 function filterBanks(event) {
@@ -939,6 +861,15 @@ function filterBanks(event) {
   document.getElementById('forth-item').style.display = 'block';
   document.getElementById('fifth-item').style.display = 'none';
   document.getElementById('sixth-item').style.display = 'block';
+  if(verifyFirst){
+    document.getElementById('seventh-item').style.display = 'none';
+  }
+  if(verifySecond){
+    document.getElementById('eighth-item').style.display = 'block';
+  }
+  if(verifyThird){
+    document.getElementById('nineth-item').style.display = 'none';
+  }
 }
 
 function filterEducation(event) {
@@ -949,6 +880,15 @@ function filterEducation(event) {
   document.getElementById('forth-item').style.display = 'none';
   document.getElementById('fifth-item').style.display = 'block';
   document.getElementById('sixth-item').style.display = 'block';
+  if(verifyFirst){
+    document.getElementById('seventh-item').style.display = 'block';
+  }
+  if(verifySecond){
+    document.getElementById('eighth-item').style.display = 'block';
+  }
+  if(verifyThird){
+    document.getElementById('nineth-item').style.display = 'none';
+  }
 }
 
 function filterAlex(event) {
@@ -959,6 +899,15 @@ function filterAlex(event) {
   document.getElementById('forth-item').style.display = 'none';
   document.getElementById('fifth-item').style.display = 'none';
   document.getElementById('sixth-item').style.display = 'block';
+  if(verifyFirst){
+    document.getElementById('seventh-item').style.display = 'none';
+  }
+  if(verifySecond){
+    document.getElementById('eighth-item').style.display = 'block';
+  }
+  if(verifyThird){
+    document.getElementById('nineth-item').style.display = 'none';
+  }
 }
 
 function filterGleem(event) {
@@ -969,6 +918,15 @@ function filterGleem(event) {
   document.getElementById('forth-item').style.display = 'none';
   document.getElementById('fifth-item').style.display = 'none';
   document.getElementById('sixth-item').style.display = 'block';
+  if(verifyFirst){
+    document.getElementById('seventh-item').style.display = 'none';
+  }
+  if(verifySecond){
+    document.getElementById('eighth-item').style.display = 'block';
+  }
+  if(verifyThird){
+    document.getElementById('nineth-item').style.display = 'none';
+  }
 }
 
 function filterCairo(event) {
@@ -979,6 +937,15 @@ function filterCairo(event) {
   document.getElementById('forth-item').style.display = 'block';
   document.getElementById('fifth-item').style.display = 'block';
   document.getElementById('sixth-item').style.display = 'block';
+  if(verifyFirst){
+    document.getElementById('seventh-item').style.display = 'block';
+  }
+  if(verifySecond){
+    document.getElementById('eighth-item').style.display = 'block';
+  }
+  if(verifyThird){
+    document.getElementById('nineth-item').style.display = 'none';
+  }
 }
 
 function filterNasr(event) {
@@ -989,6 +956,15 @@ function filterNasr(event) {
   document.getElementById('forth-item').style.display = 'none';
   document.getElementById('fifth-item').style.display = 'none';
   document.getElementById('sixth-item').style.display = 'none';
+  if(verifyFirst){
+    document.getElementById('seventh-item').style.display = 'none';
+  }
+  if(verifySecond){
+    document.getElementById('eighth-item').style.display = 'block';
+  }
+  if(verifyThird){
+    document.getElementById('nineth-item').style.display = 'none';
+  }
 }
 
 function filterMaadi(event) {
@@ -999,6 +975,15 @@ function filterMaadi(event) {
   document.getElementById('forth-item').style.display = 'block';
   document.getElementById('fifth-item').style.display = 'block';
   document.getElementById('sixth-item').style.display = 'block';
+  if(verifyFirst){
+    document.getElementById('seventh-item').style.display = 'block';
+  }
+  if(verifySecond){
+    document.getElementById('eighth-item').style.display = 'none';
+  }
+  if(verifyThird){
+    document.getElementById('nineth-item').style.display = 'none';
+  }
 }
 
 function filterFayoum(event) {
@@ -1009,6 +994,15 @@ function filterFayoum(event) {
   document.getElementById('forth-item').style.display = 'none';
   document.getElementById('fifth-item').style.display = 'none';
   document.getElementById('sixth-item').style.display = 'none';
+  if(verifyFirst){
+    document.getElementById('seventh-item').style.display = 'none';
+  }
+  if(verifySecond){
+    document.getElementById('eighth-item').style.display = 'none';
+  }
+  if(verifyThird){
+    document.getElementById('nineth-item').style.display = 'block';
+  }
 }
 
 function filterTirsa(event) {
@@ -1019,6 +1013,129 @@ function filterTirsa(event) {
   document.getElementById('forth-item').style.display = 'none';
   document.getElementById('fifth-item').style.display = 'none';
   document.getElementById('sixth-item').style.display = 'none';
+  if(verifyFirst){
+    document.getElementById('seventh-item').style.display = 'none';
+  }
+  if(verifySecond){
+    document.getElementById('eighth-item').style.display = 'none';
+  }
+  if(verifyThird){
+    document.getElementById('nineth-item').style.display = 'block';
+  }
 }
  
- 
+function performSearch(event) {
+  event.preventDefault();
+  var searchTerm = document.getElementById('searchBox').value.toLowerCase();  // Ensure case insensitivity
+  var firstItem = document.getElementById('first-item');
+  var secondItem = document.getElementById('second-item');
+  var thirdItem = document.getElementById('third-item');
+  var forthItem = document.getElementById('forth-item');
+  var fifthItem = document.getElementById('fifth-item');
+  var sixthItem = document.getElementById('sixth-item');
+  var seventhItem = document.getElementById('seventh-item');
+  var eighthItem = document.getElementById('eighth-item');
+  var ninethItem = document.getElementById('nineth-item');
+  var items = [firstItem, secondItem, thirdItem, forthItem, fifthItem, sixthItem, seventhItem, eighthItem, ninethItem];
+  items.forEach(item => item.style.display = 'none');
+  if (searchTerm === '') {
+    items.forEach(item => item.style.display = 'block');
+    if (verifyFirst) {
+      seventhItem.style.display = 'block';
+    }
+    if (verifySecond) {
+      eighthItem.style.display = 'block';
+    }
+    if (verifyThird) {
+      ninethItem.style.display = 'block';
+    }
+  } else if (searchTerm.includes('orman')) {
+    sixthItem.style.display = 'block';
+  } else if (searchTerm.includes('57357')) {
+    secondItem.style.display = 'block';
+  } else if (searchTerm.includes('misr el')) {
+    firstItem.style.display = 'block';
+  } else if (searchTerm.includes('food bank')) {
+    forthItem.style.display = 'block';
+  } else if (searchTerm.includes('resala')) {
+    fifthItem.style.display = 'block';
+  } else if (searchTerm.includes('red')) {
+    thirdItem.style.display = 'block';
+  } else if (verifyFirst && searchTerm.includes('toy')) {
+    seventhItem.style.display = 'block';
+  } else if (verifySecond && searchTerm.includes('sawaris')) {
+    eighthItem.style.display = 'block';
+  } else if (verifyThird && searchTerm.includes('magdi')) {
+    ninethItem.style.display = 'block';
+  } else {
+  }
+}
+
+
+
+function closeT1(event) {
+  event.preventDefault();
+  alert('Teacher Removed!');
+  document.getElementById('first-item-tech').style.display = 'none';
+}
+
+function closeT2(event) {
+  event.preventDefault();
+  alert('Teacher Removed!');
+  document.getElementById('second-item-tech').style.display = 'none';
+}
+
+function closeT3(event) {
+  event.preventDefault();
+  alert('Teacher Removed!');
+  document.getElementById('third-item-tech').style.display = 'none';
+}
+
+function closeT4(event) {
+  event.preventDefault();
+  alert('Teacher Removed!');
+  document.getElementById('forth-item-tech').style.display = 'none';
+}
+
+function closeT5(event) {
+  event.preventDefault();
+  alert('Teacher Removed!');
+  document.getElementById('seventh-item-tech').style.display = 'none';
+}
+
+function closeT6(event) {
+  event.preventDefault();
+  alert('Teacher Removed!');
+  document.getElementById('eighth-item-tech').style.display = 'none';
+}
+
+
+function closeD1(event) {
+  event.preventDefault();
+  alert('Doctor Removed!');
+  document.getElementById('first-item-doc').style.display = 'none';
+}
+
+function closeD2(event) {
+  event.preventDefault();
+  alert('Doctor Removed!');
+  document.getElementById('second-item-doc').style.display = 'none';
+}
+
+function closeD3(event) {
+  event.preventDefault();
+  alert('Doctor Removed!');
+  document.getElementById('third-item-doc').style.display = 'none';
+}
+
+function closeD4(event) {
+  event.preventDefault();
+  alert('Doctor Removed!');
+  document.getElementById('forth-item-doc').style.display = 'none';
+}
+
+function closeD5(event) {
+  event.preventDefault();
+  alert('Doctor Removed!');
+  document.getElementById('seventh-item-doc').style.display = 'none';
+}
