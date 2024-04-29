@@ -769,6 +769,80 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('third-item-reg').style.display = 'none';
   }
 
+  var deletedFirst = false;
+var deletedSecond = false;
+var deletedThird = false;
+var deletedFourth = false;
+var deletedFifth = false;
+var deletedSixth = false;
+var deletedSeventh = false;
+var deletedEighth = false;
+var deletedNineth = false;
+
+function deleteO1(event) {
+    event.preventDefault();
+    alert('Organization Acount Removed!');
+    document.getElementById('first-item').style.display = 'none';
+    deletedFirst = true;
+}
+
+function deleteO2(event) {
+    event.preventDefault();
+    alert('Organization Acount Removed!');
+    document.getElementById('second-item').style.display = 'none';
+    deletedSecond = true;
+}
+
+function deleteO3(event) {
+    event.preventDefault();
+    alert('Organization Acount Removed!');
+    document.getElementById('third-item').style.display = 'none';
+    deletedThird = true;
+}
+
+function deleteO4(event) {
+    event.preventDefault();
+    alert('Organization Acount Removed!');
+    document.getElementById('forth-item').style.display = 'none';
+    deletedFourth = true;
+}
+
+function deleteO5(event) {
+    event.preventDefault();
+    alert('Organization Acount Removed!');
+    document.getElementById('fifth-item').style.display = 'none';
+    deletedFifth = true;
+}
+
+function deleteO6(event) {
+    event.preventDefault();
+    alert('Organization Acount Removed!');
+    document.getElementById('sixth-item').style.display = 'none';
+    deletedSixth = true;
+}
+
+function deleteO7(event) {
+    event.preventDefault();
+    alert('Organization Acount Removed!');
+    document.getElementById('seventh-item').style.display = 'none';
+    deletedSeventh = true;
+}
+
+function deleteO8(event) {
+    event.preventDefault();
+    alert('Organization Acount Removed!');
+    document.getElementById('eighth-item').style.display = 'none';
+    deletedEighth = true;
+}
+
+function deleteO9(event) {
+    event.preventDefault();
+    alert('Organization Acount Removed!');
+    document.getElementById('nineth-item').style.display = 'none';
+    deletedNineth = true;
+}
+
+
 var verifyFirst = false;
 var verifySeond = false;
 var verifySecond = false;
@@ -815,6 +889,39 @@ var verifySecond = false;
       document.getElementById('nineth-item').style.display = 'block';
     }
   }
+
+function checkDeleted(){
+  if (deletedFirst) {
+    document.getElementById('first-item').style.display = 'none';
+}
+if (deletedSecond) {
+    document.getElementById('second-item').style.display = 'none';
+}
+if (deletedThird) {
+    document.getElementById('third-item').style.display = 'none';
+}
+if (deletedFourth) {
+    document.getElementById('forth-item').style.display = 'none';
+}
+if (deletedFifth) {
+    document.getElementById('fifth-item').style.display = 'none';
+}
+if (deletedSixth) {
+    document.getElementById('sixth-item').style.display = 'none';
+}
+if (deletedSeventh) {
+    document.getElementById('seventh-item').style.display = 'none';
+}
+if (deletedEighth) {
+    document.getElementById('eighth-item').style.display = 'none';
+}
+if (deletedNineth) {
+    document.getElementById('nineth-item').style.display = 'none';
+}
+
+}
+
+
   function filterHealthcare(event) {
     event.stopPropagation();
     document.getElementById('first-item').style.display = 'block';
@@ -832,6 +939,7 @@ var verifySecond = false;
     if(verifyThird){
       document.getElementById('nineth-item').style.display = 'block';
     }
+    checkDeleted();
 }
 
 function filterHumanitarian(event) {
@@ -851,6 +959,7 @@ function filterHumanitarian(event) {
   if(verifyThird){
     document.getElementById('nineth-item').style.display = 'none';
   }
+  checkDeleted();
 }
 
 function filterBanks(event) {
@@ -870,6 +979,7 @@ function filterBanks(event) {
   if(verifyThird){
     document.getElementById('nineth-item').style.display = 'none';
   }
+  checkDeleted();
 }
 
 function filterEducation(event) {
@@ -889,6 +999,7 @@ function filterEducation(event) {
   if(verifyThird){
     document.getElementById('nineth-item').style.display = 'none';
   }
+  checkDeleted();
 }
 
 function filterAlex(event) {
@@ -908,6 +1019,7 @@ function filterAlex(event) {
   if(verifyThird){
     document.getElementById('nineth-item').style.display = 'none';
   }
+  checkDeleted();
 }
 
 function filterGleem(event) {
@@ -927,6 +1039,7 @@ function filterGleem(event) {
   if(verifyThird){
     document.getElementById('nineth-item').style.display = 'none';
   }
+  checkDeleted();
 }
 
 function filterCairo(event) {
@@ -946,6 +1059,7 @@ function filterCairo(event) {
   if(verifyThird){
     document.getElementById('nineth-item').style.display = 'none';
   }
+  checkDeleted();
 }
 
 function filterNasr(event) {
@@ -965,6 +1079,7 @@ function filterNasr(event) {
   if(verifyThird){
     document.getElementById('nineth-item').style.display = 'none';
   }
+  checkDeleted();
 }
 
 function filterMaadi(event) {
@@ -984,6 +1099,7 @@ function filterMaadi(event) {
   if(verifyThird){
     document.getElementById('nineth-item').style.display = 'none';
   }
+  checkDeleted();
 }
 
 function filterFayoum(event) {
@@ -1003,6 +1119,7 @@ function filterFayoum(event) {
   if(verifyThird){
     document.getElementById('nineth-item').style.display = 'block';
   }
+  checkDeleted();
 }
 
 function filterTirsa(event) {
@@ -1022,6 +1139,7 @@ function filterTirsa(event) {
   if(verifyThird){
     document.getElementById('nineth-item').style.display = 'block';
   }
+  checkDeleted();
 }
  
 function performSearch(event) {
@@ -1069,73 +1187,74 @@ function performSearch(event) {
     ninethItem.style.display = 'block';
   } else {
   }
+  checkDeleted();
 }
 
 
 
 function closeT1(event) {
   event.preventDefault();
-  alert('Teacher Removed!');
+  alert('Teacher Acount Removed!');
   document.getElementById('first-item-tech').style.display = 'none';
 }
 
 function closeT2(event) {
   event.preventDefault();
-  alert('Teacher Removed!');
+  alert('Teacher Acount Removed!');
   document.getElementById('second-item-tech').style.display = 'none';
 }
 
 function closeT3(event) {
   event.preventDefault();
-  alert('Teacher Removed!');
+  alert('Teacher Acount Removed!');
   document.getElementById('third-item-tech').style.display = 'none';
 }
 
 function closeT4(event) {
   event.preventDefault();
-  alert('Teacher Removed!');
+  alert('Teacher Acount Removed!');
   document.getElementById('forth-item-tech').style.display = 'none';
 }
 
 function closeT5(event) {
   event.preventDefault();
-  alert('Teacher Removed!');
+  alert('Teacher Acount Removed!');
   document.getElementById('seventh-item-tech').style.display = 'none';
 }
 
 function closeT6(event) {
   event.preventDefault();
-  alert('Teacher Removed!');
+  alert('Teacher Acount Removed!');
   document.getElementById('eighth-item-tech').style.display = 'none';
 }
 
 
 function closeD1(event) {
   event.preventDefault();
-  alert('Doctor Removed!');
+  alert('Doctor Acount Removed!');
   document.getElementById('first-item-doc').style.display = 'none';
 }
 
 function closeD2(event) {
   event.preventDefault();
-  alert('Doctor Removed!');
+  alert('Doctor Acount Removed!');
   document.getElementById('second-item-doc').style.display = 'none';
 }
 
 function closeD3(event) {
   event.preventDefault();
-  alert('Doctor Removed!');
+  alert('Doctor Acount Removed!');
   document.getElementById('third-item-doc').style.display = 'none';
 }
 
 function closeD4(event) {
   event.preventDefault();
-  alert('Doctor Removed!');
+  alert('Doctor Acount Removed!');
   document.getElementById('forth-item-doc').style.display = 'none';
 }
 
 function closeD5(event) {
   event.preventDefault();
-  alert('Doctor Removed!');
+  alert('Doctor Acount Removed!');
   document.getElementById('seventh-item-doc').style.display = 'none';
 }
