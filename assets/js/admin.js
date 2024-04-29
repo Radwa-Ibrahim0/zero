@@ -873,19 +873,25 @@ var verifySecond = false;
 
 
   function removeFilter() {
+    if (!deletedFirst)
     document.getElementById('first-item').style.display = 'block';
+    if (!deletedSecond)
     document.getElementById('second-item').style.display = 'block';
+    if (!deletedThird)
     document.getElementById('third-item').style.display = 'block';
+    if (!deletedFourth)
     document.getElementById('forth-item').style.display = 'block';
+    if (!deletedFifth)
     document.getElementById('fifth-item').style.display = 'block';
+    if (!deletedSixth)
     document.getElementById('sixth-item').style.display = 'block';
-    if(verifyFirst){
+    if(verifyFirst && !deletedSeventh){
       document.getElementById('seventh-item').style.display = 'block';
     }
-    if(verifySecond){
+    if(verifySecond && !deletedEighth){
       document.getElementById('eighth-item').style.display = 'block';
     }
-    if(verifyThird){
+    if(verifyThird && !deletedNineth){
       document.getElementById('nineth-item').style.display = 'block';
     }
   }
@@ -924,19 +930,23 @@ if (deletedNineth) {
 
   function filterHealthcare(event) {
     event.stopPropagation();
+    if(!deletedFirst)
     document.getElementById('first-item').style.display = 'block';
+    if(!deletedSecond)
     document.getElementById('second-item').style.display = 'block';
+    if(!deletedThird)
     document.getElementById('third-item').style.display = 'block';
     document.getElementById('forth-item').style.display = 'none';
+    if(!deletedFifth)
     document.getElementById('fifth-item').style.display = 'block';
     document.getElementById('sixth-item').style.display = 'none';
-    if(verifyFirst){
+    if(verifyFirst && !deletedSeventh){
       document.getElementById('seventh-item').style.display = 'none';
     }
-    if(verifySecond){
+    if(verifySecond && !deletedEighth){
       document.getElementById('eighth-item').style.display = 'block';
     }
-    if(verifyThird){
+    if(verifyThird && !deletedNineth){
       document.getElementById('nineth-item').style.display = 'block';
     }
     checkDeleted();
@@ -944,19 +954,21 @@ if (deletedNineth) {
 
 function filterHumanitarian(event) {
   event.stopPropagation();
+  if(!deletedFirst)
   document.getElementById('first-item').style.display = 'block';
   document.getElementById('second-item').style.display = 'none';
+  if(!deletedThird)
   document.getElementById('third-item').style.display = 'block';
   document.getElementById('forth-item').style.display = 'none';
   document.getElementById('fifth-item').style.display = 'none';
   document.getElementById('sixth-item').style.display = 'none';
-  if(verifyFirst){
+  if(verifyFirst && !deletedSeventh){
     document.getElementById('seventh-item').style.display = 'none';
   }
-  if(verifySecond){
+  if(verifySecond && !deletedEighth){
     document.getElementById('eighth-item').style.display = 'none';
   }
-  if(verifyThird){
+  if(verifyThird && !deletedNineth){
     document.getElementById('nineth-item').style.display = 'none';
   }
   checkDeleted();
@@ -964,19 +976,22 @@ function filterHumanitarian(event) {
 
 function filterBanks(event) {
   event.stopPropagation();
+  if (!deletedFirst)
   document.getElementById('first-item').style.display = 'block';
   document.getElementById('second-item').style.display = 'none';
   document.getElementById('third-item').style.display = 'none';
+  if (!deletedFourth)
   document.getElementById('forth-item').style.display = 'block';
   document.getElementById('fifth-item').style.display = 'none';
+  if (!deletedSixth)
   document.getElementById('sixth-item').style.display = 'block';
-  if(verifyFirst){
+  if(verifyFirst && !deletedSeventh){
     document.getElementById('seventh-item').style.display = 'none';
   }
-  if(verifySecond){
+  if(verifySecond && !deletedEighth){
     document.getElementById('eighth-item').style.display = 'block';
   }
-  if(verifyThird){
+  if(verifyThird && !deletedNineth){
     document.getElementById('nineth-item').style.display = 'none';
   }
   checkDeleted();
@@ -984,19 +999,22 @@ function filterBanks(event) {
 
 function filterEducation(event) {
   event.stopPropagation();
+  if(!deletedFirst)
   document.getElementById('first-item').style.display = 'block';
   document.getElementById('second-item').style.display = 'none';
   document.getElementById('third-item').style.display = 'none';
   document.getElementById('forth-item').style.display = 'none';
+  if(!deletedFifth)
   document.getElementById('fifth-item').style.display = 'block';
+  if(!deletedSixth)
   document.getElementById('sixth-item').style.display = 'block';
-  if(verifyFirst){
+  if(verifyFirst && !deletedSeventh){
     document.getElementById('seventh-item').style.display = 'block';
   }
-  if(verifySecond){
+  if(verifySecond && !deletedEighth){
     document.getElementById('eighth-item').style.display = 'block';
   }
-  if(verifyThird){
+  if(verifyThird && !deletedNineth){
     document.getElementById('nineth-item').style.display = 'none';
   }
   checkDeleted();
@@ -1004,19 +1022,22 @@ function filterEducation(event) {
 
 function filterAlex(event) {
   event.stopPropagation();
+  if(!deletedFirst)
   document.getElementById('first-item').style.display = 'block';
   document.getElementById('second-item').style.display = 'none';
+  if(!deletedThird)
   document.getElementById('third-item').style.display = 'block';
   document.getElementById('forth-item').style.display = 'none';
   document.getElementById('fifth-item').style.display = 'none';
+  if(!deletedSixth)
   document.getElementById('sixth-item').style.display = 'block';
-  if(verifyFirst){
+  if(verifyFirst && !deletedSeventh){
     document.getElementById('seventh-item').style.display = 'none';
   }
-  if(verifySecond){
+  if(verifySecond && !deletedEighth){
     document.getElementById('eighth-item').style.display = 'block';
   }
-  if(verifyThird){
+  if(verifyThird && !deletedNineth){
     document.getElementById('nineth-item').style.display = 'none';
   }
   checkDeleted();
@@ -1024,19 +1045,22 @@ function filterAlex(event) {
 
 function filterGleem(event) {
   event.stopPropagation();
+  if(!deletedFirst)
   document.getElementById('first-item').style.display = 'block';
   document.getElementById('second-item').style.display = 'none';
+  if(!deletedThird)
   document.getElementById('third-item').style.display = 'block';
   document.getElementById('forth-item').style.display = 'none';
   document.getElementById('fifth-item').style.display = 'none';
+  if(!deletedSixth)
   document.getElementById('sixth-item').style.display = 'block';
-  if(verifyFirst){
+  if(verifyFirst && !deletedSeventh){
     document.getElementById('seventh-item').style.display = 'none';
   }
-  if(verifySecond){
+  if(verifySecond && !deletedEighth){
     document.getElementById('eighth-item').style.display = 'block';
   }
-  if(verifyThird){
+  if(verifyThird && !deletedNineth){
     document.getElementById('nineth-item').style.display = 'none';
   }
   checkDeleted();
@@ -1044,19 +1068,25 @@ function filterGleem(event) {
 
 function filterCairo(event) {
   event.stopPropagation();
+  if(!deletedFirst)
   document.getElementById('first-item').style.display = 'block';
+  if(!deletedSecond)
   document.getElementById('second-item').style.display = 'block';
+  if(!deletedThird)
   document.getElementById('third-item').style.display = 'block';
+  if(!deletedFourth)
   document.getElementById('forth-item').style.display = 'block';
+  if(!deletedFifth)
   document.getElementById('fifth-item').style.display = 'block';
+  if(!deletedSixth)
   document.getElementById('sixth-item').style.display = 'block';
-  if(verifyFirst){
+  if(verifyFirst && !deletedSeventh){
     document.getElementById('seventh-item').style.display = 'block';
   }
-  if(verifySecond){
+  if(verifySecond && !deletedEighth){
     document.getElementById('eighth-item').style.display = 'block';
   }
-  if(verifyThird){
+  if(verifyThird && !deletedNineth){
     document.getElementById('nineth-item').style.display = 'none';
   }
   checkDeleted();
@@ -1064,19 +1094,22 @@ function filterCairo(event) {
 
 function filterNasr(event) {
   event.stopPropagation();
+  if(!deletedFirst)
   document.getElementById('first-item').style.display = 'block';
+  if(!deletedSecond)
   document.getElementById('second-item').style.display = 'block';
+  if(!deletedThird)
   document.getElementById('third-item').style.display = 'block';
   document.getElementById('forth-item').style.display = 'none';
   document.getElementById('fifth-item').style.display = 'none';
   document.getElementById('sixth-item').style.display = 'none';
-  if(verifyFirst){
+  if(verifyFirst && !deletedSeventh){
     document.getElementById('seventh-item').style.display = 'none';
   }
-  if(verifySecond){
+  if(verifySecond && !deletedEighth){
     document.getElementById('eighth-item').style.display = 'block';
   }
-  if(verifyThird){
+  if(verifyThird && !deletedNineth){
     document.getElementById('nineth-item').style.display = 'none';
   }
   checkDeleted();
@@ -1087,16 +1120,19 @@ function filterMaadi(event) {
   document.getElementById('first-item').style.display = 'none';
   document.getElementById('second-item').style.display = 'none';
   document.getElementById('third-item').style.display = 'none';
+  if(!deletedFourth)
   document.getElementById('forth-item').style.display = 'block';
+  if(!deletedFifth)
   document.getElementById('fifth-item').style.display = 'block';
+  if(!deletedSixth)
   document.getElementById('sixth-item').style.display = 'block';
-  if(verifyFirst){
+  if(verifyFirst && !deletedSeventh){
     document.getElementById('seventh-item').style.display = 'block';
   }
-  if(verifySecond){
+  if(verifySecond && !deletedEighth){
     document.getElementById('eighth-item').style.display = 'none';
   }
-  if(verifyThird){
+  if(verifyThird && !deletedNineth){
     document.getElementById('nineth-item').style.display = 'none';
   }
   checkDeleted();
@@ -1104,19 +1140,20 @@ function filterMaadi(event) {
 
 function filterFayoum(event) {
   event.stopPropagation();
+  if(!deletedFirst)
   document.getElementById('first-item').style.display = 'block';
   document.getElementById('second-item').style.display = 'none';
   document.getElementById('third-item').style.display = 'none';
   document.getElementById('forth-item').style.display = 'none';
   document.getElementById('fifth-item').style.display = 'none';
   document.getElementById('sixth-item').style.display = 'none';
-  if(verifyFirst){
+  if(verifyFirst && !deletedSeventh){
     document.getElementById('seventh-item').style.display = 'none';
   }
-  if(verifySecond){
+  if(verifySecond && !deletedEighth){
     document.getElementById('eighth-item').style.display = 'none';
   }
-  if(verifyThird){
+  if(verifyThird && !deletedNineth){
     document.getElementById('nineth-item').style.display = 'block';
   }
   checkDeleted();
@@ -1124,19 +1161,20 @@ function filterFayoum(event) {
 
 function filterTirsa(event) {
   event.stopPropagation();
+  if(!deletedFirst)
   document.getElementById('first-item').style.display = 'block';
   document.getElementById('second-item').style.display = 'none';
   document.getElementById('third-item').style.display = 'none';
   document.getElementById('forth-item').style.display = 'none';
   document.getElementById('fifth-item').style.display = 'none';
   document.getElementById('sixth-item').style.display = 'none';
-  if(verifyFirst){
+  if(verifyFirst && !deletedSeventh){
     document.getElementById('seventh-item').style.display = 'none';
   }
-  if(verifySecond){
+  if(verifySecond && !deletedEighth){
     document.getElementById('eighth-item').style.display = 'none';
   }
-  if(verifyThird){
+  if(verifyThird && !deletedNineth){
     document.getElementById('nineth-item').style.display = 'block';
   }
   checkDeleted();
