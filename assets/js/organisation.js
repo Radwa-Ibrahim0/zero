@@ -1436,7 +1436,7 @@ function deleteO55(event) {
     setTimeout(function(){
       notificationElement.style.display = "block";
     }, Math.random() * 10000)
-    
+
     setTimeout(function() {
       notificationElement.style.display = "none";
       randomIndex++;

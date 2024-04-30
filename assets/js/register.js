@@ -4,6 +4,10 @@ function MessageAdd(event){
   alert('Your location has been added successfully!');
 }
 
+function updateInfo(){
+  alert('Your Information Has Been Updated!');
+}
+
 
 function FurtherInfoC1() {
     // Prevent the default form submission behavior
@@ -119,6 +123,10 @@ function FurtherInfoC1() {
       alert('Thank you for subscribing to our Newsletter!');
     });
     });
+
+function redirectHome(){
+  window.location.href ="register.html";
+}
 
   
 function login(event) {
