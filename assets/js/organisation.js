@@ -5,6 +5,13 @@ function Message(event){
     //want it to go back to same place
   }
 
+  function MessageAdd(event){
+    event.preventDefault();
+    alert('The location has been added successfully!');
+    closePopupZ();
+    
+  }
+
  
   document.addEventListener('DOMContentLoaded', function() {
     var popupFormTeacher = document.getElementById('teach1');
