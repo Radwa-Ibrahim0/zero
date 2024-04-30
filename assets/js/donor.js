@@ -977,5 +977,31 @@ function filterTirsa(event) {
   document.getElementById('fifth-item').style.display = 'none';
   document.getElementById('sixth-item').style.display = 'none';
 }
+
+var randomIndex = 0;
+  function showRandomNotification() {
+    var notifications = [
+      "Driver is on the Way!",
+      "Driver is 5 Minutes Away!",
+      "Driver is Here!"
+    ];
+    
+    var notificationElement = document.getElementById("notification");
+    notificationElement.textContent = notifications[randomIndex];
+    notificationElement.style.display = "block";
+    setTimeout(function() {
+      notificationElement.style.display = "none";
+      randomIndex++;
+      if(randomIndex>2){
+      randomIndex = 2;
+      }
+      
+     
+      setTimeout(showRandomNotification, Math.random() * 100000);
+    }, 5000);
+  }
+
+  showRandomNotification();
+
  
  

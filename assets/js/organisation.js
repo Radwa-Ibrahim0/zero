@@ -1,9 +1,3 @@
-function Message(event){
-  event.preventDefault();
-    alert('Thank You For Submitting a Case');
-    window.location.href = "organisation.html";
-    //want it to go back to same place
-  }
 
   document.addEventListener('DOMContentLoaded', function() {
     var popupTeacher = document.getElementById('form-teach');
@@ -17,59 +11,64 @@ function Message(event){
   
 
     var popupFormTeacher = document.getElementById('contact-a');
+
     var popupFormDoctor = document.getElementById('contact-j');
+    
     var popupFormSchool = document.getElementById('contact-z');
     var popupFormMedical = document.getElementById('contact-c1');
     var popupFormToys = document.getElementById('contact-b');
     var popupFormBlood = document.getElementById('contact-v2');
+
     var popupFormClothes = document.getElementById('contact-r');
+
     var popupFormFood= document.getElementById('contact-v1');
+    
     popupTeacher.addEventListener('submit', function(event) {
       event.preventDefault();
-      alert('Thank You For Submitting a Case!');
       popupFormTeacher.reset();
+      alert('Thank You For Submitting a Case!');
     });
   
     popupSchool.addEventListener('submit', function(event) {
       event.preventDefault();
-      alert('Thank You For Submitting a Case!');
       popupFormSchool.reset();
+      alert('Thank You For Submitting a Case!');
     });
   
     popupMedical.addEventListener('submit', function(event) {
       event.preventDefault();
-      alert('Thank You For Submitting a Case!');
       popupFormMedical.reset();
+      alert('Thank You For Submitting a Case!');
     });
   
     popupBlood.addEventListener('submit', function(event) {
       event.preventDefault();
-      alert('Thank You For Submitting a Case!');
       popupFormBlood.reset();
+      alert('Thank You For Submitting a Case!');
     });
   
     popupFood.addEventListener('submit', function(event) {
       event.preventDefault();
-      alert('Thank You For Submitting a Case!');
       popupFormFood.reset();
+      alert('Thank You For Submitting a Case!');
     });
   
     popupToy.addEventListener('submit', function(event) {
       event.preventDefault();
-      alert('Thank You For Submitting a Case!');
       popupFormToys.reset();
+      alert('Thank You For Submitting a Case!');
     });
     
     popupClothes.addEventListener('submit', function(event) {
       event.preventDefault();
-      alert('Thank You For Submitting a Case!');
       popupFormClothes.reset();
+      alert('Thank You For Submitting a Case!');
     });
   
     popupDoctor.addEventListener('submit', function(event) {
       event.preventDefault();
-      alert('Thank You For Submitting a Case!');
       popupFormDoctor.reset();
+      alert('Thank You For Submitting a Case!');
     });
   });
 
@@ -390,12 +389,12 @@ function Message(event){
       document.getElementById('popup-f3').style.display = 'block';
   }
   
-  function FurtherInfoX() {
+  function FurtherInfoX(event) {
     // Prevent the default form submission behavior
     event.preventDefault();
       document.getElementById('popup-x').style.display = 'block';
   }
-  function FurtherInfoY() {
+  function FurtherInfoY(event) {
     // Prevent the default form submission behavior
     event.preventDefault();
       document.getElementById('popup-y').style.display = 'block';
@@ -449,16 +448,22 @@ function Message(event){
       document.getElementById('popup-o4').style.display = 'block';
   }
   
-  function FurtherInfoO5() {
+  function FurtherInfoO5(event) {
     // Prevent the default form submission behavior
     event.preventDefault();
       document.getElementById('popup-o5').style.display = 'block';
   }
   
-  function FurtherInfoO6() {
+  function FurtherInfoO6(event) {
     // Prevent the default form submission behavior
     event.preventDefault();
       document.getElementById('popup-o6').style.display = 'block';
+  }
+
+  function FurtherInfoDel() {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+      document.getElementById('popup-del').style.display = 'block';
   }
   
   function closePopupC1() {
@@ -611,206 +616,13 @@ function Message(event){
       event.preventDefault(); // Prevent form submission
       popup.style.display = 'none';
       popupForm.reset();
-      alert('Thank you for your donation!');
+      alert('Delivery Details Saved Successfully!');
     });
     });
   
-  document.addEventListener('DOMContentLoaded', function() {
-    var popup = document.getElementById('popup-f1');
-    var popupForm = document.getElementById('contact-f1');
-    var popupDel = document.getElementById('popup-del');
-  
-    popupForm.addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent form submission
-      popup.style.display = 'none';
-      popupForm.reset();
-      popupDel.style.display = 'block';
-    });
-    });
-  
-    document.addEventListener('DOMContentLoaded', function() {
-    var popup = document.getElementById('popup-f2');
-    var popupForm = document.getElementById('contact-f2');
-    var popupDel = document.getElementById('popup-del');
-  
-    popupForm.addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent form submission
-      popup.style.display = 'none';
-      popupForm.reset();
-      popupDel.style.display = 'block';
-    });
-    });
-  
-    document.addEventListener('DOMContentLoaded', function() {
-      var popup = document.getElementById('popup-f3');
-      var popupForm = document.getElementById('contact-f3');
-      var popupDel = document.getElementById('popup-del');
-    
-      popupForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent form submission
-        popup.style.display = 'none';
-        popupForm.reset();
-        popupDel.style.display = 'block';
-      });
-      });
-  
-    document.addEventListener('DOMContentLoaded', function() {
-      var popup = document.getElementById('popup-c1');
-      var popupForm = document.getElementById('contact-c1');
-      var popupDel = document.getElementById('popup-del');
-    
-      popupForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent form submission
-        popup.style.display = 'none';
-        popupForm.reset();
-        popupDel.style.display = 'block';
-      });
-      });
-    
-    document.addEventListener('DOMContentLoaded', function() {
-    var popup = document.getElementById('popup-c2');
-    var popupForm = document.getElementById('contact-c2');
-    var popupDel = document.getElementById('popup-del');
-  
-    popupForm.addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent form submission
-      popup.style.display = 'none';
-      popupForm.reset();
-      popupDel.style.display = 'block';
-    });
-    });
-  
-    document.addEventListener('DOMContentLoaded', function() {
-      var popup = document.getElementById('popup-c3');
-      var popupForm = document.getElementById('contact-c3');
-      var popupDel = document.getElementById('popup-del');
-    
-      popupForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent form submission
-        popup.style.display = 'none';
-        popupForm.reset();
-        popupDel.style.display = 'block';
-      });
-      });
   
   
-    document.addEventListener('DOMContentLoaded', function() {
-      var popup = document.getElementById('popup-v1');
-      var popupForm = document.getElementById('contact-v1');
-      var popupDel = document.getElementById('popup-del');
-    
-      popupForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent form submission
-        popup.style.display = 'none';
-        popupForm.reset();
-        popupDel.style.display = 'block';
-      });
-      });
-    
-    document.addEventListener('DOMContentLoaded', function() {
-    var popup = document.getElementById('popup-v2');
-    var popupForm = document.getElementById('contact-v2');
-    var popupDel = document.getElementById('popup-del');
-  
-    popupForm.addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent form submission
-      popup.style.display = 'none';
-      popupForm.reset();
-      popupDel.style.display = 'block';
-    });
-    });
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var popup = document.getElementById('popup-b');
-    var popupForm = document.getElementById('contact-b');
-    var popupDel = document.getElementById('popup-del');
-  
-    popupForm.addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent form submission
-      popup.style.display = 'none';
-      popupForm.reset();
-      popupDel.style.display = 'block';
-    });
-    });
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var popup = document.getElementById('popup-x');
-    var popupForm = document.getElementById('contact-x');
-    var popupDel = document.getElementById('popup-del');
-  
-    popupForm.addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent form submission
-      popup.style.display = 'none';
-      popupForm.reset();
-      popupDel.style.display = 'block';
-    });
-    });
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var popup = document.getElementById('popup-y');
-    var popupForm = document.getElementById('contact-y');
-    var popupDel = document.getElementById('popup-del');
-  
-    popupForm.addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent form submission
-      popup.style.display = 'none';
-      popupForm.reset();
-      popupDel.style.display = 'block';
-    });
-    });
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var popup = document.getElementById('popup-z');
-    var popupForm = document.getElementById('contact-z');
-    var popupDel = document.getElementById('popup-del');
-  
-    popupForm.addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent form submission
-      popup.style.display = 'none';
-      popupForm.reset();
-      popupDel.style.display = 'block';
-    });
-    });
-  
-    document.addEventListener('DOMContentLoaded', function() {
-      var popup = document.getElementById('popup-a');
-      var popupForm = document.getElementById('contact-a');
-      var popupDel = document.getElementById('popup-del');
-    
-      popupForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent form submission
-        popup.style.display = 'none';
-        popupForm.reset();
-        popupDel.style.display = 'block';
-      });
-      });
-  
-      document.addEventListener('DOMContentLoaded', function() {
-        var popup = document.getElementById('popup-j');
-        var popupForm = document.getElementById('contact-j');
-        var popupDel = document.getElementById('popup-del');
-      
-        popupForm.addEventListener('submit', function(event) {
-          event.preventDefault(); // Prevent form submission
-          popup.style.display = 'none';
-          popupForm.reset();
-          popupDel.style.display = 'block';
-        });
-        });
-  
-        document.addEventListener('DOMContentLoaded', function() {
-          var popup = document.getElementById('popup-r');
-          var popupForm = document.getElementById('contact-r');
-          var popupDel = document.getElementById('popup-del');
-        
-          popupForm.addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent form submission
-            popup.style.display = 'none';
-            popupForm.reset();
-            popupDel.style.display = 'block';
-          });
-          });
-  
+ 
   document.addEventListener('DOMContentLoaded', function() {
     var popupForm = document.getElementById('subscribe');
   
@@ -923,7 +735,60 @@ function Message(event){
     }
   
   
-  
+    document.addEventListener('DOMContentLoaded', function() {
+      var popupForm = document.getElementById('contact-o5');
+      var popup = document.getElementById('popup-o5');
+    
+      popupForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+        alert('Case Updated Successfully!');
+        popupForm.reset();
+        popup.style.display='none';
+        
+      });
+      });
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var popupForm = document.getElementById('contact-o6');
+        var popup = document.getElementById('popup-o6');
+      
+        popupForm.addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent form submission
+          alert('Case Updated Successfully!');
+          popupForm.reset();
+          popup.style.display='none';
+          
+        });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+          var popupForm = document.getElementById('contact-x');
+          var popup = document.getElementById('popup-x');
+        
+          popupForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            alert('Case Updated Successfully!');
+            popupForm.reset();
+            popup.style.display='none';
+            
+          });
+          });
+
+          document.addEventListener('DOMContentLoaded', function() {
+            var popupForm = document.getElementById('contact-y');
+            var popup = document.getElementById('popup-y');
+          
+            popupForm.addEventListener('submit', function(event) {
+              event.preventDefault(); // Prevent form submission
+              alert('Case Updated Successfully!');
+              popupForm.reset();
+              popup.style.display='none';
+              
+            });
+            });
+
+
+     
   
   document.addEventListener('DOMContentLoaded', function() {
     var popupForm = document.getElementById('subscribe');
@@ -1557,4 +1422,32 @@ function deleteO55(event) {
     alert('Doctor Acount Removed!');
     document.getElementById('seventh-item-doc').style.display = 'none';
   }
+
+  var randomIndex = 0;
+  function showRandomNotification() {
+    var notifications = [
+      "Case 480 Has Been Accepted!",
+      "Case 326 Has Been Accepted!",
+      "Case 5210 Has Been Accepted!"
+    ];
+    
+    var notificationElement = document.getElementById("notification");
+    notificationElement.textContent = notifications[randomIndex];
+    setTimeout(function(){
+      notificationElement.style.display = "block";
+    }, Math.random() * 10000)
+    
+    setTimeout(function() {
+      notificationElement.style.display = "none";
+      randomIndex++;
+      if(randomIndex>2){
+      randomIndex = 0;
+      }
+      setTimeout(showRandomNotification, Math.random() * 10000);
+    }, 5000);
+  }
+
+  showRandomNotification();
+
+  
   

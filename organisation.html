@@ -73,6 +73,7 @@
 </div>
 </div>
 
+<div class="notification" id="notification">This is a random notification!</div>
 
 <div id="info" class="contact-us section">
   <div class="container">
@@ -294,6 +295,131 @@
 </div>
 
 
+<div id="popup-del" class="popup-c">
+  <div class="popup-content-c">
+      <div class="pop-up-c">
+        <span class="close-c" id="close-popup-del" onclick="closePopupDel()">&times;</span>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-heading">
+            </div>
+          </div>
+          <div class="col-lg-12 align-self-center">
+            <form id="contact-del" action="" method="get">
+              <div class="row">
+                <div class="col-lg-12">
+                 <h3>Delivery Details</h3>
+                 <br>
+                </div>
+                <div class="col-lg-12">
+                  <br>
+                  <label for="meeting-date">Select a date for Delivery  </label>
+                  <input type="date" id="meeting-date" name="meeting-date" required>
+                  <br>
+                  <br>
+                  <label for="start-time">Select a time for Delivery</label>
+                  <br>
+                  <label for="start-time">From  </label>
+                  <input type="time" id="start-time" name="start-time" required>
+                  <label for="end-time">To </label>
+                  <input type="time" id="end-time" name="end-time" required>     
+                  <br>   
+                </div>
+              <div class="col-lg-12">
+                <div class="main-red-button-hover">
+                  <br> 
+                  <button type="submit" id="form-submit">Submit</button>
+                </div>
+              </div>
+              </div>
+            </form>
+
+          </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+
+
+<div id="popup-z" class="popup-c">
+  <div class="popup-content-c">
+      <div class="pop-up-c">
+        <span class="close-c" id="close-popup-z" onclick="closePopupZ()">&times;</span>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-heading">
+              <h4> Add Google marker</h4>
+            </div>
+          </div>
+          <div class="col-lg-12 align-self-center">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13820.642965518973!2d31.426276249999994!3d30.003540549999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583cc75436d909%3A0x7f921d4528ec3e03!2sThe%205th%20Settlement%2C%20New%20Cairo%201%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1714434043754!5m2!1sen!2seg" 
+              width="470"
+               height="450"
+                style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <div class="col-lg-6">
+            <fieldset>
+              <button type="submit" id="googleAdd" onclick=" MessageAdd(event)">Add</button>
+            </fieldset>
+          </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+  <div id="popup-del" class="popup-c">
+  <div class="popup-content-c">
+      <div class="pop-up-c">
+        <span class="close-c" id="close-popup-del" onclick="closePopupDel()">&times;</span>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-heading">
+            </div>
+          </div>
+          <div class="col-lg-12 align-self-center">
+            <form id="contact-del" action="" method="get">
+              <div class="row">
+                <div class="col-lg-12">
+                 <h3>Delivery Details</h3>
+                 <br>
+                </div>
+                <div class="col-lg-12">
+                  <br>
+                  <label for="meeting-date">Select a date for Delivery  </label>
+                  <input type="date" id="meeting-date" name="meeting-date" required>
+                  <br>
+                  <br>
+                  <label for="start-time">Select a time for Delivery</label>
+                  <br>
+                  <label for="start-time">From  </label>
+                  <input type="time" id="start-time" name="start-time" required>
+                  <label for="end-time">To </label>
+                  <input type="time" id="end-time" name="end-time" required>     
+                  <br>   
+                </div>
+              <div class="col-lg-12">
+                <div class="main-red-button-hover">
+                  <br> 
+                  <button type="submit" id="form-submit">Submit</button>
+                </div>
+              </div>
+              </div>
+            </form>
+
+          </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
 
 
 <div id="popup-z" class="popup-c">
@@ -410,7 +536,7 @@
                 </div>
               </div>
               <div class="col-lg-2">
-                <div class="main-blue-button-hover" onclick="FurtherInfoO5()">
+                <div class="main-blue-button-hover" onclick="FurtherInfoO5(event)">
                   <a href="#">Update</a>
                 </div>
               </div>
@@ -441,7 +567,7 @@
                 </div>
               </div>
               <div class="col-lg-2">
-                <div class="main-blue-button-hover" onclick="FurtherInfoO6()">
+                <div class="main-blue-button-hover" onclick="FurtherInfoO6(event)">
                   <a href="#">Update</a>
                 </div>
               </div>
@@ -471,7 +597,7 @@
                 </div>
               </div>
               <div class="col-lg-2">
-                <div class="main-blue-button-hover" onclick="FurtherInfoX()">
+                <div class="main-blue-button-hover" onclick="FurtherInfoX(event)">
                   <a href="#">Update</a>
                 </div>
               </div>
@@ -500,7 +626,7 @@
                 </div>
               </div>
               <div class="col-lg-2">
-                <div class="main-blue-button-hover" onclick="FurtherInfoY()">
+                <div class="main-blue-button-hover" onclick="FurtherInfoY(event)">
                   <a href="#">Update</a>
                 </div>
               </div>
@@ -603,10 +729,12 @@
                   <li>Eggplant (7kg) <br> Bananas (3kg) <br> Tomatoes (10kg)</li>
                 </ul>
               </div>
-            <div class="col-lg-3 offset-lg-1">
-              <br>
-              
-          </div>
+              <div class="col-lg-3 offset-lg-1">
+                <br>
+                <div class="main-blue-button-hover" onclick="FurtherInfoDel()">
+                  <a href="#" > Delivery Details</a>
+                </div>
+            </div>
           <div class="col-lg-1">
             <br>
             <div class="main-red-button-hover" onclick="deleteO1(event)">
@@ -622,20 +750,26 @@
               <div class="col-lg-2">
                 <img src="assets/images/teacher.jpg">
               </div>
-              <div class="col-lg-4">
-                <h3>Case ID 2671</h3>
+              <div class="col-lg-3">
+                <h3>Case ID 21</h3>
                 <ul>
                   <h4>Science Lessons</h4>
                   <li>6th Primary <br>10 students </li>
                 </ul>
               </div>
-              <div class="col-lg-3 offset-lg-1">
+              <div class="col-lg-3">
                 <br>
                 <div class="main-blue-button-hover" onclick="FurtherInfoO1()">
                   <a href="#" >View Donor Details</a>
                 </div>
             </div>
-          <div class="col-lg-2">
+            <div class="col-lg-3">
+              <br>
+              <div class="main-blue-button-hover" onclick="FurtherInfoDel()">
+                <a href="#" > Delivery Details <i class="fas fa-truck"></i></a>
+              </div>
+          </div>
+          <div class="col-lg-1">
             <br>
             <div class="main-red-button-hover" onclick="deleteO2(event)">
               <a href="#" ><i class="fas fa-trash-alt"></i></i></a>
@@ -650,20 +784,26 @@
               <div class="col-lg-2">
                 <img src="assets/images/doctor.jpg">
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-3">
                 <h3>Case ID 33</h3>
                 <ul>
                   <h4>Pediatric Visits</h4>
                   <li>3 Cases </li>
                 </ul>
               </div>
-              <div class="col-lg-3 offset-lg-1">
+              <div class="col-lg-3">
                 <br>
                 <div class="main-blue-button-hover" onclick="FurtherInfoO2()">
                   <a href="#" >View Donor Details</a>
                 </div>
             </div>
-          <div class="col-lg-2">
+            <div class="col-lg-3">
+              <br>
+              <div class="main-blue-button-hover" onclick="FurtherInfoDel()">
+                <a href="#" > Delivery Details <i class="fas fa-truck"></i></a>
+              </div>
+          </div>
+          <div class="col-lg-1">
             <br>
             <div class="main-red-button-hover" onclick="deleteO3(event)">
               <a href="#" ><i class="fas fa-trash-alt"></i></i></a>
@@ -701,25 +841,25 @@
                     <div class="col-lg-4"></div>
                     <div class="col-lg-12">
                       <br>
-                      <label for ="clothes">First Name: Marwan</label>
+                      <label for ="clothes">First Name: Heba</label>
                       <br>
-                      <label for ="clothes">Last Name: Mousa</label>
+                      <label for ="clothes">Last Name: Yousri</label>
                       <br>
-                      <label for ="clothes">Gender: Male</label>
+                      <label for ="clothes">Gender: Female</label>
                       <br>
-                      <label for ="clothes">Area: Maadi</label>
+                      <label for ="clothes">Area: Sherouk</label>
                       <br>
                       <label for ="clothes">Governorate: Cairo</label>
                     </div>
                     <div class="col-lg-12">
-                      <label for ="clothes">Address: 4 AlAhram Street, Al Nafoura Sq., Cairo Governorate</label>
+                      <label for ="clothes">Address: 6 Gamal Abd Nasser Street, Al Nafoura Sq., Cairo Governorate</label>
                     </div>
                     <div class="col-lg-12">
                       <a href="https://maps.app.goo.gl/NJEgR9TiPR5z2mfD6" 
                       target="_blank"><i class="fas fa-map-marker-alt"></i> Location</a>
                     </div>
                     <div class="col-lg-12">
-                      <a href="#"  onclick="FurtherInfoF2()"
+                      <a href="#"  onclick="FurtherInfoO3()"
                       target="_blank"><i class="fas fa-phone-alt"></i> Contact Details</a>
                     </div>
                   </div>
@@ -751,25 +891,25 @@
                     <div class="col-lg-4"></div>
                     <div class="col-lg-12">
                       <br>
-                      <label for ="clothes">First Name: Heba</label>
+                      <label for ="clothes">First Name: Marwan</label>
                       <br>
-                      <label for ="clothes">Last Name: Yousri</label>
+                      <label for ="clothes">Last Name: Mousa</label>
                       <br>
-                      <label for ="clothes">Gender: Female</label>
+                      <label for ="clothes">Gender: Male</label>
                       <br>
-                      <label for ="clothes">Area: Sherouk</label>
+                      <label for ="clothes">Area: Maadi</label>
                       <br>
                       <label for ="clothes">Governorate: Cairo</label>
                     </div>
                     <div class="col-lg-12">
-                      <label for ="clothes">Address: 6 Gamal Abd Nasser Street, Al Nafoura Sq., Cairo Governorate</label>
+                      <label for ="clothes">Address: 4 AlAhram Street, Al Nafoura Sq., Cairo Governorate</label>
                     </div>
                     <div class="col-lg-12">
                       <a href="https://maps.app.goo.gl/j6fc3pFj7FrqFcni7" 
                       target="_blank"><i class="fas fa-map-marker-alt"></i> Location</a>
                     </div>
                     <div class="col-lg-12">
-                      <a href="#"  onclick="FurtherInfoO3()"
+                      <a href="#"  onclick="FurtherInfoF2()"
                       target="_blank"><i class="fas fa-phone-alt"></i> Contact Details</a>
                     </div>
                   </div>
@@ -929,9 +1069,13 @@
                         <div class="infoLabel2">Cans</div>
                          </div>
                   </div>
-                  <div class="main-red-button-hover">
-                    <br> 
-                    <button type="submit" id="form-submit">Update</button>
+                  <div class="row">
+                    <div class="col-lg-12 ">
+                      <div class="main-red-button-hover">
+                        <br> 
+                        <button type="submit" id="form-submit">Update</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               
@@ -950,7 +1094,7 @@
             <div class="row">
               <div class="row">
               <div class="col-lg-12 align-self-center">
-                <form id="contact-o5" action="" method="get">
+                <form id="contact-o6" action="" method="get">
                   <div class="row">
                     <div class="row">
                       <div class="col-lg-4 ">
@@ -985,9 +1129,13 @@
                           <div class="infoLabel3">Kg</div>
                            </div>
                     </div>
-                    <div class="main-red-button-hover">
-                      <br> 
-                      <button type="submit" id="form-submit">Update</button>
+                    <div class="row">
+                      <div class="col-lg-12 ">
+                        <div class="main-red-button-hover">
+                          <br> 
+                          <button type="submit" id="form-submit">Update</button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 
@@ -1032,9 +1180,13 @@
                            </div>
                     </div>
                    
-                    <div class="main-red-button-hover">
-                      <br> 
-                      <button type="submit" id="form-submit">Update</button>
+                    <div class="row">
+                      <div class="col-lg-12 ">
+                        <div class="main-red-button-hover">
+                          <br> 
+                          <button type="submit" id="form-submit">Update</button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 
@@ -1046,6 +1198,8 @@
       </div>
     </div> 
     
+   
+
     <div id="popup-x" class="popup-c">
       <div class="popup-content-c">
           <div class="pop-up-c">
@@ -1056,42 +1210,39 @@
                 <form id="contact-x" action="" method="get">
                   <div class="row">
                     <div class="row">
-                      <div class="col-lg-7">
-                        <div class="name-box4" contenteditable="true" id="name">Pasta </div>
-                      </div>
-                        <div class="col-lg-1 ">
-                          <div class="name-box2" contenteditable="true" id="name">50</div>
+                        <div class="col-lg-12 ">
+                          <div class="name-box4" contenteditable="true" id="name">Mostafa Aziz</div>
                         </div>
-                        <div class="col-lg-3">
-                          <div class="infoLabel4">Packet</div>
-                           </div>
                     </div>
                     <div class="row">
-                      <div class="col-lg-7">
-                        <div class="name-box4" contenteditable="true" id="name">Tomato Sauce </div>
-                      </div>
-                        <div class="col-lg-1 ">
-                          <div class="name-box2" contenteditable="true" id="name">6</div>
+                        <div class="col-lg-12 ">
+                          <div class="name-box4" contenteditable="true" id="name">B+</div>
                         </div>
-                        <div class="col-lg-3">
-                          <div class="infoLabel4">Packets</div>
-                           </div>
                     </div>
                     <div class="row">
-                      <div class="col-lg-7 ">
-                        <div class="name-box4" contenteditable="true" id="name">Milk </div>
-                      </div>
-                        <div class="col-lg-1 ">
-                          <div class="name-box2" contenteditable="true" id="name">13</div>
+                        <div class="col-lg-12">
+                          <div class="name-box4" contenteditable="true" id="name">Andalusia Hospital</div>
                         </div>
-                        <div class="col-lg-3">
-                          <div class="infoLabel4">Cartons</div>
-                           </div>
                     </div>
-                    <div class="main-red-button-hover">
-                      <br> 
-                      <button type="submit" id="form-submit">Update</button>
+                    <div class="row">
+                        <div class="col-lg-12 ">
+                          <div class="name-box4" contenteditable="true" id="name"> Nasr City</div>
+                        </div>
                     </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                          <div class="name-box4" contenteditable="true" id="name">Cairo</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="main-red-button-hover">
+                          <br> 
+                          <button type="submit" id="form-submit">Update</button>
+                        </div>
+                      </div>
+                  </div>
+                    
                   </div>
                 
                 </form>
@@ -1160,7 +1311,7 @@
                       <label for="clothes">Type: Geometry Set </label>
                     </div>
                     <div class="col-lg-12">
-                      <label for="clothes">Amount Needed: 3</label>
+                      <label for="clothes">Amount Needed: 6</label>
                     </div>
                     <div class="col-lg-12">
                    
@@ -1169,7 +1320,7 @@
                       <label for="clothes">Type: CopyBook </label>
                     </div>
                     <div class="col-lg-12">
-                      <label for="clothes">Amount Needed: 6</label>
+                      <label for="clothes">Amount Needed: 3</label>
                     </div>
                     <div class="col-lg-12">
                       <!--<fieldset>
@@ -1247,9 +1398,7 @@
         <div class="videos-left-dec">
           <img src="assets/images/videos-left-dec.png" alt="">
         </div>
-        <div class="videos-right-dec">
-          <img src="assets/images/videos-right-dec.png" alt="">
-        </div>
+       
         <div class="container">
           <div class="section-heading">
               <h2>Make a <em>Request!</em><span></span></h2>
@@ -1379,77 +1528,76 @@
       </div>
       
       <div id="form-doc" class="schoolForm">
-      <div class="row">
-        <div class="col-lg-2"></div>
-      <div class="col-lg-8 align-self-center">
-      <div class="row">
-        <form id="contact-j" action="" method="get">
-          <div class="row">
-            <div class="col-lg-12">
-              <h3>Doctor Form</h3>
-                <br>
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8 align-self-center">
+            <div class="row">
+              <form id="contact-j" action="" method="get">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h3>Doctor Form</h3>
+                    <br>
+                  </div>
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <input type="text" name="patientName" id="patientName" placeholder="Patient Name" autocomplete="on" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <input type="text" name="age" id="age" placeholder="Age" autocomplete="on" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <input type="text" name="gender" id="gender" placeholder="Gender" autocomplete="on" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <input type="text" name="weight" id="weight" placeholder="Weight" autocomplete="on" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <input type="text" name="location" id="location" placeholder="Location" autocomplete="on" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <input type="text" name="address" id="address" placeholder="Address" autocomplete="on" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <input type="text" name="organizationName" id="organizationName" placeholder="Organization Name" autocomplete="on" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <input type="text" name="medicalSpeciality" id="medicalSpeciality" placeholder="Medical Speciality" autocomplete="on" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <input type="text" name="caseDescription" id="caseDescription" placeholder="Case Description" autocomplete="on" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6">
+                    <br>
+                    <a href="#register" onclick="FurtherInfoZ()"> <i class="fas fa-map-marker-alt"></i>Add Google Marker of Patient Location</a>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="main-red-button-hover">
+                      <button type="submit" id="form-submit">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
-            <div class="col-lg-6">
-              <fieldset>
-                <input type="text" name="Amount" id="amount" placeholder="Patient Name" autocomplete="on" required min="0">
-              </fieldset>
-            </div>
-            <div class="col-lg-6">
-              <fieldset>
-                <input type="text" name="Amount" id="amount" placeholder="Age" autocomplete="on" required min="0">
-              </fieldset>
-            </div>
-            <div class="col-lg-6">
-              <fieldset>
-                <input type="text" name="Amount" id="amount" placeholder="Gender" autocomplete="on" required min="0">
-              </fieldset>
-            </div>
-            <div class="col-lg-6">
-              <fieldset>
-                <input type="text" name="Amount" id="amount" placeholder="Weight" autocomplete="on" required min="0">
-              </fieldset>
-            </div>
-            <div class="col-lg-6">
-              <fieldset>
-                <input type="text" name="Amount" id="amount" placeholder="Location" autocomplete="on" required min="0">
-              </fieldset>
-            </div>
-            <div class="col-lg-6">
-              <fieldset>
-                <input type="text" name="Amount" id="amount" placeholder="Address" autocomplete="on" required min="0">
-              </fieldset>
-            </div>
-            <div class="col-lg-6">
-              <fieldset>
-                <input type="text" name="Amount" id="amount" placeholder="Organization Name" autocomplete="on" required min="0">
-              </fieldset>
-            </div>
-            <div class="col-lg-6">
-              <fieldset>
-                <input type="text" name="Amount" id="amount" placeholder="Medical Speciality" autocomplete="on" required min="0">
-              </fieldset>
-            </div>
-            <div class="col-lg-6">
-              <fieldset>
-                <input type="text" name="Amount" id="amount" placeholder="Case Description" autocomplete="on" required min="0">
-              </fieldset>
-            </div>
-            <div class="col-lg-6">
-              <br>
-              <a href="#register" onclick="FurtherInfoZ()"> <i class="fas fa-map-marker-alt"></i>Add Google Marker of Patient Location</a>
           </div>
-          <div class="col-lg-6">
-            <div class="main-red-button-hover">
-              <button type="submit" id="form-submit">Submit</button>
-            </div>
-          </div>
-          </div>
-      </form>
+        </div>
       </div>
-      </div>
-      </div>
-      </div>
-      
       
       <div id="form-cloth" class="schoolForm">
       <div class="row">
@@ -1533,7 +1681,7 @@
           
         <div class="col-lg-12">
           <div class="main-red-button-hover">
-            <button type="submit" id="form-submit">Submit</button>
+            <button type="submit" id="form-submit" >Submit</button>
           </div>
         </div>
         </div>
@@ -1556,27 +1704,27 @@
           </div>
           <div class="col-lg-6">
             <fieldset>
-              <input type="text" name="Amount" id="amount" placeholder="Patient Name" autocomplete="on" required min="0">
+              <input type="text" name="Amount" id="name" placeholder="Patient Name" autocomplete="on" required min="0">
             </fieldset>
           </div>
           <div class="col-lg-6">
             <fieldset>
-              <input type="text" name="Amount" id="amount" placeholder="Blood Type (with RH)" autocomplete="on" required min="0">
+              <input type="text" name="Amount" id="blood" placeholder="Blood Type (with RH)" autocomplete="on" required min="0">
             </fieldset>
           </div>
           <div class="col-lg-6">
             <fieldset>
-              <input type="text" name="Amount" id="amount" placeholder="Hospital Name" autocomplete="on" required min="0">
+              <input type="text" name="Amount" id="hname" placeholder="Hospital Name" autocomplete="on" required min="0">
             </fieldset>
           </div>
           <div class="col-lg-6">
             <fieldset>
-              <input type="text" name="Amount" id="amount" placeholder="Hospital Area" autocomplete="on" required min="0">
+              <input type="text" name="Amount" id="area" placeholder="Hospital Area" autocomplete="on" required min="0">
             </fieldset>
           </div>
           <div class="col-lg-6">
             <fieldset>
-              <input type="text" name="Amount" id="amount" placeholder="Hospital Governerate" autocomplete="on" required min="0">
+              <input type="text" name="Amount" id="gov" placeholder="Hospital Governerate" autocomplete="on" required min="0">
             </fieldset>
           </div>
           <div class="col-lg-6">
@@ -1590,7 +1738,7 @@
         </div>
         <div class="col-lg-6">
           <div class="main-red-button-hover">
-            <button type="submit" id="form-submit">Submit</button>
+            <button type="submit" id="form-submit" >Submit</button>
           </div>
         </div>
         
@@ -1621,8 +1769,7 @@
             <fieldset>
               <input type="number" name="Amount" id="amount" placeholder="Amount Needed" autocomplete="on" required min="0">
             </fieldset>
-          </div>
-          
+          </div> 
         <div class="col-lg-12">
           <div class="main-red-button-hover">
             <button type="submit" id="form-submit">Submit</button>
@@ -1673,7 +1820,7 @@
           </div>
         <div class="col-lg-12">
           <div class="main-red-button-hover">
-            <button type="submit" id="form-submit">Submit</button>
+            <button type="submit" id="form-submit" >Submit</button>
           </div>
         </div>
         </div>
@@ -1714,7 +1861,7 @@
           </div>
         <div class="col-lg-12">
           <div class="main-red-button-hover">
-            <button type="submit" id="form-submit">Submit</button>
+            <button type="submit" id="form-submit" >Submit</button>
           </div>
         </div>
         </div>
