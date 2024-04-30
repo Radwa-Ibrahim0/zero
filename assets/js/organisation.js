@@ -5,6 +5,75 @@ function Message(event){
     //want it to go back to same place
   }
 
+  document.addEventListener('DOMContentLoaded', function() {
+    var popupTeacher = document.getElementById('form-teach');
+    var popupDoctor = document.getElementById('form-doc');
+    var popupFood = document.getElementById('form-food');
+    var popupToy = document.getElementById('form-toy');
+    var popupBlood = document.getElementById('form-blood');
+    var popupClothes = document.getElementById('form-cloth');
+    var popupSchool = document.getElementById('form-school');
+    var popupMedical = document.getElementById('form-med');
+  
+
+    var popupFormTeacher = document.getElementById('contact-a');
+    var popupFormDoctor = document.getElementById('contact-j');
+    var popupFormSchool = document.getElementById('contact-z');
+    var popupFormMedical = document.getElementById('contact-c1');
+    var popupFormToys = document.getElementById('contact-b');
+    var popupFormBlood = document.getElementById('contact-v2');
+    var popupFormClothes = document.getElementById('contact-r');
+    var popupFormFood= document.getElementById('contact-v1');
+    popupTeacher.addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Thank You For Submitting a Case!');
+      popupFormTeacher.reset();
+    });
+  
+    popupSchool.addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Thank You For Submitting a Case!');
+      popupFormSchool.reset();
+    });
+  
+    popupMedical.addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Thank You For Submitting a Case!');
+      popupFormMedical.reset();
+    });
+  
+    popupBlood.addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Thank You For Submitting a Case!');
+      popupFormBlood.reset();
+    });
+  
+    popupFood.addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Thank You For Submitting a Case!');
+      popupFormFood.reset();
+    });
+  
+    popupToy.addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Thank You For Submitting a Case!');
+      popupFormToys.reset();
+    });
+    
+    popupClothes.addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Thank You For Submitting a Case!');
+      popupFormClothes.reset();
+    });
+  
+    popupDoctor.addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Thank You For Submitting a Case!');
+      popupFormDoctor.reset();
+    });
+  });
+
+
   function MessageAdd(event){
     event.preventDefault();
     alert('The location has been added successfully!');
@@ -54,7 +123,7 @@ function Message(event){
       setTimeout(function() {
         popupTeacher.style.opacity = '1';
       }, 200); 
-      popupTeacher.style.display = 'block'
+      popupTeacher.style.display = 'block';
     });
   
     popupFormSchool.addEventListener('submit', function(event) {
@@ -164,7 +233,7 @@ function Message(event){
       setTimeout(function() {
         popupToy.style.opacity = '1';
       }, 200); 
-      popupToy.style.display = 'block'
+      popupToy.style.display = 'block';
     });
     
     popupFormClothes.addEventListener('submit', function(event) {
@@ -186,7 +255,7 @@ function Message(event){
       setTimeout(function() {
         popupClothes.style.opacity = '1';
       }, 200); 
-      popupClothes.style.display = 'block'
+      popupClothes.style.display = 'block';
     });
   
     popupFormDoctor.addEventListener('submit', function(event) {
@@ -208,7 +277,7 @@ function Message(event){
       setTimeout(function() {
         popupDoctor.style.opacity = '1';
       }, 200); 
-      popupDoctor.style.display = 'block'
+      popupDoctor.style.display = 'block';
     });
   });
   
@@ -260,6 +329,7 @@ function Message(event){
   }
   
   function redirectHome(){
+    alert('Account was deleted!')
     window.location.href = "register.html";
   }
   

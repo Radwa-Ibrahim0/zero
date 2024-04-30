@@ -15,11 +15,7 @@ function FurtherInfoC1() {
     event.preventDefault();
       document.getElementById('popup-c2').style.display = 'block';
   }
-  function FurtherInfoC3() {
-    // Prevent the default form submission behavior
-    event.preventDefault();
-      document.getElementById('popup-c3').style.display = 'block';
-  }
+ 
 
   
   function FurtherInfoF1() {
@@ -134,7 +130,7 @@ function login(event) {
         var dummyUsers = [
           { username: "admin@sawa", password: "1234", redirectUrl: "admin.html" },
           { username: "donor@sawa", password: "12345", redirectUrl: "donorMain.html" },
-          { username: "organization@sawa", password: "123456", redirectUrl: "organization.html" },
+          { username: "organization@sawa", password: "123456", redirectUrl: "organisation.html" },
         ];
     
         // Check if the entered credentials match any of the dummy data
@@ -162,9 +158,31 @@ function login(event) {
 
   function validateFormF3(event) {
     event.preventDefault();
-    alert("Congratulations! You are now registered as an Organization.");
-    window.location.href = "organization.html";
+    document.getElementById('popup-c3').style.display = 'block';
+    //alert("Congratulations! You are now registered as an Organization.");
+    // window.location.href = "organisation.html";
   }
+
+  function checkFilesOrganization(event) {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+    var input = document.getElementById('file-upload-t');
+    if (input.files && input.files.length > 0) {
+      // Files were uploaded
+      alert('Files were uploaded successfully! You are now verified as an Organization Representative!');
+      window.location.href = "organisation.html";
+    } else {
+      // No files were uploaded
+      alert('No files were uploaded.');
+    }
+  }
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var button = document.getElementById('check-button-org');
+    button.addEventListener('click', function(event) {
+      checkFilesOrganization(event); // Pass the event to the function
+    });
+  });
 
 
   var eventTriggered = false;

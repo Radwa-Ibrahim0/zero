@@ -3747,6 +3747,26 @@ ul.dates {
   color: #fff;
 }
 
+.updateInfo2 {
+  display: inline-block;
+  background-color: #ff685f;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  transition: all .3s;
+  border:0px solid #fff;
+  cursor: pointer;
+  z-index: 999;
+}
+.update2 :hover {
+  background-color: #03a4ed;
+  color: #fff;
+}
+
 
 .infoLabel{
   font-size: 20px;
@@ -4268,10 +4288,11 @@ schoolForm
 
 
 .contact-forms {
+  width: 100%;
   position: relative;
   z-index: 2;
-  padding: 0px 60px 40px 0px;
   border-radius: 20px;
+  margin:0;
  
 }
 
@@ -4282,14 +4303,16 @@ schoolForm
 }
 
 .contact-forms button {
-  display: inline-block;
+  width: 100%;
+  display: block;
   background-color: #ff695f ;
   font-size: 20px;
   font-weight: 700;
   color: #fff;
   text-transform: capitalize;
-  padding: 10px 10px 10px;
-  border-radius: 20px 0px 20px 20px;
+  text-align: center;
+  height: 40px;
+  border-radius: 20px 20px 20px 20px;
   letter-spacing: 0.25px;
   border: none;
   outline: none;

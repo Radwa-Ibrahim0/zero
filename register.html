@@ -14,7 +14,7 @@
 
     
 
-    <title>Registeration | Sawa</title>
+    <title>Home | Sawa</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -460,7 +460,7 @@ https://templatemo.com/tm-565-onix-digital
                       <div>
                         <div class="thumb">
                           <div class="col-lg-12 ">
-                            <form id="contact-f3" action="" method="get" onsubmit="return validateFormF3()">
+                            <form id="contact-f3" action="" method="get" onsubmit="return validateFormF3(event)">
                              <div class="row">
                                 <div class="col-lg-6">
                                   <fieldset>
@@ -523,7 +523,7 @@ https://templatemo.com/tm-565-onix-digital
                               </div>
                                     <div class="col-lg-12">
                                       <fieldset>
-                                        <button type="submit" id="registerB" class="main-button" onclick="FurtherInfoC3()">Register</button>
+                                        <button type="submit" id="registerB" class="main-button">Register</button>
                                       </fieldset>
                                     </div>
                                 
@@ -638,7 +638,7 @@ https://templatemo.com/tm-565-onix-digital
                       <div class="col-lg-12">
                         <h3>Submit Your PaperWork</h3>
                         <br>
-                        <h5>upload document(s) to prove that you are a part of this organization and that it is what it claims to be</h5>
+                        <h5>upload document(s) to prove that you are a part of this organization</h5>
                       </div>
                       <div class="row">
                         <div class="col-lg-10 offset-lg-1">
@@ -646,7 +646,10 @@ https://templatemo.com/tm-565-onix-digital
                             <br>
                             <label for="file-upload-t" class= "main-blue-button">Upload Files</label>
                               <input type="file" id="file-upload-t" multiple>
-                            <button class= "main-blue-button" id="check-button-teacher">Submit</button>
+                              <div>
+                              <br>
+                            <button class= "main-blue-button" id="check-button-org">Submit</button>
+                          </div>
                           </form>
                         </div>
                       </div>
