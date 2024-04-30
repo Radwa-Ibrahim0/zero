@@ -220,6 +220,8 @@ body {
 }
 
 
+
+
 input[type="file"]{
   display: none;
 }
@@ -258,6 +260,8 @@ input[type="file"]{
   animation: bubble 0.2s ease-out;
   background-color: #ff695f;
 }
+
+
 
 .main-blue-button-hover a {
   display: inline-block;
@@ -3750,6 +3754,7 @@ ul.dates {
   color: #1e1e1e;
   margin-bottom: 15px;
   margin-top: 15px;
+  cursor: default;
 }
 
 .name-box{
@@ -3758,6 +3763,69 @@ ul.dates {
   padding: 10px;
   font-size: 20px;
 }
+
+.infoLabel2{
+  font-size: 15px;
+  font-weight: 500;
+  color: #1e1e1e;
+  margin-top:15px;
+  margin-left: -60px;
+  cursor: default;
+}
+
+.name-box2{
+  border-radius: 15px;
+  border: 3px solid #ccc;
+  padding: 10px;
+  font-size: 15px;
+  margin-left: -10px;
+  margin-bottom: 5px;
+  display: inline-block;
+  width: max-content;
+}
+
+.infoLabel3{
+  font-size: 15px;
+  font-weight: 500;
+  color: #1e1e1e;
+  margin-left:-10px;
+  margin-top: 10px;
+  cursor: default;
+}
+
+.name-box3{
+  border-radius: 15px;
+  border: 3px solid #ccc;
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom : 10px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.name-box3 :hover{
+  background-color:  #03a4ed;
+}
+
+.infoLabel4{
+  font-size: 15px;
+  font-weight: 500;
+  color: #1e1e1e;
+  margin-left:25px;
+  margin-top: 10px;
+  cursor: default;
+}
+
+.name-box4{
+  border-radius: 15px;
+  border: 3px solid #ccc;
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom : 10px;
+  margin-right: 1px;
+  white-space: nowrap;
+}
+
+
 
 /*progress  bar*/
 .progress-bar{
@@ -4232,4 +4300,24 @@ schoolForm
 
 .contact-forms button:hover {
   background-color: #03a4ed;
+}
+
+#googleAdd  {
+  display: inline-block;
+  background-color: #03a4ed;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: 0 solid #03a4ed;
+  transition: 0.3s;
+}
+
+
+#googleAdd :hover {
+  background-color: #ff695f;
+
 }

@@ -484,7 +484,7 @@ https://templatemo.com/tm-565-onix-digital
                                 </div>
                                 <div class="col-lg-6">
                                   <fieldset>
-                                    <input type="number" name="contactNumber" id="contactNumber2" placeholder="Contact Number" autocomplete="on" required>
+                                    <input type="text" name="contactNumber" id="contactNumber2" placeholder="Contact Number" autocomplete="on" required>
                                   </fieldset>
                                 </div>
                                 <div class="col-lg-6">
@@ -515,13 +515,18 @@ https://templatemo.com/tm-565-onix-digital
                                 <div class="col-lg-6">
                                   <fieldset>
                                     <input type="text" name="governorate" id="governorate" placeholder="Governorate" required="">
+                                   
                                   </fieldset>
                                 </div>
-                                <div class="col-lg-12">
-                                  <fieldset>
-                                    <button type="submit" id="registerB" class="main-button">Register</button>
-                                  </fieldset>
-                                </div>
+                                <div class="col-lg-6">
+                                  <a href="#register" onclick="FurtherInfoC2()"> <i class="fas fa-map-marker-alt"></i>Add Google marker of my organization location</a>
+                              </div>
+                                    <div class="col-lg-12">
+                                      <fieldset>
+                                        <button type="submit" id="registerB" class="main-button" onclick="FurtherInfoC3()">Register</button>
+                                      </fieldset>
+                                    </div>
+                                
                               </div>
                           </form>
                         </div>
@@ -574,7 +579,7 @@ https://templatemo.com/tm-565-onix-digital
                   <br>
                   <label for ="clothes">Don't have an account? </label>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-12 ali">
                   <a href="#register" onclick="closePopupC1()">Register Now!</a>
                 </div>
                 </div>
@@ -584,6 +589,76 @@ https://templatemo.com/tm-565-onix-digital
           </div>
         </div>
     </div>
+
+
+    <div id="popup-c2" class="popup-c">
+      <div class="popup-content-c">
+          <div class="pop-up-c">
+            <span class="close-c" id="close-popup-c2" onclick="closePopupC2()">&times;</span>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="section-heading">
+                  <h4> Add Google marker</h4>
+                </div>
+              </div>
+              <div class="col-lg-12 align-self-center">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13820.642965518973!2d31.426276249999994!3d30.003540549999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583cc75436d909%3A0x7f921d4528ec3e03!2sThe%205th%20Settlement%2C%20New%20Cairo%201%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1714434043754!5m2!1sen!2seg" 
+                  width="470"
+                   height="450"
+                    style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <button type="submit" id="googleAdd" onclick=" MessageAdd(event)">Add</button>
+                </fieldset>
+              </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  
+  
+  
+      <div id="popup-c3" class="popup-c">
+        <div class="popup-content-c">
+            <div class="pop-up-c">
+              <span class="close-c" id="close-popup-c3" onclick="closePopupC3()">&times;</span>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="section-heading">
+                  </div>
+                </div>
+                <div class="col-lg-12 align-self-center">
+                  <form id="contact-c3" action="" method="get">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <h3>Submit Your PaperWork</h3>
+                        <br>
+                        <h5>upload document(s) to prove that you are a part of this organization and that it is what it claims to be</h5>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-10 offset-lg-1">
+                          <form id="subscribeForm-t" action="" method="get">
+                            <br>
+                            <label for="file-upload-t" class= "main-blue-button">Upload Files</label>
+                              <input type="file" id="file-upload-t" multiple>
+                            <button class= "main-blue-button" id="check-button-teacher">Submit</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    
+    
 
 
 

@@ -1,3 +1,10 @@
+function MessageAdd(event){
+  event.preventDefault();
+  closePopupC2();
+  alert('Your location has been added successfully!');
+}
+
+
 function FurtherInfoC1() {
     // Prevent the default form submission behavior
     event.preventDefault();

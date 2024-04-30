@@ -4,7 +4,8 @@ function Message(event){
     window.location.href = "organisation.html";
     //want it to go back to same place
   }
-  
+
+ 
   document.addEventListener('DOMContentLoaded', function() {
     var popupFormTeacher = document.getElementById('teach1');
   
@@ -94,7 +95,6 @@ function Message(event){
     });
   
     popupFormBlood.addEventListener('submit', function(event) {
-      alert("qwertyuiop");
       event.preventDefault(); // Prevent form submission
       popupDoctor.style.display = 'none';
       popupDoctor.style.opacity = '0';
@@ -111,7 +111,6 @@ function Message(event){
       popupMedical.style.display='none';
       popupMedical.style.opacity='0';
       setTimeout(function() {
-        alert('kwvnjltngtjn');
         popupBlood.style.opacity = '1';
       }, 200); 
       popupBlood.style.display = 'block';
@@ -970,6 +969,37 @@ function Message(event){
   var deletedSeventh = false;
   var deletedEighth = false;
   var deletedNineth = false;
+
+  function deleteO11(event) {
+    event.preventDefault();
+    alert('Case Removed!');
+    document.getElementById('first-item-reg').style.display = 'none';
+    deletedFirst = true;
+}
+function deleteO22(event) {
+  event.preventDefault();
+  alert('Case Removed!');
+  document.getElementById('second-item-reg').style.display = 'none';
+  deletedFirst = true;
+}
+function deleteO33(event) {
+  event.preventDefault();
+  alert('Case Removed!');
+  document.getElementById('third-item-reg').style.display = 'none';
+  deletedFirst = true;
+}
+function deleteO44(event) {
+  event.preventDefault();
+  alert('Case Removed!');
+  document.getElementById('forth-item-reg').style.display = 'none';
+  deletedFirst = true;
+}
+function deleteO55(event) {
+  event.preventDefault();
+  alert('Case Removed!');
+  document.getElementById('fifth-item-reg').style.display = 'none';
+  deletedFirst = true;
+}
   
   function deleteO1(event) {
       event.preventDefault();
