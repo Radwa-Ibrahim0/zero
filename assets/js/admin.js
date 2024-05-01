@@ -40,8 +40,7 @@ function checkPass() {
     }
     event.preventDefault(); // Prevent form submission
     
-    
-
+  
   }
 
 
@@ -78,6 +77,7 @@ function FurtherInfoC1() {
   event.preventDefault();
     document.getElementById('popup-c1').style.display = 'block';
 }
+
 function FurtherInfoC2() {
   // Prevent the default form submission behavior
   event.preventDefault();
@@ -192,6 +192,62 @@ function FurtherInfoO6() {
   event.preventDefault();
     document.getElementById('popup-o6').style.display = 'block';
 }
+
+
+
+
+function FurtherInfoAzhar() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-mosque1').style.display = 'block';
+}
+
+function FurtherInfoHussein() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-mosque2').style.display = 'block';
+}
+
+function FurtherInfoMark() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-church1').style.display = 'block';
+}
+
+function FurtherInfoGeorge() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-church2').style.display = 'block';
+}
+
+function FurtherInfoMetro() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-school1').style.display = 'block';
+}
+
+
+function FurtherInfoCho() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-school2').style.display = 'block';
+}
+
+function FurtherInfoSalam() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-hospital1').style.display = 'block';
+}
+
+function FurtherInfoShifa() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-hospital2').style.display = 'block';
+}
+
+
+
+
 
 function closePopupC1() {
   var popup = document.getElementById("popup-c1");
@@ -335,6 +391,71 @@ function closePopupDel() {
   popupForm.reset();
 }
 
+
+
+
+function closePopupMosque1() {
+  var popup = document.getElementById("popup-mosque1");
+  var popupForm = document.getElementById('contact-mosque1');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+
+function closePopupMosque2() {
+  var popup = document.getElementById("popup-mosque2");
+  var popupForm = document.getElementById('contact-mosque2');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+
+function closePopupChurch1() {
+  var popup = document.getElementById("popup-church1");
+  var popupForm = document.getElementById('contact-church1');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+
+function closePopupChurch2() {
+  var popup = document.getElementById("popup-church2");
+  var popupForm = document.getElementById('contact-church2');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+
+
+function closePopupSchool1() {
+  var popup = document.getElementById("popup-school1");
+  var popupForm = document.getElementById('contact-school1');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+
+function closePopupSchool2() {
+  var popup = document.getElementById("popup-school2");
+  var popupForm = document.getElementById('contact-school2');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+
+function closePopupHospital1() {
+  var popup = document.getElementById("popup-hospital1");
+  var popupForm = document.getElementById('contact-hospital1');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+
+function closePopupHospital2() {
+  var popup = document.getElementById("popup-hospital2");
+  var popupForm = document.getElementById('contact-hospital2');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
   var popup = document.getElementById('popup-del');
   var popupForm = document.getElementById('contact-del');
@@ -372,6 +493,19 @@ document.addEventListener('DOMContentLoaded', function() {
     popupDel.style.display = 'block';
   });
   });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var popup = document.getElementById('popup-mosque1');
+    var popupForm = document.getElementById('contact-mosque1');
+    var popupDel = document.getElementById('popup-del');
+  
+    popupForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+      popup.style.display = 'none';
+      popupForm.reset();
+      popupDel.style.display = 'block';
+    });
+    });
 
   document.addEventListener('DOMContentLoaded', function() {
     var popup = document.getElementById('popup-f3');
