@@ -677,10 +677,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Populate options based on the selected option from the first dropdown
     if (option === "Option 1") {
       secondDropdownContent.innerHTML += `
-        <a href="#health" onclick="filterHealthcare(event)">Healthcare Organizations</a>
-        <a href="#education" onclick="filterEducation(event)">Education Organizations</a>
-        <a href="#humanitarian" onclick="filterHumanitarian(event)">Humanitarian Aid Organizations</a>
-        <a href="#food-bank" onclick="filterBanks(event)">Food Banks</a>
+        <a href="#church" onclick="filterChurch(event)">Churches</a>
+        <a href="#school" onclick="filterSchool(event)">Schools</a>
+        <a href="#mosque" onclick="filterMosque(event)">Mosques</a>
+        <a href="#hospital" onclick="filterHospital(event)">Hospitals</a>
+        <a href="#non-profit" onclick="showmore(event)">Non-Profits</a>
       `;
       secondDropbtn.textContent = "Filter by Organization Type";
     } else if (option === "Option 2") {
@@ -703,6 +704,26 @@ document.addEventListener('DOMContentLoaded', function() {
     secondDropdown.style.display = "inline-block";
 
   }
+
+  function showmore(event) {
+    event.preventDefault(); // Prevent default behavior of anchor tag
+    var ThirdDropdown = document.getElementById("third-dropdown");
+    var ThirdDropdownContent = ThirdDropdown.querySelector(".dropdown-content");
+    var ThirdDropbtn = document.getElementById("third-dropbtn");// Prevent default behavior of anchor tag
+    ThirdDropdownContent.innerHTML = "";
+      ThirdDropdownContent.innerHTML += `
+      <a href="#health" onclick="filterHealthcare(event)">Healthcare Organizations</a>
+      <a href="#education" onclick="filterEducation(event)">Education Organizations</a>
+      <a href="#humanitarian" onclick="filterHumanitarian(event)">Humanitarian Aid Organizations</a>
+      <a href="#food-bank" onclick="filterBanks(event)">Food Banks</a>
+      `;
+      ThirdDropbtn.textContent = "Filter by Organization Type";
+    
+    ThirdDropdown.style.display = "inline-block";
+
+  }
+
+
   
   function stopPropagation(event) {
     event.stopPropagation(); // Prevent event from bubbling up
@@ -757,6 +778,32 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('first-item-reg').style.display = 'none';
   }
 
+  function reject18(event) {
+    event.preventDefault();
+    alert('Mosque Rejected!');
+    document.getElementById('eighteenth-item-reg').style.display = 'none';
+  }
+
+  function reject19(event) {
+    event.preventDefault();
+    alert('Church Rejected!');
+    document.getElementById('nineteenth-item-reg').style.display = 'none';
+  }
+
+  function reject20(event) {
+    event.preventDefault();
+    alert('School Rejected!');
+    document.getElementById('twenty-item-reg').style.display = 'none';
+  }
+
+  function reject21(event) {
+    event.preventDefault();
+    alert('Hospital Rejected!');
+    document.getElementById('twentyone-item-reg').style.display = 'none';
+  }
+
+  
+
   function reject2(event) {
     event.preventDefault();
     alert('Organization Rejected!');
@@ -778,6 +825,16 @@ var deletedSixth = false;
 var deletedSeventh = false;
 var deletedEighth = false;
 var deletedNineth = false;
+var deletedTenth= false;
+var deletedEleventh = false;
+var deletedTwelveth = false;
+var deletedThirteenth = false;
+var deletedFourteenth = false;
+var deletedFifteenth = false;
+var deletedSixteenth = false;
+var deletedSeventeenth = false;
+
+
 
 function deleteO1(event) {
     event.preventDefault();
@@ -842,10 +899,72 @@ function deleteO9(event) {
     deletedNineth = true;
 }
 
+function deleteAzhar(event) {
+  event.preventDefault();
+  alert('Mosque Acount Removed!');
+  document.getElementById('tenth-item').style.display = 'none';
+  deletedTenth = true;
+}
+
+function deleteHussein(event) {
+  event.preventDefault();
+  alert('Mosque Acount Removed!');
+  document.getElementById('eleventh-item').style.display = 'none';
+  deletedEleventh = true;
+}
+
+function deleteGeorge(event) {
+  event.preventDefault();
+  alert('Church Acount Removed!');
+  document.getElementById('twelveth-item').style.display = 'none';
+  deletedTwelveth = true;
+}
+
+function deleteMark(event) {
+  event.preventDefault();
+  alert('Church Acount Removed!');
+  document.getElementById('thirteenth-item').style.display = 'none';
+  deletedThirteenth = true;
+}
+
+function deleteCho(event) {
+  event.preventDefault();
+  alert('School Acount Removed!');
+  document.getElementById('fourteenth-item').style.display = 'none';
+  deletedFourteenth = true;
+}
+
+function deleteMetro(event) {
+  event.preventDefault();
+  alert('School Acount Removed!');
+  document.getElementById('fifteenth-item').style.display = 'none';
+  deletedFifteenth = true;
+}
+
+function deleteSalam(event) {
+  event.preventDefault();
+  alert('Hospital Acount Removed!');
+  document.getElementById('sixteenth-item').style.display = 'none';
+  deletedSixteenth = true;
+}
+
+function deleteShifa(event) {
+  event.preventDefault();
+  alert('Hospital Acount Removed!');
+  document.getElementById('seventeenth-item').style.display = 'none';
+  deletedSeventeenth = true;
+}
+
+
+
 
 var verifyFirst = false;
-var verifySeond = false;
 var verifySecond = false;
+var verifyThird = false;
+var verify18 = false;
+var verify19 = false;
+var verify20 = false;
+var verify21 = false;
 
   function verify1(event) {
     event.preventDefault();
@@ -853,6 +972,38 @@ var verifySecond = false;
     document.getElementById('first-item-reg').style.display = 'none';
     document.getElementById('seventh-item').style.display = 'block';
     verifyFirst = true;
+  }
+
+  function verify188(event) {
+    event.preventDefault();
+    alert('Mosque Verified and added to Verified Organizations!');
+    document.getElementById('eighteenth-item-reg').style.display = 'none';
+    document.getElementById('tenth-item').style.display = 'block';
+    verify18 = true;
+  }
+
+  function verify199(event) {
+    event.preventDefault();
+    alert('Church Verified and added to Verified Organizations!');
+    document.getElementById('nineteenth-item-reg').style.display = 'none';
+    document.getElementById('twelveth-item').style.display = 'block';
+    verify19 = true;
+  }
+
+  function verify200(event) {
+    event.preventDefault();
+    alert('School Verified and added to Verified Organizations!');
+    document.getElementById('twenty-item-reg').style.display = 'none';
+    document.getElementById('fifteenth-item').style.display = 'block';
+    verify20 = true;
+  }
+
+  function verify211(event) {
+    event.preventDefault();
+    alert('Hospital Verified and added to Verified Organizations!');
+    document.getElementById('twentyone-item-reg').style.display = 'none';
+    document.getElementById('sixteenth-item').style.display = 'block';
+    verify21 = true;
   }
 
   function verify2(event) {
@@ -885,6 +1036,14 @@ var verifySecond = false;
     document.getElementById('fifth-item').style.display = 'block';
     if (!deletedSixth)
     document.getElementById('sixth-item').style.display = 'block';
+    if (!deletedEleventh)
+    document.getElementById('eleventh-item').style.display = 'block';
+    if (!deletedThirteenth)
+    document.getElementById('thirteenth-item').style.display = 'block';
+    if (!deletedFourteenth)
+    document.getElementById('fourteenth-item').style.display = 'block';
+    if (!deletedSeventeenth)
+    document.getElementById('seventeenth-item').style.display = 'block';
     if(verifyFirst && !deletedSeventh){
       document.getElementById('seventh-item').style.display = 'block';
     }
@@ -893,6 +1052,18 @@ var verifySecond = false;
     }
     if(verifyThird && !deletedNineth){
       document.getElementById('nineth-item').style.display = 'block';
+    }
+    if(verify18 && !deletedTenth){
+      document.getElementById('tenth-item').style.display = 'block';
+    }
+    if(verify19 && !deletedTwelveth){
+      document.getElementById('twelveth-item').style.display = 'block';
+    }
+    if(verify20 && !deletedFifteenth){
+      document.getElementById('fifteenth-item').style.display = 'block';
+    }
+    if(verify21 && !deletedSixteenth){
+      document.getElementById('sixteenth-item').style.display = 'block';
     }
   }
 
@@ -924,6 +1095,30 @@ if (deletedEighth) {
 if (deletedNineth) {
     document.getElementById('nineth-item').style.display = 'none';
 }
+if (deletedTenth) {
+  document.getElementById('tenth-item').style.display = 'none';
+}
+if (deletedEleventh) {
+  document.getElementById('eleventh-item').style.display = 'none';
+}
+if (deletedTwelveth) {
+  document.getElementById('twelveth-item').style.display = 'none';
+}
+if (deletedThirteenth) {
+  document.getElementById('thirteenth-item').style.display = 'none';
+}
+if (deletedFourteenth) {
+  document.getElementById('fourteenth-item').style.display = 'none';
+}
+if (deletedFifteenth) {
+  document.getElementById('fifteenth-item').style.display = 'none';
+}
+if (deletedSixteenth) {
+  document.getElementById('sixteenth-item').style.display = 'none';
+}
+if (deletedSeventeenth) {
+  document.getElementById('seventeenth-item').style.display = 'none';
+}
 
 }
 
@@ -940,6 +1135,12 @@ if (deletedNineth) {
     if(!deletedFifth)
     document.getElementById('fifth-item').style.display = 'block';
     document.getElementById('sixth-item').style.display = 'none';
+    document.getElementById('eleventh-item').style.display = 'none';
+    document.getElementById('thirteenth-item').style.display = 'none';
+    document.getElementById('fourteenth-item').style.display = 'none';
+    if(!deletedSeventeenth)
+    document.getElementById('seventeenth-item').style.display = 'block';
+
     if(verifyFirst && !deletedSeventh){
       document.getElementById('seventh-item').style.display = 'none';
     }
@@ -949,10 +1150,23 @@ if (deletedNineth) {
     if(verifyThird && !deletedNineth){
       document.getElementById('nineth-item').style.display = 'block';
     }
+    if(verify18 && !deletedTenth){
+      document.getElementById('tenth-item').style.display = 'none';
+    }
+    if(verify19 && !deletedTwelveth){
+      document.getElementById('twelveth-item').style.display = 'none';
+    }
+    if(verify20 && !deletedFifteenth){
+      document.getElementById('fifteenth-item').style.display = 'none';
+    }
+    if(verify21 && !deletedSixteenth){
+      document.getElementById('sixteenth-item').style.display = 'block';
+    }
     checkDeleted();
 }
 
 function filterHumanitarian(event) {
+  
   event.stopPropagation();
   if(!deletedFirst)
   document.getElementById('first-item').style.display = 'block';
@@ -962,14 +1176,39 @@ function filterHumanitarian(event) {
   document.getElementById('forth-item').style.display = 'none';
   document.getElementById('fifth-item').style.display = 'none';
   document.getElementById('sixth-item').style.display = 'none';
+  if(!deletedEleventh)
+  document.getElementById('eleventh-item').style.display = 'block';
+  if(!deletedThirteenth)
+  document.getElementById('thirteenth-item').style.display = 'block';
+  document.getElementById('fourteenth-item').style.display = 'none';
+  if(!deletedSeventeenth)
+  document.getElementById('seventeenth-item').style.display = 'block';
+  
   if(verifyFirst && !deletedSeventh){
     document.getElementById('seventh-item').style.display = 'none';
   }
   if(verifySecond && !deletedEighth){
     document.getElementById('eighth-item').style.display = 'none';
   }
+  
   if(verifyThird && !deletedNineth){
     document.getElementById('nineth-item').style.display = 'none';
+  }
+  
+  if(verify18 && !deletedTenth){
+    document.getElementById('tenth-item').style.display = 'block';
+  }
+  
+  if(verify19 && !deletedTwelveth){
+    document.getElementById('twelveth-item').style.display = 'block';
+  }
+  
+  if(verify20 && !deletedFifteenth){
+    document.getElementById('fifteenth-item').style.display = 'none';
+    
+  }
+  if(verify21 && !deletedSixteenth){
+    document.getElementById('sixteenth-item').style.display = 'block';
   }
   checkDeleted();
 }
@@ -985,6 +1224,12 @@ function filterBanks(event) {
   document.getElementById('fifth-item').style.display = 'none';
   if (!deletedSixth)
   document.getElementById('sixth-item').style.display = 'block';
+  if(!deletedEleventh)
+  document.getElementById('eleventh-item').style.display = 'block';
+  if(!deletedThirteenth)
+  document.getElementById('thirteenth-item').style.display = 'block';
+  document.getElementById('fourteenth-item').style.display = 'none'; 
+  document.getElementById('seventeenth-item').style.display = 'none';
   if(verifyFirst && !deletedSeventh){
     document.getElementById('seventh-item').style.display = 'none';
   }
@@ -993,6 +1238,18 @@ function filterBanks(event) {
   }
   if(verifyThird && !deletedNineth){
     document.getElementById('nineth-item').style.display = 'none';
+  }
+  if(verify18 && !deletedTenth){
+    document.getElementById('tenth-item').style.display = 'block';
+  }
+  if(verify19 && !deletedTwelveth){
+    document.getElementById('twelveth-item').style.display = 'block';
+  }
+  if(verify20 && !deletedFifteenth){
+    document.getElementById('fifteenth-item').style.display = 'none';
+  }
+  if(verify21 && !deletedSixteenth){
+    document.getElementById('sixteenth-item').style.display = 'none';
   }
   checkDeleted();
 }
@@ -1008,6 +1265,11 @@ function filterEducation(event) {
   document.getElementById('fifth-item').style.display = 'block';
   if(!deletedSixth)
   document.getElementById('sixth-item').style.display = 'block';
+  document.getElementById('eleventh-item').style.display = 'none';
+  document.getElementById('thirteenth-item').style.display = 'none';
+  if(!deletedFourteenth)
+  document.getElementById('fourteenth-item').style.display = 'block'; 
+  document.getElementById('seventeenth-item').style.display = 'none';
   if(verifyFirst && !deletedSeventh){
     document.getElementById('seventh-item').style.display = 'block';
   }
@@ -1016,6 +1278,18 @@ function filterEducation(event) {
   }
   if(verifyThird && !deletedNineth){
     document.getElementById('nineth-item').style.display = 'none';
+  }
+  if(verify18 && !deletedTenth){
+    document.getElementById('tenth-item').style.display = 'none';
+  }
+  if(verify19 && !deletedTwelveth){
+    document.getElementById('twelveth-item').style.display = 'none';
+  }
+  if(verify20 && !deletedFifteenth){
+    document.getElementById('fifteenth-item').style.display = 'block';
+  }
+  if(verify21 && !deletedSixteenth){
+    document.getElementById('sixteenth-item').style.display = 'none';
   }
   checkDeleted();
 }
@@ -1031,6 +1305,11 @@ function filterAlex(event) {
   document.getElementById('fifth-item').style.display = 'none';
   if(!deletedSixth)
   document.getElementById('sixth-item').style.display = 'block';
+  document.getElementById('eleventh-item').style.display = 'none';
+  document.getElementById('thirteenth-item').style.display = 'none';
+  if(!deletedFourteenth)
+  document.getElementById('fourteenth-item').style.display = 'block'; 
+  document.getElementById('seventeenth-item').style.display = 'none';
   if(verifyFirst && !deletedSeventh){
     document.getElementById('seventh-item').style.display = 'none';
   }
@@ -1039,6 +1318,18 @@ function filterAlex(event) {
   }
   if(verifyThird && !deletedNineth){
     document.getElementById('nineth-item').style.display = 'none';
+  }
+  if(verify18 && !deletedTenth){
+    document.getElementById('tenth-item').style.display = 'none';
+  }
+  if(verify19 && !deletedTwelveth){
+    document.getElementById('twelveth-item').style.display = 'block';
+  }
+  if(verify20 && !deletedFifteenth){
+    document.getElementById('fifteenth-item').style.display = 'none';
+  }
+  if(verify21 && !deletedSixteenth){
+    document.getElementById('sixteenth-item').style.display = 'none';
   }
   checkDeleted();
 }
@@ -1054,6 +1345,11 @@ function filterGleem(event) {
   document.getElementById('fifth-item').style.display = 'none';
   if(!deletedSixth)
   document.getElementById('sixth-item').style.display = 'block';
+  document.getElementById('eleventh-item').style.display = 'none';
+  document.getElementById('thirteenth-item').style.display = 'none';
+  if(!deletedFourteenth)
+  document.getElementById('fourteenth-item').style.display = 'block'; 
+  document.getElementById('seventeenth-item').style.display = 'none';
   if(verifyFirst && !deletedSeventh){
     document.getElementById('seventh-item').style.display = 'none';
   }
@@ -1062,6 +1358,18 @@ function filterGleem(event) {
   }
   if(verifyThird && !deletedNineth){
     document.getElementById('nineth-item').style.display = 'none';
+  }
+  if(verify18 && !deletedTenth){
+    document.getElementById('tenth-item').style.display = 'none';
+  }
+  if(verify19 && !deletedTwelveth){
+    document.getElementById('twelveth-item').style.display = 'block';
+  }
+  if(verify20 && !deletedFifteenth){
+    document.getElementById('fifteenth-item').style.display = 'none';
+  }
+  if(verify21 && !deletedSixteenth){
+    document.getElementById('sixteenth-item').style.display = 'none';
   }
   checkDeleted();
 }
@@ -1080,6 +1388,14 @@ function filterCairo(event) {
   document.getElementById('fifth-item').style.display = 'block';
   if(!deletedSixth)
   document.getElementById('sixth-item').style.display = 'block';
+  if(!deletedEleventh)
+  document.getElementById('eleventh-item').style.display = 'block';
+  if(!deletedThirteenth)
+  document.getElementById('thirteenth-item').style.display = 'block';
+  if(!deletedFourteenth)
+  document.getElementById('fourteenth-item').style.display = 'block'; 
+  if(!deletedSeventeenth)
+  document.getElementById('seventeenth-item').style.display = 'block';
   if(verifyFirst && !deletedSeventh){
     document.getElementById('seventh-item').style.display = 'block';
   }
@@ -1088,6 +1404,18 @@ function filterCairo(event) {
   }
   if(verifyThird && !deletedNineth){
     document.getElementById('nineth-item').style.display = 'none';
+  }
+  if(verify18 && !deletedTenth){
+    document.getElementById('tenth-item').style.display = 'block';
+  }
+  if(verify19 && !deletedTwelveth){
+    document.getElementById('twelveth-item').style.display = 'block';
+  }
+  if(verify20 && !deletedFifteenth){
+    document.getElementById('fifteenth-item').style.display = 'block';
+  }
+  if(verify21 && !deletedSixteenth){
+    document.getElementById('sixteenth-item').style.display = 'block';
   }
   checkDeleted();
 }
@@ -1103,6 +1431,13 @@ function filterNasr(event) {
   document.getElementById('forth-item').style.display = 'none';
   document.getElementById('fifth-item').style.display = 'none';
   document.getElementById('sixth-item').style.display = 'none';
+  document.getElementById('eleventh-item').style.display = 'none';
+  if(!deletedThirteenth)
+  document.getElementById('thirteenth-item').style.display = 'block';
+  if(!deletedFourteenth)
+  document.getElementById('fourteenth-item').style.display = 'block'; 
+  if(!deletedSeventeenth)
+  document.getElementById('seventeenth-item').style.display = 'block';
   if(verifyFirst && !deletedSeventh){
     document.getElementById('seventh-item').style.display = 'none';
   }
@@ -1111,6 +1446,18 @@ function filterNasr(event) {
   }
   if(verifyThird && !deletedNineth){
     document.getElementById('nineth-item').style.display = 'none';
+  }
+  if(verify18 && !deletedTenth){
+    document.getElementById('tenth-item').style.display = 'block';
+  }
+  if(verify19 && !deletedTwelveth){
+    document.getElementById('twelveth-item').style.display = 'block';
+  }
+  if(verify20 && !deletedFifteenth){
+    document.getElementById('fifteenth-item').style.display = 'none';
+  }
+  if(verify21 && !deletedSixteenth){
+    document.getElementById('sixteenth-item').style.display = 'block';
   }
   checkDeleted();
 }
@@ -1126,6 +1473,12 @@ function filterMaadi(event) {
   document.getElementById('fifth-item').style.display = 'block';
   if(!deletedSixth)
   document.getElementById('sixth-item').style.display = 'block';
+  document.getElementById('eleventh-item').style.display = 'none';
+  if(!deletedThirteenth)
+  document.getElementById('thirteenth-item').style.display = 'block';
+  if(!deletedFourteenth)
+  document.getElementById('fourteenth-item').style.display = 'block'; 
+  document.getElementById('seventeenth-item').style.display = 'none';
   if(verifyFirst && !deletedSeventh){
     document.getElementById('seventh-item').style.display = 'block';
   }
@@ -1134,6 +1487,18 @@ function filterMaadi(event) {
   }
   if(verifyThird && !deletedNineth){
     document.getElementById('nineth-item').style.display = 'none';
+  }
+  if(verify18 && !deletedTenth){
+    document.getElementById('tenth-item').style.display = 'block';
+  }
+  if(verify19 && !deletedTwelveth){
+    document.getElementById('twelveth-item').style.display = 'block';
+  }
+  if(verify20 && !deletedFifteenth){
+    document.getElementById('fifteenth-item').style.display = 'none';
+  }
+  if(verify21 && !deletedSixteenth){
+    document.getElementById('sixteenth-item').style.display = 'none';
   }
   checkDeleted();
 }
@@ -1147,6 +1512,11 @@ function filterFayoum(event) {
   document.getElementById('forth-item').style.display = 'none';
   document.getElementById('fifth-item').style.display = 'none';
   document.getElementById('sixth-item').style.display = 'none';
+  document.getElementById('eleventh-item').style.display = 'none';
+  document.getElementById('thirteenth-item').style.display = 'none';
+  if(!deletedFourteenth)
+  document.getElementById('fourteenth-item').style.display = 'block'; 
+  document.getElementById('seventeenth-item').style.display = 'none';
   if(verifyFirst && !deletedSeventh){
     document.getElementById('seventh-item').style.display = 'none';
   }
@@ -1155,6 +1525,18 @@ function filterFayoum(event) {
   }
   if(verifyThird && !deletedNineth){
     document.getElementById('nineth-item').style.display = 'block';
+  }
+  if(verify18 && !deletedTenth){
+    document.getElementById('tenth-item').style.display = 'none';
+  }
+  if(verify19 && !deletedTwelveth){
+    document.getElementById('twelveth-item').style.display = 'none';
+  }
+  if(verify20 && !deletedFifteenth){
+    document.getElementById('fifteenth-item').style.display = 'none';
+  }
+  if(verify21 && !deletedSixteenth){
+    document.getElementById('sixteenth-item').style.display = 'block';
   }
   checkDeleted();
 }
@@ -1168,6 +1550,11 @@ function filterTirsa(event) {
   document.getElementById('forth-item').style.display = 'none';
   document.getElementById('fifth-item').style.display = 'none';
   document.getElementById('sixth-item').style.display = 'none';
+  document.getElementById('eleventh-item').style.display = 'none';
+  document.getElementById('thirteenth-item').style.display = 'none';
+  if(!deletedFourteenth)
+  document.getElementById('fourteenth-item').style.display = 'block'; 
+  document.getElementById('seventeenth-item').style.display = 'none';
   if(verifyFirst && !deletedSeventh){
     document.getElementById('seventh-item').style.display = 'none';
   }
@@ -1177,8 +1564,220 @@ function filterTirsa(event) {
   if(verifyThird && !deletedNineth){
     document.getElementById('nineth-item').style.display = 'block';
   }
+  if(verify18 && !deletedTenth){
+    document.getElementById('tenth-item').style.display = 'block';
+  }
+  if(verify19 && !deletedTwelveth){
+    document.getElementById('twelveth-item').style.display = 'block';
+  }
+  if(verify20 && !deletedFifteenth){
+    document.getElementById('fifteenth-item').style.display = 'block';
+  }
+  if(verify21 && !deletedSixteenth){
+    document.getElementById('sixteenth-item').style.display = 'block';
+  }
   checkDeleted();
 }
+
+
+function filterSchool(event) {
+  event.stopPropagation();
+  document.getElementById('first-item').style.display = 'none';
+  document.getElementById('second-item').style.display = 'none';
+  document.getElementById('third-item').style.display = 'none';
+  document.getElementById('forth-item').style.display = 'none';
+  document.getElementById('fifth-item').style.display = 'none';
+  document.getElementById('sixth-item').style.display = 'none';
+  document.getElementById('eleventh-item').style.display = 'none';
+  document.getElementById('thirteenth-item').style.display = 'none';
+  if(!deletedFourteenth)
+  document.getElementById('fourteenth-item').style.display = 'block'; 
+  document.getElementById('seventeenth-item').style.display = 'none';
+  if(verifyFirst && !deletedSeventh){
+    document.getElementById('seventh-item').style.display = 'none';
+  }
+  if(verifySecond && !deletedEighth){
+    document.getElementById('eighth-item').style.display = 'none';
+  }
+  if(verifyThird && !deletedNineth){
+    document.getElementById('nineth-item').style.display = 'none';
+  }
+  if(verify18 && !deletedTenth){
+    document.getElementById('tenth-item').style.display = 'none';
+  }
+  if(verify19 && !deletedTwelveth){
+    document.getElementById('twelveth-item').style.display = 'none';
+  }
+  if(verify20 && !deletedFifteenth){
+    document.getElementById('fifteenth-item').style.display = 'block';
+  }
+  if(verify21 && !deletedSixteenth){
+    document.getElementById('sixteenth-item').style.display = 'none';
+  }
+  checkDeleted();
+}
+
+function filterMosque(event) {
+  event.stopPropagation();
+  document.getElementById('first-item').style.display = 'none';
+  document.getElementById('second-item').style.display = 'none';
+  document.getElementById('third-item').style.display = 'none';
+  document.getElementById('forth-item').style.display = 'none';
+  document.getElementById('fifth-item').style.display = 'none';
+  document.getElementById('sixth-item').style.display = 'none';
+  if(!deletedEleventh)
+  document.getElementById('eleventh-item').style.display = 'block';
+  document.getElementById('thirteenth-item').style.display = 'none';
+  document.getElementById('fourteenth-item').style.display = 'none'; 
+  document.getElementById('seventeenth-item').style.display = 'none';
+  if(verifyFirst && !deletedSeventh){
+    document.getElementById('seventh-item').style.display = 'none';
+  }
+  if(verifySecond && !deletedEighth){
+    document.getElementById('eighth-item').style.display = 'none';
+  }
+  if(verifyThird && !deletedNineth){
+    document.getElementById('nineth-item').style.display = 'none';
+  }
+  if(verify18 && !deletedTenth){
+    document.getElementById('tenth-item').style.display = 'block';
+  }
+  if(verify19 && !deletedTwelveth){
+    document.getElementById('twelveth-item').style.display = 'none';
+  }
+  if(verify20 && !deletedFifteenth){
+    document.getElementById('fifteenth-item').style.display = 'none';
+  }
+  if(verify21 && !deletedSixteenth){
+    document.getElementById('sixteenth-item').style.display = 'none';
+  }
+  checkDeleted();
+}
+
+function filterChurch(event) {
+  event.stopPropagation();
+  document.getElementById('first-item').style.display = 'none';
+  document.getElementById('second-item').style.display = 'none';
+  document.getElementById('third-item').style.display = 'none';
+  document.getElementById('forth-item').style.display = 'none';
+  document.getElementById('fifth-item').style.display = 'none';
+  document.getElementById('sixth-item').style.display = 'none';
+  document.getElementById('eleventh-item').style.display = 'none';
+  if(!deletedThirteenth)
+  document.getElementById('thirteenth-item').style.display = 'block';
+  document.getElementById('fourteenth-item').style.display = 'none'; 
+  document.getElementById('seventeenth-item').style.display = 'none';
+  if(verifyFirst && !deletedSeventh){
+    document.getElementById('seventh-item').style.display = 'none';
+  }
+  if(verifySecond && !deletedEighth){
+    document.getElementById('eighth-item').style.display = 'none';
+  }
+  if(verifyThird && !deletedNineth){
+    document.getElementById('nineth-item').style.display = 'none';
+  }
+  if(verify18 && !deletedTenth){
+    document.getElementById('tenth-item').style.display = 'none';
+  }
+  if(verify19 && !deletedTwelveth){
+    document.getElementById('twelveth-item').style.display = 'block';
+  }
+  if(verify20 && !deletedFifteenth){
+    document.getElementById('fifteenth-item').style.display = 'none';
+  }
+  if(verify21 && !deletedSixteenth){
+    document.getElementById('sixteenth-item').style.display = 'none';
+  }
+  checkDeleted();
+}
+
+function filterHospital(event) {
+  event.stopPropagation();
+  document.getElementById('first-item').style.display = 'none';
+  document.getElementById('second-item').style.display = 'none';
+  document.getElementById('third-item').style.display = 'none';
+  document.getElementById('forth-item').style.display = 'none';
+  document.getElementById('fifth-item').style.display = 'none';
+  document.getElementById('sixth-item').style.display = 'none';
+  document.getElementById('eleventh-item').style.display = 'none';
+  document.getElementById('thirteenth-item').style.display = 'none';
+  document.getElementById('fourteenth-item').style.display = 'none'; 
+  if(!deletedSeventeenth)
+  document.getElementById('seventeenth-item').style.display = 'block';
+  if(verifyFirst && !deletedSeventh){
+    document.getElementById('seventh-item').style.display = 'none';
+  }
+  if(verifySecond && !deletedEighth){
+    document.getElementById('eighth-item').style.display = 'none';
+  }
+  if(verifyThird && !deletedNineth){
+    document.getElementById('nineth-item').style.display = 'none';
+  }
+  if(verify18 && !deletedTenth){
+    document.getElementById('tenth-item').style.display = 'none';
+  }
+  if(verify19 && !deletedTwelveth){
+    document.getElementById('twelveth-item').style.display = 'none';
+  }
+  if(verify20 && !deletedFifteenth){
+    document.getElementById('fifteenth-item').style.display = 'none';
+  }
+  if(verify21 && !deletedSixteenth){
+    document.getElementById('sixteenth-item').style.display = 'block';
+  }
+  checkDeleted();
+}
+
+function filterProfit(event) {
+  event.stopPropagation();
+  if(!deletedFirst)
+  document.getElementById('first-item').style.display = 'block';
+  if(!deletedSecond)
+  document.getElementById('second-item').style.display = 'block';
+  if(!deletedThird)
+  document.getElementById('third-item').style.display = 'block';
+  if(!deletedFourth)
+  document.getElementById('forth-item').style.display = 'block';
+  if(!deletedFifth)
+  document.getElementById('fifth-item').style.display = 'block';
+  if(!deletedSixth)
+  document.getElementById('sixth-item').style.display = 'block';
+  
+  document.getElementById('eleventh-item').style.display = 'none';
+
+  document.getElementById('thirteenth-item').style.display = 'none';
+
+  document.getElementById('fourteenth-item').style.display = 'none'; 
+
+  document.getElementById('seventeenth-item').style.display = 'none';
+  if(verifyFirst && !deletedSeventh){
+    document.getElementById('seventh-item').style.display = 'block';
+  }
+  if(verifySecond && !deletedEighth){
+    document.getElementById('eighth-item').style.display = 'block';
+  }
+  if(verifyThird && !deletedNineth){
+    document.getElementById('nineth-item').style.display = 'none';
+  }
+  if(verify18 && !deletedTenth){
+    document.getElementById('tenth-item').style.display = 'none';
+  }
+  if(verify19 && !deletedTwelveth){
+    document.getElementById('twelveth-item').style.display = 'none';
+  }
+  if(verify20 && !deletedFifteenth){
+    document.getElementById('fifteenth-item').style.display = 'none';
+  }
+  if(verify21 && !deletedSixteenth){
+    document.getElementById('sixteenth-item').style.display = 'none';
+  }
+  checkDeleted();
+}
+
+
+
+
+
  
 function performSearch(event) {
   event.preventDefault();
