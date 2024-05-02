@@ -3526,6 +3526,7 @@ responsive
   border-radius: 23px;
   letter-spacing: 0.25px;
   border: none;
+  z-index: -6;
   
 }
 
@@ -3533,7 +3534,6 @@ responsive
 .dropdown {
   position: relative;
   display: inline-block;
-  z-index: 80;
 
 }
 
@@ -3545,7 +3545,7 @@ responsive
   background-color: #f1f1f1;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 999;
+  z-index: 9999;
  
 }
 
