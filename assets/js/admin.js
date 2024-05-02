@@ -841,6 +841,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function showmore(event) {
     event.preventDefault(); // Prevent default behavior of anchor tag
+    filterProfit(event);
     var ThirdDropdown = document.getElementById("third-dropdown");
     var ThirdDropdownContent = ThirdDropdown.querySelector(".dropdown-content");
     var ThirdDropbtn = document.getElementById("third-dropbtn");// Prevent default behavior of anchor tag
@@ -851,7 +852,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <a href="#humanitarian" onclick="filterHumanitarian(event)">Humanitarian Aid Organizations</a>
       <a href="#food-bank" onclick="filterBanks(event)">Food Banks</a>
       `;
-      ThirdDropbtn.textContent = "Filter by Organization Type";
+      ThirdDropbtn.textContent = "Filter by Charity Type";
     
     ThirdDropdown.style.display = "inline-block";
 
@@ -1716,6 +1717,7 @@ function filterTirsa(event) {
 
 function filterSchool(event) {
   event.stopPropagation();
+  document.getElementById('third-dropdown').style.display = 'none';
   document.getElementById('first-item').style.display = 'none';
   document.getElementById('second-item').style.display = 'none';
   document.getElementById('third-item').style.display = 'none';
@@ -1753,6 +1755,7 @@ function filterSchool(event) {
 
 function filterMosque(event) {
   event.stopPropagation();
+  document.getElementById('third-dropdown').style.display = 'none';
   document.getElementById('first-item').style.display = 'none';
   document.getElementById('second-item').style.display = 'none';
   document.getElementById('third-item').style.display = 'none';
@@ -1790,6 +1793,7 @@ function filterMosque(event) {
 
 function filterChurch(event) {
   event.stopPropagation();
+  document.getElementById('third-dropdown').style.display = 'none';
   document.getElementById('first-item').style.display = 'none';
   document.getElementById('second-item').style.display = 'none';
   document.getElementById('third-item').style.display = 'none';
@@ -1827,8 +1831,9 @@ function filterChurch(event) {
 
 function filterHospital(event) {
   event.stopPropagation();
+  document.getElementById('third-dropdown').style.display = 'none';
   document.getElementById('first-item').style.display = 'none';
-  document.getElementById('second-item').style.display = 'none';
+  document.getElementById('second-item').style.display = 'block';
   document.getElementById('third-item').style.display = 'none';
   document.getElementById('forth-item').style.display = 'none';
   document.getElementById('fifth-item').style.display = 'none';
@@ -1981,7 +1986,7 @@ function performSearch(event) {
   else if (searchTerm.includes('choueifat')) {
     fourteen.style.display = 'block';
   }
-  else if (searchTerm.includes('shifa')) {
+  else if (searchTerm.includes('al-nas')) {
     seventeen.style.display = 'block';
   }
    else if (verifyFirst && searchTerm.includes('toy')) {
@@ -2000,8 +2005,31 @@ function performSearch(event) {
   else if (verify200 && searchTerm.includes('metro')) {
     fifteen.style.display = 'block';
   }
-  else if (verify211 && searchTerm.includes('salam')) {
+  else if (verify211 && searchTerm.includes('ahl masr')) {
     sixteen.style.display = 'block';
+  }
+  else if (verify211 && searchTerm.includes('hospital')) {
+    if (verify211 && searchTerm.includes('ahl masr'))
+    sixteen.style.display = 'block';
+    seventeen.style.display = 'block';
+    secondItem.style.display = 'block';
+
+  }
+  else if (verify211 && searchTerm.includes('mosque')) {
+    if (verify188 && searchTerm.includes('azhar')) 
+      tenth.style.display = 'block';
+      eleven.style.display = 'block';
+
+  }
+  else if (verify211 && searchTerm.includes('school')) {
+    if (verify200 && searchTerm.includes('metro')) 
+      fifteen.style.display = 'block';
+      fourteen.style.display = 'block';
+  }
+  else if (verify211 && searchTerm.includes('church')) {
+    if (verify199 && searchTerm.includes('george')) 
+      twelve.style.display = 'block';
+      thirteen.style.display = 'block';
   }
   
   
