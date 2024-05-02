@@ -1,6 +1,117 @@
 /*
 -------------------Donor Main------------------
 */
+
+
+function FurtherInfoAzhar() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-mosque1').style.display = 'block';
+}
+
+function FurtherInfoHussein() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-mosque2').style.display = 'block';
+}
+
+function FurtherInfoMark() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-church1').style.display = 'block';
+}
+
+function FurtherInfoGeorge() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-church2').style.display = 'block';
+}
+
+function FurtherInfoMetro() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-school1').style.display = 'block';
+}
+
+
+function FurtherInfoCho() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-school2').style.display = 'block';
+}
+
+function FurtherInfoSalam() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-hospital1').style.display = 'block';
+}
+
+function FurtherInfoShifa() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-hospital2').style.display = 'block';
+}
+
+
+
+function closePopupMosque1() {
+  var popup = document.getElementById("popup-mosque1");
+  var popupForm = document.getElementById('contact-mosque1');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+
+function closePopupMosque2() {
+  var popup = document.getElementById("popup-mosque2");
+  var popupForm = document.getElementById('contact-mosque2');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+
+function closePopupChurch1() {
+  var popup = document.getElementById("popup-church1");
+  var popupForm = document.getElementById('contact-church1');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+
+function closePopupChurch2() {
+  var popup = document.getElementById("popup-church2");
+  var popupForm = document.getElementById('contact-church2');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+
+
+function closePopupSchool1() {
+  var popup = document.getElementById("popup-school1");
+  var popupForm = document.getElementById('contact-school1');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+
+function closePopupSchool2() {
+  var popup = document.getElementById("popup-school2");
+  var popupForm = document.getElementById('contact-school2');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+
+function closePopupHospital1() {
+  var popup = document.getElementById("popup-hospital1");
+  var popupForm = document.getElementById('contact-hospital1');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+
+function closePopupHospital2() {
+  var popup = document.getElementById("popup-hospital2");
+  var popupForm = document.getElementById('contact-hospital2');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+
+
 function checkFilesTeacher(event) {
   // Prevent the default form submission behavior
   event.preventDefault();
@@ -740,6 +851,10 @@ document.addEventListener('DOMContentLoaded', function() {
     var forthItem = document.getElementById('forth-item');
     var fifthItem = document.getElementById('fifth-item');
     var sixthItem = document.getElementById('sixth-item');
+    var eleven = document.getElementById('eleventh-item');
+    var thirteen = document.getElementById('thirteenth-item');
+    var fourteen = document.getElementById('fourteenth-item');
+    var seventeen = document.getElementById('seventeenth-item');
 
     if(searchTerm === ''){
       firstItem.style.display = 'block';
@@ -748,6 +863,10 @@ document.addEventListener('DOMContentLoaded', function() {
       forthItem.style.display = 'block';
       fifthItem.style.display = 'block';
       sixthItem.style.display = 'block';
+      eleven.style.display = 'block';
+      thirteen.style.display = 'block';
+      fourteen.style.display = 'block';
+      seventeen.style.display = 'block';
     }
    else if (searchTerm.includes('orman')) { 
      firstItem.style.display = 'none';
@@ -756,6 +875,10 @@ document.addEventListener('DOMContentLoaded', function() {
       forthItem.style.display = 'none';
       fifthItem.style.display = 'none';
       sixthItem.style.display = 'block';
+      eleven.style.display = 'none';
+      thirteen.style.display = 'none';
+      fourteen.style.display = 'none';
+      seventeen.style.display = 'none';
     } 
     else if (searchTerm.includes('57357')) { 
       firstItem.style.display = 'none';
@@ -764,6 +887,10 @@ document.addEventListener('DOMContentLoaded', function() {
        forthItem.style.display = 'none';
        fifthItem.style.display = 'none';
        sixthItem.style.display = 'none';
+       eleven.style.display = 'none';
+       thirteen.style.display = 'none';
+       fourteen.style.display = 'none';
+       seventeen.style.display = 'none';
      }
      else if (searchTerm.includes('misr el')) { 
       firstItem.style.display = 'block';
@@ -772,6 +899,10 @@ document.addEventListener('DOMContentLoaded', function() {
        forthItem.style.display = 'none';
        fifthItem.style.display = 'none';
        sixthItem.style.display = 'none';
+       eleven.style.display = 'none';
+       thirteen.style.display = 'none';
+       fourteen.style.display = 'none';
+       seventeen.style.display = 'none';
      }
      else if (searchTerm.includes('food bank')) { 
       firstItem.style.display = 'none';
@@ -780,6 +911,10 @@ document.addEventListener('DOMContentLoaded', function() {
        forthItem.style.display = 'block';
        fifthItem.style.display = 'none';
        sixthItem.style.display = 'none';
+       eleven.style.display = 'none';
+       thirteen.style.display = 'none';
+       fourteen.style.display = 'none';
+       seventeen.style.display = 'none';
      }
      else if (searchTerm.includes('resala')) { 
       firstItem.style.display = 'none';
@@ -788,6 +923,10 @@ document.addEventListener('DOMContentLoaded', function() {
        forthItem.style.display = 'none';
        fifthItem.style.display = 'block';
        sixthItem.style.display = 'none';
+       eleven.style.display = 'none';
+       thirteen.style.display = 'none';
+       fourteen.style.display = 'none';
+       seventeen.style.display = 'none';
      }
      else if (searchTerm.includes('red')) { 
       firstItem.style.display = 'none';
@@ -796,7 +935,75 @@ document.addEventListener('DOMContentLoaded', function() {
        forthItem.style.display = 'none';
        fifthItem.style.display = 'none';
        sixthItem.style.display = 'none';
+       eleven.style.display = 'none';
+       thirteen.style.display = 'none';
+       fourteen.style.display = 'none';
+       seventeen.style.display = 'none';
      }
+     else if (searchTerm.includes('hussein')||searchTerm.includes('mosque')) { 
+      firstItem.style.display = 'none';
+       secondItem.style.display = 'none';
+       thirdItem.style.display = 'none';
+       forthItem.style.display = 'none';
+       fifthItem.style.display = 'none';
+       sixthItem.style.display = 'none';
+       eleven.style.display = 'block';
+       thirteen.style.display = 'none';
+       fourteen.style.display = 'none';
+       seventeen.style.display = 'none';
+     }
+     else if (searchTerm.includes('mark')||searchTerm.includes('church')) { 
+      firstItem.style.display = 'none';
+       secondItem.style.display = 'none';
+       thirdItem.style.display = 'none';
+       forthItem.style.display = 'none';
+       fifthItem.style.display = 'none';
+       sixthItem.style.display = 'none';
+       eleven.style.display = 'none';
+       thirteen.style.display = 'block';
+       fourteen.style.display = 'none';
+       seventeen.style.display = 'none';
+     }
+
+     else if (searchTerm.includes('chou')||searchTerm.includes('school')) { 
+      firstItem.style.display = 'none';
+       secondItem.style.display = 'none';
+       thirdItem.style.display = 'none';
+       forthItem.style.display = 'none';
+       fifthItem.style.display = 'none';
+       sixthItem.style.display = 'none';
+       eleven.style.display = 'none';
+       thirteen.style.display = 'none';
+       fourteen.style.display = 'block';
+       seventeen.style.display = 'none';
+     }
+     else if (searchTerm.includes('nas')) { 
+      firstItem.style.display = 'none';
+       secondItem.style.display = 'none';
+       thirdItem.style.display = 'none';
+       forthItem.style.display = 'none';
+       fifthItem.style.display = 'none';
+       sixthItem.style.display = 'none';
+       eleven.style.display = 'none';
+       thirteen.style.display = 'none';
+       fourteen.style.display = 'none';
+       seventeen.style.display = 'block';
+     }
+     else if (searchTerm.includes('hospital')) { 
+      firstItem.style.display = 'none';
+       secondItem.style.display = 'block';
+       thirdItem.style.display = 'none';
+       forthItem.style.display = 'none';
+       fifthItem.style.display = 'none';
+       sixthItem.style.display = 'none';
+       eleven.style.display = 'none';
+       thirteen.style.display = 'none';
+       fourteen.style.display = 'none';
+       seventeen.style.display = 'block';
+     }
+
+
+
      else{
       firstItem.style.display = 'none';
       secondItem.style.display = 'none';
@@ -804,9 +1011,31 @@ document.addEventListener('DOMContentLoaded', function() {
       forthItem.style.display = 'none';
       fifthItem.style.display = 'none';
       sixthItem.style.display = 'none';
+      eleven.style.display = 'none';
+      thirteen.style.display = 'none';
+      fourteen.style.display = 'none';
+      seventeen.style.display = 'none';
      }
 }
 
+function showmore(event) {
+  event.preventDefault(); // Prevent default behavior of anchor tag
+  filterProfit(event);
+  var ThirdDropdown = document.getElementById("third-dropdown");
+  var ThirdDropdownContent = ThirdDropdown.querySelector(".dropdown-content");
+  var ThirdDropbtn = document.getElementById("third-dropbtn");// Prevent default behavior of anchor tag
+  ThirdDropdownContent.innerHTML = "";
+    ThirdDropdownContent.innerHTML += `
+    <a href="#health" onclick="filterHealthcare(event)">Healthcare Organizations</a>
+    <a href="#education" onclick="filterEducation(event)">Education Organizations</a>
+    <a href="#humanitarian" onclick="filterHumanitarian(event)">Humanitarian Aid Organizations</a>
+    <a href="#food-bank" onclick="filterBanks(event)">Food Banks</a>
+    `;
+    ThirdDropbtn.textContent = "Filter by Charity Type";
+  
+  ThirdDropdown.style.display = "inline-block";
+
+}
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -829,13 +1058,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // Populate options based on the selected option from the first dropdown
     if (option === "Option 1") {
       secondDropdownContent.innerHTML += `
-        <a href="#health" onclick="filterHealthcare(event)">Healthcare Organizations</a>
-        <a href="#education" onclick="filterEducation(event)">Education Organizations</a>
-        <a href="#humanitarian" onclick="filterHumanitarian(event)">Humanitarian Aid Organizations</a>
-        <a href="#food-bank" onclick="filterBanks(event)">Food Banks</a>
+        <a href="#church" onclick="filterChurch(event)">Churches</a>
+        <a href="#school" onclick="filterSchool(event)">Schools</a>
+        <a href="#mosque" onclick="filterMosque(event)">Mosques</a>
+        <a href="#hospital" onclick="filterHospital(event)">Hospitals</a>
+        <a href="#non-profit" onclick="showmore(event)">Non-Profits</a>
       `;
       secondDropbtn.textContent = "Filter by Organization Type";
     } else if (option === "Option 2") {
+      document.getElementById('third-dropdown').style.display = 'none';
       secondDropdownContent.innerHTML += `
       <a href="#alex" onclick="filterAlex(event)">Alexandria</a>
       <a href="#cairo" onclick="filterCairo(event)">Cairo</a>
@@ -843,6 +1074,7 @@ document.addEventListener('DOMContentLoaded', function() {
       `;
       secondDropbtn.textContent = "Filter by Governorate";
     } else if (option === "Option 3") {
+      document.getElementById('third-dropdown').style.display = 'none';
       secondDropdownContent.innerHTML += `
         <a href="#gleem" onclick="filterGleem(event)">Gleem</a>
         <a href="#maadi" onclick="filterMaadi(event)">Maadi</a>
@@ -867,7 +1099,29 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('forth-item').style.display = 'block';
     document.getElementById('fifth-item').style.display = 'block';
     document.getElementById('sixth-item').style.display = 'block';
+    document.getElementById('eleventh-item').style.display = 'block';
+    document.getElementById('thirteenth-item').style.display = 'block';
+    document.getElementById('fourteenth-item').style.display = 'block';
+    document.getElementById('seventeenth-item').style.display = 'block';
+ 
+      
   }
+
+
+  function filterMosque(event) {
+    event.stopPropagation();
+    document.getElementById('third-dropdown').style.display = 'none';
+    document.getElementById('first-item').style.display = 'none';
+    document.getElementById('second-item').style.display = 'none';
+    document.getElementById('third-item').style.display = 'none';
+    document.getElementById('forth-item').style.display = 'none';
+    document.getElementById('fifth-item').style.display = 'none';
+    document.getElementById('sixth-item').style.display = 'none';
+    document.getElementById('eleventh-item').style.display = 'block';
+    document.getElementById('thirteenth-item').style.display = 'none';
+    document.getElementById('fourteenth-item').style.display = 'none'; 
+    document.getElementById('seventeenth-item').style.display = 'none';}
+
   function filterHealthcare(event) {
     event.stopPropagation();
     document.getElementById('first-item').style.display = 'block';
@@ -876,6 +1130,10 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('forth-item').style.display = 'none';
     document.getElementById('fifth-item').style.display = 'block';
     document.getElementById('sixth-item').style.display = 'none';
+    document.getElementById('eleventh-item').style.display = 'none';
+    document.getElementById('thirteenth-item').style.display = 'none';
+    document.getElementById('fourteenth-item').style.display = 'none';
+    document.getElementById('seventeenth-item').style.display = 'block';
 }
 
 function filterHumanitarian(event) {
@@ -886,6 +1144,10 @@ function filterHumanitarian(event) {
   document.getElementById('forth-item').style.display = 'none';
   document.getElementById('fifth-item').style.display = 'none';
   document.getElementById('sixth-item').style.display = 'none';
+  document.getElementById('eleventh-item').style.display = 'block';
+  document.getElementById('thirteenth-item').style.display = 'block';
+  document.getElementById('fourteenth-item').style.display = 'none';
+  document.getElementById('seventeenth-item').style.display = 'block';
 }
 
 function filterBanks(event) {
@@ -896,6 +1158,10 @@ function filterBanks(event) {
   document.getElementById('forth-item').style.display = 'block';
   document.getElementById('fifth-item').style.display = 'none';
   document.getElementById('sixth-item').style.display = 'block';
+  document.getElementById('eleventh-item').style.display = 'block';
+  document.getElementById('thirteenth-item').style.display = 'block';
+  document.getElementById('fourteenth-item').style.display = 'none'; 
+  document.getElementById('seventeenth-item').style.display = 'none';
 }
 
 function filterEducation(event) {
@@ -906,6 +1172,10 @@ function filterEducation(event) {
   document.getElementById('forth-item').style.display = 'none';
   document.getElementById('fifth-item').style.display = 'block';
   document.getElementById('sixth-item').style.display = 'block';
+  document.getElementById('eleventh-item').style.display = 'none';
+  document.getElementById('thirteenth-item').style.display = 'none';
+  document.getElementById('fourteenth-item').style.display = 'block'; 
+  document.getElementById('seventeenth-item').style.display = 'none';
 }
 
 function filterAlex(event) {
@@ -916,6 +1186,10 @@ function filterAlex(event) {
   document.getElementById('forth-item').style.display = 'none';
   document.getElementById('fifth-item').style.display = 'none';
   document.getElementById('sixth-item').style.display = 'block';
+  document.getElementById('eleventh-item').style.display = 'none';
+  document.getElementById('thirteenth-item').style.display = 'none';
+  document.getElementById('fourteenth-item').style.display = 'block'; 
+  document.getElementById('seventeenth-item').style.display = 'none';
 }
 
 function filterGleem(event) {
@@ -926,6 +1200,10 @@ function filterGleem(event) {
   document.getElementById('forth-item').style.display = 'none';
   document.getElementById('fifth-item').style.display = 'none';
   document.getElementById('sixth-item').style.display = 'block';
+  document.getElementById('eleventh-item').style.display = 'none';
+  document.getElementById('thirteenth-item').style.display = 'none';
+  document.getElementById('fourteenth-item').style.display = 'block'; 
+  document.getElementById('seventeenth-item').style.display = 'none';
 }
 
 function filterCairo(event) {
@@ -936,6 +1214,10 @@ function filterCairo(event) {
   document.getElementById('forth-item').style.display = 'block';
   document.getElementById('fifth-item').style.display = 'block';
   document.getElementById('sixth-item').style.display = 'block';
+  document.getElementById('eleventh-item').style.display = 'block';
+  document.getElementById('thirteenth-item').style.display = 'block';
+  document.getElementById('fourteenth-item').style.display = 'block'; 
+  document.getElementById('seventeenth-item').style.display = 'block';
 }
 
 function filterNasr(event) {
@@ -946,6 +1228,10 @@ function filterNasr(event) {
   document.getElementById('forth-item').style.display = 'none';
   document.getElementById('fifth-item').style.display = 'none';
   document.getElementById('sixth-item').style.display = 'none';
+  document.getElementById('eleventh-item').style.display = 'none';
+  document.getElementById('thirteenth-item').style.display = 'block';
+  document.getElementById('fourteenth-item').style.display = 'block'; 
+  document.getElementById('seventeenth-item').style.display = 'block';
 }
 
 function filterMaadi(event) {
@@ -956,6 +1242,10 @@ function filterMaadi(event) {
   document.getElementById('forth-item').style.display = 'block';
   document.getElementById('fifth-item').style.display = 'block';
   document.getElementById('sixth-item').style.display = 'block';
+  document.getElementById('eleventh-item').style.display = 'none';
+  document.getElementById('thirteenth-item').style.display = 'block';
+  document.getElementById('fourteenth-item').style.display = 'block'; 
+  document.getElementById('seventeenth-item').style.display = 'none';
 }
 
 function filterFayoum(event) {
@@ -966,6 +1256,10 @@ function filterFayoum(event) {
   document.getElementById('forth-item').style.display = 'none';
   document.getElementById('fifth-item').style.display = 'none';
   document.getElementById('sixth-item').style.display = 'none';
+  document.getElementById('eleventh-item').style.display = 'none';
+  document.getElementById('thirteenth-item').style.display = 'none';
+  document.getElementById('fourteenth-item').style.display = 'block'; 
+  document.getElementById('seventeenth-item').style.display = 'none';
 }
 
 function filterTirsa(event) {
@@ -976,7 +1270,78 @@ function filterTirsa(event) {
   document.getElementById('forth-item').style.display = 'none';
   document.getElementById('fifth-item').style.display = 'none';
   document.getElementById('sixth-item').style.display = 'none';
+  document.getElementById('eleventh-item').style.display = 'none';
+  document.getElementById('thirteenth-item').style.display = 'none';
+  document.getElementById('fourteenth-item').style.display = 'block'; 
+  document.getElementById('seventeenth-item').style.display = 'none';
 }
+
+function filterSchool(event) {
+  event.stopPropagation();
+  document.getElementById('third-dropdown').style.display = 'none';
+  document.getElementById('first-item').style.display = 'none';
+  document.getElementById('second-item').style.display = 'none';
+  document.getElementById('third-item').style.display = 'none';
+  document.getElementById('forth-item').style.display = 'none';
+  document.getElementById('fifth-item').style.display = 'none';
+  document.getElementById('sixth-item').style.display = 'none';
+  document.getElementById('eleventh-item').style.display = 'none';
+  document.getElementById('thirteenth-item').style.display = 'none';
+  document.getElementById('fourteenth-item').style.display = 'block'; 
+  document.getElementById('seventeenth-item').style.display = 'none';}
+
+  function filterChurch(event) {
+    event.stopPropagation();
+    document.getElementById('third-dropdown').style.display = 'none';
+    document.getElementById('first-item').style.display = 'none';
+    document.getElementById('second-item').style.display = 'none';
+    document.getElementById('third-item').style.display = 'none';
+    document.getElementById('forth-item').style.display = 'none';
+    document.getElementById('fifth-item').style.display = 'none';
+    document.getElementById('sixth-item').style.display = 'none';
+    document.getElementById('eleventh-item').style.display = 'none';
+    document.getElementById('thirteenth-item').style.display = 'block';
+    document.getElementById('fourteenth-item').style.display = 'none'; 
+    document.getElementById('seventeenth-item').style.display = 'none';}
+
+    function filterHospital(event) {
+      event.stopPropagation();
+      document.getElementById('third-dropdown').style.display = 'none';
+      document.getElementById('first-item').style.display = 'none';
+      document.getElementById('second-item').style.display = 'block';
+      document.getElementById('third-item').style.display = 'none';
+      document.getElementById('forth-item').style.display = 'none';
+      document.getElementById('fifth-item').style.display = 'none';
+      document.getElementById('sixth-item').style.display = 'none';
+      document.getElementById('eleventh-item').style.display = 'none';
+      document.getElementById('thirteenth-item').style.display = 'none';
+      document.getElementById('fourteenth-item').style.display = 'none'; 
+      document.getElementById('seventeenth-item').style.display = 'block';}
+
+
+      function filterProfit(event) {
+        event.stopPropagation();
+        
+        document.getElementById('first-item').style.display = 'block';
+       
+        document.getElementById('second-item').style.display = 'block';
+       
+        document.getElementById('third-item').style.display = 'block';
+      
+        document.getElementById('forth-item').style.display = 'block';
+        
+        document.getElementById('fifth-item').style.display = 'block';
+        
+        document.getElementById('sixth-item').style.display = 'block';
+        
+        document.getElementById('eleventh-item').style.display = 'none';
+      
+        document.getElementById('thirteenth-item').style.display = 'none';
+      
+        document.getElementById('fourteenth-item').style.display = 'none'; 
+      
+        document.getElementById('seventeenth-item').style.display = 'none';}
+
 
 var randomIndex = 0;
   function showRandomNotification() {

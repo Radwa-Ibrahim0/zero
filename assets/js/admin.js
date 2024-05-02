@@ -819,6 +819,7 @@ document.addEventListener('DOMContentLoaded', function() {
       `;
       secondDropbtn.textContent = "Filter by Organization Type";
     } else if (option === "Option 2") {
+      document.getElementById('third-dropdown').style.display = 'none';
       secondDropdownContent.innerHTML += `
       <a href="#alex" onclick="filterAlex(event)">Alexandria</a>
       <a href="#cairo" onclick="filterCairo(event)">Cairo</a>
@@ -826,6 +827,7 @@ document.addEventListener('DOMContentLoaded', function() {
       `;
       secondDropbtn.textContent = "Filter by Governorate";
     } else if (option === "Option 3") {
+      document.getElementById('third-dropdown').style.display = 'none';
       secondDropdownContent.innerHTML += `
         <a href="#gleem" onclick="filterGleem(event)">Gleem</a>
         <a href="#maadi" onclick="filterMaadi(event)">Maadi</a>
@@ -1260,6 +1262,7 @@ if (deletedSeventeenth) {
 
   function filterHealthcare(event) {
     event.stopPropagation();
+    
     if(!deletedFirst)
     document.getElementById('first-item').style.display = 'block';
     if(!deletedSecond)
@@ -1431,6 +1434,7 @@ function filterEducation(event) {
 
 function filterAlex(event) {
   event.stopPropagation();
+  document.getElementById('third-dropdown').style.display = 'none';
   if(!deletedFirst)
   document.getElementById('first-item').style.display = 'block';
   document.getElementById('second-item').style.display = 'none';
@@ -1471,6 +1475,7 @@ function filterAlex(event) {
 
 function filterGleem(event) {
   event.stopPropagation();
+  document.getElementById('third-dropdown').style.display = 'none';
   if(!deletedFirst)
   document.getElementById('first-item').style.display = 'block';
   document.getElementById('second-item').style.display = 'none';
@@ -1511,6 +1516,7 @@ function filterGleem(event) {
 
 function filterCairo(event) {
   event.stopPropagation();
+  document.getElementById('third-dropdown').style.display = 'none';
   if(!deletedFirst)
   document.getElementById('first-item').style.display = 'block';
   if(!deletedSecond)
@@ -1557,6 +1563,7 @@ function filterCairo(event) {
 
 function filterNasr(event) {
   event.stopPropagation();
+  document.getElementById('third-dropdown').style.display = 'none';
   if(!deletedFirst)
   document.getElementById('first-item').style.display = 'block';
   if(!deletedSecond)
@@ -1599,6 +1606,7 @@ function filterNasr(event) {
 
 function filterMaadi(event) {
   event.stopPropagation();
+  document.getElementById('third-dropdown').style.display = 'none';
   document.getElementById('first-item').style.display = 'none';
   document.getElementById('second-item').style.display = 'none';
   document.getElementById('third-item').style.display = 'none';
@@ -1640,6 +1648,7 @@ function filterMaadi(event) {
 
 function filterFayoum(event) {
   event.stopPropagation();
+  document.getElementById('third-dropdown').style.display = 'none';
   if(!deletedFirst)
   document.getElementById('first-item').style.display = 'block';
   document.getElementById('second-item').style.display = 'none';
@@ -1678,6 +1687,7 @@ function filterFayoum(event) {
 
 function filterTirsa(event) {
   event.stopPropagation();
+  document.getElementById('third-dropdown').style.display = 'none';
   if(!deletedFirst)
   document.getElementById('first-item').style.display = 'block';
   document.getElementById('second-item').style.display = 'none';
