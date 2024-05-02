@@ -1,3 +1,17 @@
+function sendMarwan(event){
+  event.preventDefault();
+  alert("Message was Sent to Marwan Successfully!");
+  var popupContact = document.getElementById('popup-f2');
+  popupContact.style.display='none';
+}
+
+function sendHeba(event){
+  event.preventDefault();
+  alert("Message was Sent to Heba Successfully!");
+  var popupContact = document.getElementById('popup-o3');
+  popupContact.style.display='none';
+}
+
 
   document.addEventListener('DOMContentLoaded', function() {
     var popupTeacher = document.getElementById('form-teach');
@@ -335,6 +349,7 @@
   function updateInfoA(){
     alert('Your Address Has Been Updated!');
   }
+
   
   function updateInfoI(){
     alert('Your Information Has Been Updated!');

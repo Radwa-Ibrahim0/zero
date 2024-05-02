@@ -1925,7 +1925,17 @@ function performSearch(event) {
   var seventhItem = document.getElementById('seventh-item');
   var eighthItem = document.getElementById('eighth-item');
   var ninethItem = document.getElementById('nineth-item');
-  var items = [firstItem, secondItem, thirdItem, forthItem, fifthItem, sixthItem, seventhItem, eighthItem, ninethItem];
+
+  var tenth = document.getElementById('tenth-item');
+  var eleven = document.getElementById('eleventh-item');
+  var twelve = document.getElementById('twelveth-item');
+  var thirteen = document.getElementById('thirteenth-item');
+  var fourteen = document.getElementById('fourteenth-item');
+  var fifteen = document.getElementById('fifteenth-item');
+  var sixteen = document.getElementById('sixteenth-item');
+  var seventeen = document.getElementById('seventeenth-item');
+
+  var items = [firstItem, secondItem, thirdItem, forthItem, fifthItem, sixthItem, seventhItem, eighthItem, ninethItem,tenth,eleven,twelve,thirteen,fourteen,fifteen,sixteen,seventeen];
   items.forEach(item => item.style.display = 'none');
   if (searchTerm === '') {
     items.forEach(item => item.style.display = 'block');
