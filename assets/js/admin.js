@@ -1948,6 +1948,18 @@ function performSearch(event) {
     if (verifyThird) {
       ninethItem.style.display = 'block';
     }
+    if (verify188) {
+      tenth.style.display = 'block';
+    }
+    if (verify199) {
+      twelve.style.display = 'block';
+    }
+    if (verify200) {
+      fifteen.style.display = 'block';
+    }
+    if (verify211) {
+      sixteen.style.display = 'block';
+    }
   } else if (searchTerm.includes('orman')) {
     sixthItem.style.display = 'block';
   } else if (searchTerm.includes('57357')) {
@@ -1960,13 +1972,40 @@ function performSearch(event) {
     fifthItem.style.display = 'block';
   } else if (searchTerm.includes('red')) {
     thirdItem.style.display = 'block';
-  } else if (verifyFirst && searchTerm.includes('toy')) {
+  }  else if (searchTerm.includes('hussein')) {
+    eleven.style.display = 'block';
+  }
+  else if (searchTerm.includes('mark')) {
+    thirteen.style.display = 'block';
+  }
+  else if (searchTerm.includes('choueifat')) {
+    fourteen.style.display = 'block';
+  }
+  else if (searchTerm.includes('shifa')) {
+    seventeen.style.display = 'block';
+  }
+   else if (verifyFirst && searchTerm.includes('toy')) {
     seventhItem.style.display = 'block';
   } else if (verifySecond && searchTerm.includes('sawaris')) {
     eighthItem.style.display = 'block';
   } else if (verifyThird && searchTerm.includes('magdi')) {
     ninethItem.style.display = 'block';
-  } else {
+  } 
+  else if (verify188 && searchTerm.includes('azhar')) {
+    tenth.style.display = 'block';
+  }
+  else if (verify199 && searchTerm.includes('george')) {
+    twelve.style.display = 'block';
+  }
+  else if (verify200 && searchTerm.includes('metro')) {
+    fifteen.style.display = 'block';
+  }
+  else if (verify211 && searchTerm.includes('salam')) {
+    sixteen.style.display = 'block';
+  }
+  
+  
+  else {
   }
   checkDeleted();
 }
