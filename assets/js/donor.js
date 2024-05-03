@@ -1347,8 +1347,11 @@ var randomIndex = 0;
   function showRandomNotification() {
     var notifications = [
       "Driver is on the Way!",
+      "57357 Is Saying Thank You!",
       "Driver is 5 Minutes Away!",
-      "Driver is Here!"
+      "MEK Says Thanks For Donating!",
+      "Driver is Here!",
+      "Orman Says Thank You!"
     ];
     
     var notificationElement = document.getElementById("notification");
@@ -1357,12 +1360,12 @@ var randomIndex = 0;
     setTimeout(function() {
       notificationElement.style.display = "none";
       randomIndex++;
-      if(randomIndex>2){
-      randomIndex = 2;
+      if(randomIndex>6){
+      randomIndex = 0;
       }
       
      
-      setTimeout(showRandomNotification, Math.random() * 100000);
+      setTimeout(showRandomNotification, Math.random() * 50000);
     }, 5000);
   }
 

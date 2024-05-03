@@ -1963,16 +1963,16 @@ function performSearch(event) {
     if (verifyThird) {
       ninethItem.style.display = 'block';
     }
-    if (verify188) {
+    if (verify18) {
       tenth.style.display = 'block';
     }
-    if (verify199) {
+    if (verify19) {
       twelve.style.display = 'block';
     }
-    if (verify200) {
+    if (verify20) {
       fifteen.style.display = 'block';
     }
-    if (verify211) {
+    if (verify21) {
       sixteen.style.display = 'block';
     }
   } else if (searchTerm.includes('orman')) {
@@ -2006,38 +2006,38 @@ function performSearch(event) {
   } else if (verifyThird && searchTerm.includes('magdi')) {
     ninethItem.style.display = 'block';
   } 
-  else if (verify188 && searchTerm.includes('azhar')) {
+  else if (verify18 && searchTerm.includes('azhar')) {
     tenth.style.display = 'block';
   }
-  else if (verify199 && searchTerm.includes('george')) {
+  else if (verify19 && searchTerm.includes('george')) {
     twelve.style.display = 'block';
   }
-  else if (verify200 && searchTerm.includes('metro')) {
+  else if (verify20 && searchTerm.includes('metro')) {
     fifteen.style.display = 'block';
   }
-  else if (verify211 && searchTerm.includes('ahl masr')) {
+  else if (verify21 && searchTerm.includes('ahl masr')) {
     sixteen.style.display = 'block';
   }
-  else if (verify211 && searchTerm.includes('hospital')) {
-    if (verify211 && searchTerm.includes('ahl masr'))
+  else if (searchTerm.includes('hospital')) {
+    if (verify21)
     sixteen.style.display = 'block';
     seventeen.style.display = 'block';
     secondItem.style.display = 'block';
 
   }
-  else if (verify211 && searchTerm.includes('mosque')) {
-    if (verify188 && searchTerm.includes('azhar')) 
+  else if (searchTerm.includes('mosque')) {
+    if (verify18) 
       tenth.style.display = 'block';
       eleven.style.display = 'block';
 
   }
-  else if (verify211 && searchTerm.includes('school')) {
-    if (verify200 && searchTerm.includes('metro')) 
+  else if (searchTerm.includes('school')) {
+    if (verify20) 
       fifteen.style.display = 'block';
       fourteen.style.display = 'block';
   }
-  else if (verify211 && searchTerm.includes('church')) {
-    if (verify199 && searchTerm.includes('george')) 
+  else if (searchTerm.includes('church')) {
+    if (verify19) 
       twelve.style.display = 'block';
       thirteen.style.display = 'block';
   }
