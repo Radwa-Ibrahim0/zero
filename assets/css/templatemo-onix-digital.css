@@ -4893,6 +4893,870 @@ form#contact-church2 button:hover {
 }
 
 
+form#contact-donor2 {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 60px 80px;
+  border-radius: 20px;
+}
+
+form#contact-donor2 h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+form#contact-donor2 input {
+  width: 100%;
+  height: 46px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #9bdbf8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 0px;
+  margin-bottom: 35px;
+}
+
+form#contact-donor2 input::placeholder {
+  color: #afafaf;
+}
+
+form#contact-donor2 button {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-donor2 button:hover {
+  background-color: #03a4ed;
+}
+
+
+
+form#contact-donor1 {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 60px 80px;
+  border-radius: 20px;
+}
+
+form#contact-donor1 h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+form#contact-donor1 input {
+  width: 100%;
+  height: 46px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #9bdbf8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 0px;
+  margin-bottom: 35px;
+}
+
+form#contact-donor1 input::placeholder {
+  color: #afafaf;
+}
+
+form#contact-donor1 button {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-donor1 button:hover {
+  background-color: #03a4ed;
+}
+
+
+form#contact-donor3 {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 60px 80px;
+  border-radius: 20px;
+}
+
+form#contact-donor3 h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+form#contact-donor3 input {
+  width: 100%;
+  height: 46px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #9bdbf8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 0px;
+  margin-bottom: 35px;
+}
+
+form#contact-donor3 input::placeholder {
+  color: #afafaf;
+}
+
+form#contact-donor3 button {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-donor3 button:hover {
+  background-color: #03a4ed;
+}
+
+form#contact-donor4 {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 60px 80px;
+  border-radius: 20px;
+}
+
+form#contact-donor4 h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+form#contact-donor4 input {
+  width: 100%;
+  height: 46px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #9bdbf8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 0px;
+  margin-bottom: 35px;
+}
+
+form#contact-donor4 input::placeholder {
+  color: #afafaf;
+}
+
+form#contact-donor4 button {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-donor4 button:hover {
+  background-color: #03a4ed;
+}
+
+form#contact-donor5 {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 60px 80px;
+  border-radius: 20px;
+}
+
+form#contact-donor5 h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+form#contact-donor5 input {
+  width: 100%;
+  height: 46px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #9bdbf8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 0px;
+  margin-bottom: 35px;
+}
+
+form#contact-donor5 input::placeholder {
+  color: #afafaf;
+}
+
+form#contact-donor5 button {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-donor5 button:hover {
+  background-color: #03a4ed;
+}
+
+
+
+form#contact-donor6 {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 60px 80px;
+  border-radius: 20px;
+}
+
+form#contact-donor6 h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+form#contact-donor6 input {
+  width: 100%;
+  height: 46px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #9bdbf8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 0px;
+  margin-bottom: 35px;
+}
+
+form#contact-donor6 input::placeholder {
+  color: #afafaf;
+}
+
+form#contact-donor6 button {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-donor6 button:hover {
+  background-color: #03a4ed;
+}
+
+
+
+form#contact-donor7 {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 60px 80px;
+  border-radius: 20px;
+}
+
+form#contact-donor7 h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+form#contact-donor7 input {
+  width: 100%;
+  height: 46px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #9bdbf8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 0px;
+  margin-bottom: 35px;
+}
+
+form#contact-donor7 input::placeholder {
+  color: #afafaf;
+}
+
+form#contact-donor7 button {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-donor7 button:hover {
+  background-color: #03a4ed;
+}
+
+
+form#contact-donor8 {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 60px 80px;
+  border-radius: 20px;
+}
+
+form#contact-donor8 h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+form#contact-donor8 input {
+  width: 100%;
+  height: 46px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #9bdbf8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 0px;
+  margin-bottom: 35px;
+}
+
+form#contact-donor8 input::placeholder {
+  color: #afafaf;
+}
+
+form#contact-donor8 button {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-donor8 button:hover {
+  background-color: #03a4ed;
+}
+
+
+form#contact-donor9 {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 60px 80px;
+  border-radius: 20px;
+}
+
+form#contact-donor9 h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+form#contact-donor9 input {
+  width: 100%;
+  height: 46px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #9bdbf8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 0px;
+  margin-bottom: 35px;
+}
+
+form#contact-donor9 input::placeholder {
+  color: #afafaf;
+}
+
+form#contact-donor9 button {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-donor9 button:hover {
+  background-color: #03a4ed;
+}
+
+form#contact-donor10 {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 60px 80px;
+  border-radius: 20px;
+}
+
+form#contact-donor10 h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+form#contact-donor10 input {
+  width: 100%;
+  height: 46px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #9bdbf8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 0px;
+  margin-bottom: 35px;
+}
+
+form#contact-donor10 input::placeholder {
+  color: #afafaf;
+}
+
+form#contact-donor10 button {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-donor10 button:hover {
+  background-color: #03a4ed;
+}
+
+form#contact-donor11 {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 60px 80px;
+  border-radius: 20px;
+}
+
+form#contact-donor11  h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+form#contact-donor11 input {
+  width: 100%;
+  height: 46px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #9bdbf8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 0px;
+  margin-bottom: 35px;
+}
+
+form#contact-donor11 input::placeholder {
+  color: #afafaf;
+}
+
+form#contact-donor11 button {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-donor11 button:hover {
+  background-color: #03a4ed;
+}
+
+form#contact-8 {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 60px 80px;
+  border-radius: 20px;
+}
+
+form#contact-8  h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+form#contact-8 input {
+  width: 100%;
+  height: 46px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #9bdbf8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 0px;
+  margin-bottom: 35px;
+}
+
+form#contact-8 input::placeholder {
+  color: #afafaf;
+}
+
+form#contact-8 button {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-8 button:hover {
+  background-color: #03a4ed;
+}
+
+form#contact-9 {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 60px 80px;
+  border-radius: 20px;
+}
+
+form#contact-9  h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+form#contact-9 input {
+  width: 100%;
+  height: 46px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #9bdbf8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 0px;
+  margin-bottom: 35px;
+}
+
+form#contact-9 input::placeholder {
+  color: #afafaf;
+}
+
+form#contact-9 button {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-9 button:hover {
+  background-color: #03a4ed;
+}
+
+form#contact-10 {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 60px 80px;
+  border-radius: 20px;
+}
+
+form#contact-10  h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+form#contact-10 input {
+  width: 100%;
+  height: 46px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #9bdbf8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 0px;
+  margin-bottom: 35px;
+}
+
+form#contact-10 input::placeholder {
+  color: #afafaf;
+}
+
+form#contact-10 button {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-10 button:hover {
+  background-color: #03a4ed;
+}
+
+form#contact-11 {
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding: 60px 80px;
+  border-radius: 20px;
+}
+
+form#contact-11  h3 {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+form#contact-11 input {
+  width: 100%;
+  height: 46px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #9bdbf8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 0px;
+  margin-bottom: 35px;
+}
+
+form#contact-11 input::placeholder {
+  color: #afafaf;
+}
+
+form#contact-11 button {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: none;
+  outline: none;
+  transition: all .3s;
+}
+
+form#contact-11 button:hover {
+  background-color: #03a4ed;
+}
+
 /* 
 ---------------------------------------------
  CHANGES TO ORGANIZATION

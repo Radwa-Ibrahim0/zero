@@ -245,6 +245,84 @@ function FurtherInfoShifa() {
     document.getElementById('popup-hospital2').style.display = 'block';
 }
 
+function FurtherInfoDonor1() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-donor1').style.display = 'block';
+}
+
+function FurtherInfoDonor2() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-donor2').style.display = 'block';
+}
+
+function FurtherInfoDonor3() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-donor3').style.display = 'block';
+}
+function FurtherInfoDonor4() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-donor4').style.display = 'block';
+}
+function FurtherInfoDonor5() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-donor5').style.display = 'block';
+}
+function FurtherInfoDonor6() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-donor6').style.display = 'block';
+}
+function FurtherInfoDonor7() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-donor7').style.display = 'block';
+}
+function FurtherInfoDonor8() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-donor8').style.display = 'block';
+}
+function FurtherInfoDonor9() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-donor9').style.display = 'block';
+}
+function FurtherInfoDonor10() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-donor10').style.display = 'block';
+}
+function FurtherInfoDonor11() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-donor11').style.display = 'block';
+}
+
+function FurtherInfo8() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-8').style.display = 'block';
+}
+function FurtherInfo9() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-9').style.display = 'block';
+}
+function FurtherInfo10() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-10').style.display = 'block';
+}
+function FurtherInfo11() {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+    document.getElementById('popup-11').style.display = 'block';
+}
 
 
 
@@ -450,6 +528,105 @@ function closePopupHospital2() {
   popup.style.display = "none";
   popupForm.reset();
 }
+
+function closePopupDonor1() {
+  var popup = document.getElementById("popup-donor1");
+  var popupForm = document.getElementById('contact-donor1');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+function closePopupDonor2() {
+  var popup = document.getElementById("popup-donor2");
+  var popupForm = document.getElementById('contact-donor2');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+function closePopupDonor3() {
+  var popup = document.getElementById("popup-donor3");
+  var popupForm = document.getElementById('contact-donor3');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+function closePopupDonor4() {
+  var popup = document.getElementById("popup-donor4");
+  var popupForm = document.getElementById('contact-donor4');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+function closePopupDonor5() {
+  var popup = document.getElementById("popup-donor5");
+  var popupForm = document.getElementById('contact-donor5');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+function closePopupDonor6() {
+  var popup = document.getElementById("popup-donor6");
+  var popupForm = document.getElementById('contact-donor6');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+function closePopupDonor7() {
+  var popup = document.getElementById("popup-donor7");
+  var popupForm = document.getElementById('contact-donor7');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+function closePopupDonor8() {
+  var popup = document.getElementById("popup-donor8");
+  var popupForm = document.getElementById('contact-donor8');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+function closePopupDonor9() {
+  var popup = document.getElementById("popup-donor9");
+  var popupForm = document.getElementById('contact-donor9');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+function closePopupDonor10() {
+  var popup = document.getElementById("popup-donor10");
+  var popupForm = document.getElementById('contact-donor10');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+function closePopupDonor11() {
+  var popup = document.getElementById("popup-donor11");
+  var popupForm = document.getElementById('contact-donor11');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+
+function closePopup8() {
+  var popup = document.getElementById("popup-8");
+  var popupForm = document.getElementById('contact-8');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+
+function closePopup9() {
+  var popup = document.getElementById("popup-9");
+  var popupForm = document.getElementById('contact-9');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+
+
+function closePopup10() {
+  var popup = document.getElementById("popup-10");
+  var popupForm = document.getElementById('contact-10');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+
+function closePopup11() {
+  var popup = document.getElementById("popup-11");
+  var popupForm = document.getElementById('contact-11');
+  popup.style.display = "none";
+  popupForm.reset();
+}
+
+
+
 
 
 
