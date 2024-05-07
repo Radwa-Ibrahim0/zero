@@ -1120,10 +1120,90 @@ Services Style
   height: 60px;
   margin: 0 auto;
 }
+.our-services .item .icon0 {
+  width: 90px;
+  height: 70px;
+  margin-bottom: 50px;
+  margin-top: 0px;
+  margin-left: 100px;
+  margin-right: 0px;
+}
+
+.our-services .item .icon01 {
+  width: 140px;
+  height: 70px;
+  margin-bottom: 50px;
+  margin-top: 0px;
+  margin-left: 100px;
+  margin-right: 0px;
+}
+
+.our-services .item .icon1 {
+  width: 140px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.our-services .item .icon11 {
+  width: 90px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+
 .our-services .item .icon2 {
   width: 120px;
   height: 60px;
   margin: 0 auto;
+}
+
+.our-services .item .icon22 {
+  width: 120px;
+  height: 60px;
+  margin-bottom: 60px;
+  margin-top: 0px;
+  margin-left: 80px;
+  margin-right: 0px;
+}
+
+
+.our-services .item .icon25 {
+  width: 120px;
+  height: 60px;
+  margin-bottom: 60px;
+  margin-top: 0px;
+  margin-left: 80px;
+  margin-right: 0px;
+}
+
+.our-services .item .icon3 {
+  width: 90px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.our-services .item .icon33 {
+  width: 70px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+
+.our-services .item .icon4 {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 60px;
+  margin-top: 0px;
+  margin-left: 110px;
+  margin-right: 0px;
+}
+.our-services .item .icon5 {
+  width: 80px;
+  height: 60px;
+  margin-bottom: 60px;
+  margin-top: 0px;
+  margin-left: 100px;
+  margin-right: 0px;
 }
 
 .our-services .item p {
@@ -1184,6 +1264,31 @@ About
   width: 120px;
   height: 80px;
 }
+.about-us .fact-item .icon22 {
+  width: 140px;
+  height: 80px;
+  margin-left: -20px;
+}
+
+
+.about-us .fact-item .icon3 {
+  width: 100px;
+  height: 80px;
+}
+
+.about-us .fact-item .icon4 {
+  width: 90px;
+  height: 80px;
+}
+.about-us .fact-item .icon5 {
+  width: 53px;
+  height: 80px;
+  margin-left: 20px;
+}
+
+
+
+
 
 .about-us .fact-item {
   margin-top: 45px;
@@ -5813,11 +5918,33 @@ form#contact-11 button:hover {
  }
 
  .pricing-tables2 .first-item img {
+  margin-right: 20px;
   width:100px;
  }
 
  .pricing-tables2 .forth-item img {
   width:100px;
+ }
+
+ .pricing-tables2 .second-itemT {
+  margin-top: 20px;
+  background-image: url(../images/first-plan-bg.png);
+}
+
+
+.pricing-tables2 .second-itemT img {
+  width:60px;
+  margin-right: 25px;
+ }
+
+ .pricing-tables2 .second-itemM {
+  margin-top: 20px;
+  background-image: url(../images/first-plan-bg.png);
+}
+
+ .pricing-tables2 .second-itemM img {
+  width:100px;
+  margin-right: 20px;
  }
 
 .pricing-tables2 .second-item57 {
@@ -5936,7 +6063,6 @@ form#contact-11 button:hover {
   margin-top: 20px;
   background-image: url(../images/first-plan-bg.png);
 }
-
 .pricing-tables2 .third-itemO {
   margin-top: 20px;
   background-image: url(../images/first-plan-bg.png);
@@ -5947,6 +6073,27 @@ form#contact-11 button:hover {
  margin-right: 20px;
  width: 100px;
  height: auto;
+}
+
+.pricing-tables2 .third-itemCRAYON {
+  margin-top: 20px;
+  background-image: url(../images/first-plan-bg.png);
+}
+
+.pricing-tables2 .third-itemCRAYON img {
+  margin-top: 10px;
+ margin-right: 40px;
+ width: 60px;
+ height: auto;
+}
+
+.pricing-tables2 .third-itemD {
+  margin-top: 20px;
+  background-image: url(../images/first-plan-bg.png);
+}
+.pricing-tables2 .third-itemD img {
+  height: 110px;
+  width: auto;
 }
 
 .pricing-tables2 .third-itemMag {
