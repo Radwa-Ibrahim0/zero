@@ -1,6 +1,8 @@
 /*
 -------------------Donor Main------------------
 */
+var TeacherFlag= false;
+var DoctorFlag= false;
 
 
 function FurtherInfoAzhar() {
@@ -174,6 +176,7 @@ popupForm.addEventListener('submit', function(event) {
   event.preventDefault(); // Prevent form submission
   popup.style.display = 'none';
   popupForm.reset();
+  DoctorFlag = true;
   alert('Thank you for submitting a form!');
 });
 });
@@ -197,6 +200,7 @@ popupForm.addEventListener('submit', function(event) {
   event.preventDefault(); // Prevent form submission
   popup.style.display = 'none';
   popupForm.reset();
+  TeacherFlag = true;
   alert('Thank you for submitting a form!');
 });
 });
@@ -253,10 +257,22 @@ function redirectBlood(){
   window.location.href = "blood.html";
 }
 function redirectTeaching(){
+  if(TeacherFlag)
   window.location.href = "teaching.html";
+else{
+  alert('Please verify you are a teacher first!');
+  var elementid = document.getElementById('video');
+  elementid.scrollIntoView();
+}
 }
 function redirectDoctor(){
+  if(DoctorFlag)
   window.location.href = "Doctor.html";
+else{
+  alert('Please verify you are a doctor first!');
+  var elementid = document.getElementById('video');
+  elementid.scrollIntoView();
+}
 }
 
 
