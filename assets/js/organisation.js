@@ -636,6 +636,32 @@ function sendHeba(event){
       alert('Delivery Details Saved Successfully!');
     });
     });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var popup = document.getElementById('popup-r');
+      var popupForm = document.getElementById('contact-r');
+    
+      popupForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+        popup.style.display = 'none';
+        popupForm.reset();
+        alert('Lesson Details Saved Successfully!');
+      });
+      });
+  
+      
+      document.addEventListener('DOMContentLoaded', function() {
+        var popup = document.getElementById('popup-a');
+        var popupForm = document.getElementById('contact-a');
+      
+        popupForm.addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent form submission
+          popup.style.display = 'none';
+          popupForm.reset();
+          alert('Appointment Details Saved Successfully!');
+        });
+        });
+      
   
   
   
