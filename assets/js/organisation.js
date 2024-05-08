@@ -301,7 +301,9 @@ function sendHeba(event){
     var x = document.getElementById('new').value;
     var y = document.getElementById('check').value;
      
-      if(x==y && y!= "" && x!=""){
+    if(x==y && x==''){
+      alert('Choose a New Password');
+    }else if(x==y){
         alert('Password Changed Successfully');
         popup.style.display = 'none';
         popupForm.reset();

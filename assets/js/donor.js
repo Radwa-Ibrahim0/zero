@@ -265,6 +265,7 @@ else{
   elementid.scrollIntoView();
 }
 }
+
 function redirectDoctor(){
   if(DoctorFlag)
   window.location.href = "Doctor.html";
@@ -276,6 +277,163 @@ else{
 }
 
 
+
+// function performSearch2() {
+//   var searchTerm = document.getElementById('searchBox2').value;
+//   var clothes1 = document.getElementById('caseClothes1');
+//   var clothes2 = document.getElementById('caseClothes2');
+//   var med1 = document.getElementById('caseMedical1');
+//   var med2 = document.getElementById('caseMedical2');
+//   var med3 = document.getElementById('caseMedical3');
+//   var toy1 = document.getElementById('caseToy1');
+//   var toy2 = document.getElementById('caseToy12');
+//   var toy3 = document.getElementById('caseToy3');
+//   var food1 = document.getElementById('caseFood1');
+//   var food2 = document.getElementById('caseFood2');
+//   var food3 = document.getElementById('caseFood3');
+//   var school1 = document.getElementById('caseSchool1');
+//   var school2 = document.getElementById('caseSchool2');
+//   var blood1 = document.getElementById('caseBlood1');
+//   var blood2 = document.getElementById('caseBlood2');
+
+//   if(searchTerm === ''){
+//     med1.style.display = 'block';
+//     med2.style.display = 'block';
+//     med3.style.display = 'block';
+//     toy1.style.display = 'block';
+//     toy2.style.display = 'block';
+//     toy3.style.display = 'block';
+//     clothes1.style.display = 'block';
+//     clothes2.style.display = 'block';
+//     food1.style.display = 'block';
+//     food2.style.display = 'block';
+//     food3.style.display = 'block';
+//     school1.style.display = 'block';
+//     school2.style.display = 'block';
+//     blood1.style.display = 'block';
+//     blood2.style.display = 'block';
+//   }
+//  else if (searchTerm.includes('cloth')) { 
+//   med1.style.display = 'none';
+//   med2.style.display = 'none';
+//   med3.style.display = 'none';
+//   toy1.style.display = 'none';
+//   toy2.style.display = 'none';
+//   toy3.style.display = 'none';
+//   clothes1.style.display = 'block';
+//   clothes2.style.display = 'block';
+//   food1.style.display = 'none';
+//   food2.style.display = 'none';
+//   food3.style.display = 'none';
+//   school1.style.display = 'none';
+//   school2.style.display = 'none';
+//   blood1.style.display = 'none';
+//   blood2.style.display = 'none';
+//   } 
+//   else if (searchTerm.includes('med')) { 
+//     med1.style.display = 'block';
+//   med2.style.display = 'block';
+//   med3.style.display = 'block';
+//   toy1.style.display = 'none';
+//   toy2.style.display = 'none';
+//   toy3.style.display = 'none';
+//   clothes1.style.display = 'none';
+//   clothes2.style.display = 'none';
+//   food1.style.display = 'none';
+//   food2.style.display = 'none';
+//   food3.style.display = 'none';
+//   school1.style.display = 'none';
+//   school2.style.display = 'none';
+//   blood1.style.display = 'none';
+//   blood2.style.display = 'none';
+//    }
+//    else if (searchTerm.includes('toy')) { 
+//     med1.style.display = 'none';
+//     med2.style.display = 'none';
+//     med3.style.display = 'none';
+//     toy1.style.display = 'block';
+//     toy2.style.display = 'block';
+//     toy3.style.display = 'block';
+//     clothes1.style.display = 'none';
+//     clothes2.style.display = 'none';
+//     food1.style.display = 'none';
+//     food2.style.display = 'none';
+//     food3.style.display = 'none';
+//     school1.style.display = 'none';
+//     school2.style.display = 'none';
+//     blood1.style.display = 'none';
+//     blood2.style.display = 'none';
+//    }
+//    else if (searchTerm.includes('food')) { 
+//     med1.style.display = 'none';
+//     med2.style.display = 'none';
+//     med3.style.display = 'none';
+//     toy1.style.display = 'none';
+//     toy2.style.display = 'none';
+//     toy3.style.display = 'none';
+//     clothes1.style.display = 'none';
+//     clothes2.style.display = 'none';
+//     food1.style.display = 'block';
+//     food2.style.display = 'block';
+//     food3.style.display = 'block';
+//     school1.style.display = 'none';
+//     school2.style.display = 'none';
+//     blood1.style.display = 'none';
+//     blood2.style.display = 'none';
+//    }
+//    else if (searchTerm.includes('school')) { 
+//     med1.style.display = 'none';
+//     med2.style.display = 'none';
+//     med3.style.display = 'none';
+//     toy1.style.display = 'none';
+//     toy2.style.display = 'none';
+//     toy3.style.display = 'none';
+//     clothes1.style.display = 'none';
+//     clothes2.style.display = 'none';
+//     food1.style.display = 'none';
+//     food2.style.display = 'none';
+//     food3.style.display = 'none';
+//     school1.style.display = 'block';
+//     school2.style.display = 'block';
+//     blood1.style.display = 'none';
+//     blood2.style.display = 'none';
+//    }
+//    else if (searchTerm.includes('blood')) { 
+//     med1.style.display = 'none';
+//     med2.style.display = 'none';
+//     med3.style.display = 'none';
+//     toy1.style.display = 'none';
+//     toy2.style.display = 'none';
+//     toy3.style.display = 'none';
+//     clothes1.style.display = 'none';
+//     clothes2.style.display = 'none';
+//     food1.style.display = 'none';
+//     food2.style.display = 'none';
+//     food3.style.display = 'none';
+//     school1.style.display = 'none';
+//     school2.style.display = 'none';
+//     blood1.style.display = 'block';
+//     blood2.style.display = 'block';
+//    }
+   
+//    else{
+//     med1.style.display = 'none';
+//     med2.style.display = 'none';
+//     med3.style.display = 'none';
+//     toy1.style.display = 'none';
+//     toy2.style.display = 'none';
+//     toy3.style.display = 'none';
+//     clothes1.style.display = 'none';
+//     clothes2.style.display = 'none';
+//     food1.style.display = 'none';
+//     food2.style.display = 'none';
+//     food3.style.display = 'none';
+//     school1.style.display = 'none';
+//     school2.style.display = 'none';
+//     blood1.style.display = 'none';
+//     blood2.style.display = 'none';
+//    }
+// }
 
 function FurtherInfoC1() {
   // Prevent the default form submission behavior
@@ -871,6 +1029,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var thirteen = document.getElementById('thirteenth-item');
     var fourteen = document.getElementById('fourteenth-item');
     var seventeen = document.getElementById('seventeenth-item');
+    var nothing = document.getElementById('NothingFound');
 
     if(searchTerm === ''){
       firstItem.style.display = 'block';
@@ -883,6 +1042,7 @@ document.addEventListener('DOMContentLoaded', function() {
       thirteen.style.display = 'block';
       fourteen.style.display = 'block';
       seventeen.style.display = 'block';
+      nothing.style.display = 'none';
     }
    else if (searchTerm.includes('orman')) { 
      firstItem.style.display = 'none';
@@ -895,6 +1055,7 @@ document.addEventListener('DOMContentLoaded', function() {
       thirteen.style.display = 'none';
       fourteen.style.display = 'none';
       seventeen.style.display = 'none';
+      nothing.style.display = 'none';
     } 
     else if (searchTerm.includes('57357')) { 
       firstItem.style.display = 'none';
@@ -907,6 +1068,7 @@ document.addEventListener('DOMContentLoaded', function() {
        thirteen.style.display = 'none';
        fourteen.style.display = 'none';
        seventeen.style.display = 'none';
+       nothing.style.display = 'none';
      }
      else if (searchTerm.includes('misr el')) { 
       firstItem.style.display = 'block';
@@ -919,6 +1081,7 @@ document.addEventListener('DOMContentLoaded', function() {
        thirteen.style.display = 'none';
        fourteen.style.display = 'none';
        seventeen.style.display = 'none';
+       nothing.style.display = 'none';
      }
      else if (searchTerm.includes('food bank')) { 
       firstItem.style.display = 'none';
@@ -931,6 +1094,7 @@ document.addEventListener('DOMContentLoaded', function() {
        thirteen.style.display = 'none';
        fourteen.style.display = 'none';
        seventeen.style.display = 'none';
+       nothing.style.display = 'none';
      }
      else if (searchTerm.includes('resala')) { 
       firstItem.style.display = 'none';
@@ -943,6 +1107,7 @@ document.addEventListener('DOMContentLoaded', function() {
        thirteen.style.display = 'none';
        fourteen.style.display = 'none';
        seventeen.style.display = 'none';
+       nothing.style.display = 'none';
      }
      else if (searchTerm.includes('red')) { 
       firstItem.style.display = 'none';
@@ -955,6 +1120,7 @@ document.addEventListener('DOMContentLoaded', function() {
        thirteen.style.display = 'none';
        fourteen.style.display = 'none';
        seventeen.style.display = 'none';
+       nothing.style.display = 'none';
      }
      else if (searchTerm.includes('hussein')||searchTerm.includes('mosque')) { 
       firstItem.style.display = 'none';
@@ -967,6 +1133,7 @@ document.addEventListener('DOMContentLoaded', function() {
        thirteen.style.display = 'none';
        fourteen.style.display = 'none';
        seventeen.style.display = 'none';
+       nothing.style.display = 'none';
      }
      else if (searchTerm.includes('mark')||searchTerm.includes('church')) { 
       firstItem.style.display = 'none';
@@ -979,6 +1146,7 @@ document.addEventListener('DOMContentLoaded', function() {
        thirteen.style.display = 'block';
        fourteen.style.display = 'none';
        seventeen.style.display = 'none';
+       nothing.style.display = 'none';
      }
 
      else if (searchTerm.includes('chou')||searchTerm.includes('school')) { 
@@ -992,6 +1160,7 @@ document.addEventListener('DOMContentLoaded', function() {
        thirteen.style.display = 'none';
        fourteen.style.display = 'block';
        seventeen.style.display = 'none';
+       nothing.style.display = 'none';
      }
      else if (searchTerm.includes('nas')) { 
       firstItem.style.display = 'none';
@@ -1004,6 +1173,7 @@ document.addEventListener('DOMContentLoaded', function() {
        thirteen.style.display = 'none';
        fourteen.style.display = 'none';
        seventeen.style.display = 'block';
+       nothing.style.display = 'none';
      }
      else if (searchTerm.includes('hospital')) { 
       firstItem.style.display = 'none';
@@ -1016,6 +1186,7 @@ document.addEventListener('DOMContentLoaded', function() {
        thirteen.style.display = 'none';
        fourteen.style.display = 'none';
        seventeen.style.display = 'block';
+       nothing.style.display = 'none';
      }
 
 
@@ -1031,6 +1202,7 @@ document.addEventListener('DOMContentLoaded', function() {
       thirteen.style.display = 'none';
       fourteen.style.display = 'none';
       seventeen.style.display = 'none';
+      nothing.style.display = 'block';
      }
 }
 

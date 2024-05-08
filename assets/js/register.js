@@ -61,7 +61,10 @@ function FurtherInfoC1() {
     var x = document.getElementById('new').value;
     var y = document.getElementById('check').value;
      
-      if(x==y ){
+    if(x==y && x==''){
+      alert('Choose a New Password');
+    }
+    else if(x==y ){
         alert('Password Changed Successfully');
         popup.style.display = 'none';
         popupForm.reset();

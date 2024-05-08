@@ -30,8 +30,10 @@ function checkPass() {
   var popupForm = document.getElementById('contact-f1');
   var x = document.getElementById('new').value;
   var y = document.getElementById('check').value;
-   
-    if(x==y){
+    if(x==y && x==''){
+      alert('Choose a New Password');
+    }
+    else if(x==y){
       alert('Password Changed Successfully');
       popup.style.display = 'none';
       popupForm.reset();
@@ -1285,6 +1287,7 @@ var verify21 = false;
     alert('Organization Verified and added to Verified Organizations!');
     document.getElementById('first-item-reg').style.display = 'none';
     document.getElementById('seventh-item').style.display = 'block';
+    document.getElementById('NothingFound').style.display = 'none';
     verifyFirst = true;
   }
 
@@ -1293,6 +1296,7 @@ var verify21 = false;
     alert('Mosque Verified and added to Verified Organizations!');
     document.getElementById('eighteenth-item-reg').style.display = 'none';
     document.getElementById('tenth-item').style.display = 'block';
+    document.getElementById('NothingFound').style.display = 'none';
     verify18 = true;
   }
 
@@ -1301,6 +1305,7 @@ var verify21 = false;
     alert('Church Verified and added to Verified Organizations!');
     document.getElementById('nineteenth-item-reg').style.display = 'none';
     document.getElementById('twelveth-item').style.display = 'block';
+    document.getElementById('NothingFound').style.display = 'none';
     verify19 = true;
   }
 
@@ -1309,6 +1314,7 @@ var verify21 = false;
     alert('School Verified and added to Verified Organizations!');
     document.getElementById('twenty-item-reg').style.display = 'none';
     document.getElementById('fifteenth-item').style.display = 'block';
+    document.getElementById('NothingFound').style.display = 'none';
     verify20 = true;
   }
 
@@ -1317,6 +1323,7 @@ var verify21 = false;
     alert('Hospital Verified and added to Verified Organizations!');
     document.getElementById('twentyone-item-reg').style.display = 'none';
     document.getElementById('sixteenth-item').style.display = 'block';
+    document.getElementById('NothingFound').style.display = 'none';
     verify21 = true;
   }
 
@@ -1325,6 +1332,7 @@ var verify21 = false;
     alert('Organization Verified and added to Verified Organizations!');
     document.getElementById('second-item-reg').style.display = 'none';
     document.getElementById('eighth-item').style.display = 'block';
+    document.getElementById('NothingFound').style.display = 'none';
     verifySecond = true;
   }
 
@@ -1333,6 +1341,7 @@ var verify21 = false;
     alert('Organization Verified and added to Verified Organizations!');
     document.getElementById('third-item-reg').style.display = 'none';
     document.getElementById('nineth-item').style.display = 'block';
+    document.getElementById('NothingFound').style.display = 'none';
     verifyThird = true;
   }
 
@@ -2126,101 +2135,132 @@ function performSearch(event) {
   var fifteen = document.getElementById('fifteenth-item');
   var sixteen = document.getElementById('sixteenth-item');
   var seventeen = document.getElementById('seventeenth-item');
+  var nothing = document.getElementById('NothingFound');
 
   var items = [firstItem, secondItem, thirdItem, forthItem, fifthItem, sixthItem, seventhItem, eighthItem, ninethItem,tenth,eleven,twelve,thirteen,fourteen,fifteen,sixteen,seventeen];
   items.forEach(item => item.style.display = 'none');
   if (searchTerm === '') {
     items.forEach(item => item.style.display = 'block');
+    nothing.style.display = 'none';
     if (verifyFirst) {
       seventhItem.style.display = 'block';
+      nothing.style.display = 'none';
     }
     if (verifySecond) {
       eighthItem.style.display = 'block';
+      nothing.style.display = 'none';
     }
     if (verifyThird) {
       ninethItem.style.display = 'block';
+      nothing.style.display = 'none';
     }
     if (verify18) {
       tenth.style.display = 'block';
+      nothing.style.display = 'none';
     }
     if (verify19) {
       twelve.style.display = 'block';
+      nothing.style.display = 'none';
     }
     if (verify20) {
       fifteen.style.display = 'block';
+      nothing.style.display = 'none';
     }
     if (verify21) {
       sixteen.style.display = 'block';
+      nothing.style.display = 'none';
     }
   } else if (searchTerm.includes('orman')) {
     sixthItem.style.display = 'block';
+    nothing.style.display = 'none';
   } else if (searchTerm.includes('57357')) {
     secondItem.style.display = 'block';
+    nothing.style.display = 'none';
   } else if (searchTerm.includes('misr el')) {
     firstItem.style.display = 'block';
+    nothing.style.display = 'none';
   } else if (searchTerm.includes('food bank')) {
     forthItem.style.display = 'block';
+    nothing.style.display = 'none';
   } else if (searchTerm.includes('resala')) {
     fifthItem.style.display = 'block';
+    nothing.style.display = 'none';
   } else if (searchTerm.includes('red')) {
     thirdItem.style.display = 'block';
+    nothing.style.display = 'none';
   }  else if (searchTerm.includes('hussein')) {
     eleven.style.display = 'block';
+    nothing.style.display = 'none';
   }
   else if (searchTerm.includes('mark')) {
     thirteen.style.display = 'block';
+    nothing.style.display = 'none';
   }
   else if (searchTerm.includes('choueifat')) {
     fourteen.style.display = 'block';
+    nothing.style.display = 'none';
   }
   else if (searchTerm.includes('al-nas')) {
     seventeen.style.display = 'block';
+    nothing.style.display = 'none';
   }
-   else if (verifyFirst && searchTerm.includes('toy')) {
+   else if (verifyFirst && (searchTerm.includes('toy') || searchTerm.includes('marwa'))) {
     seventhItem.style.display = 'block';
+    nothing.style.display = 'none';
   } else if (verifySecond && searchTerm.includes('sawaris')) {
     eighthItem.style.display = 'block';
+    nothing.style.display = 'none';
   } else if (verifyThird && searchTerm.includes('magdi')) {
     ninethItem.style.display = 'block';
+    nothing.style.display = 'none';
   } 
   else if (verify18 && searchTerm.includes('azhar')) {
     tenth.style.display = 'block';
+    nothing.style.display = 'none';
   }
   else if (verify19 && searchTerm.includes('george')) {
     twelve.style.display = 'block';
+    nothing.style.display = 'none';
   }
   else if (verify20 && searchTerm.includes('metro')) {
     fifteen.style.display = 'block';
+    nothing.style.display = 'none';
   }
   else if (verify21 && searchTerm.includes('ahl masr')) {
     sixteen.style.display = 'block';
+    nothing.style.display = 'none';
   }
   else if (searchTerm.includes('hospital')) {
     if (verify21)
     sixteen.style.display = 'block';
     seventeen.style.display = 'block';
     secondItem.style.display = 'block';
+    nothing.style.display = 'none';
 
   }
   else if (searchTerm.includes('mosque')) {
     if (verify18) 
       tenth.style.display = 'block';
       eleven.style.display = 'block';
+      nothing.style.display = 'none';
 
   }
   else if (searchTerm.includes('school')) {
     if (verify20) 
       fifteen.style.display = 'block';
       fourteen.style.display = 'block';
+      nothing.style.display = 'none';
   }
   else if (searchTerm.includes('church')) {
     if (verify19) 
       twelve.style.display = 'block';
+    nothing.style.display = 'none';
       thirteen.style.display = 'block';
   }
   
   
   else {
+    nothing.style.display = 'block';
   }
   checkDeleted();
 }
