@@ -24,7 +24,7 @@ function sendHeba(event){
     var popupMedical = document.getElementById('form-med');
   
 
-    var popupFormTeacher = document.getElementById('contact-a');
+    var popupFormTeacher = document.getElementById('contact-t');
 
     var popupFormDoctor = document.getElementById('contact-j');
     
@@ -33,7 +33,7 @@ function sendHeba(event){
     var popupFormToys = document.getElementById('contact-b');
     var popupFormBlood = document.getElementById('contact-v2');
 
-    var popupFormClothes = document.getElementById('contact-r');
+    var popupFormClothes = document.getElementById('contact-donor1');
 
     var popupFormFood= document.getElementById('contact-v1');
     
