@@ -8,6 +8,10 @@ function updateInfo(){
   alert('Your Information Has Been Updated!');
 }
 
+function noDriver(){
+  alert('Cannot View Details Until Driver Is On The Move!');
+}
+
 
 function FurtherInfoC1() {
     // Prevent the default form submission behavior
@@ -18,6 +22,28 @@ function FurtherInfoC1() {
     // Prevent the default form submission behavior
     event.preventDefault();
       document.getElementById('popup-c2').style.display = 'block';
+  }
+
+  function FurtherInfoV1() {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+      document.getElementById('popup-v1').style.display = 'block';
+  }
+  function FurtherInfoV2() {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+      document.getElementById('popup-v2').style.display = 'block';
+  }
+
+  function FurtherInfoV3() {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+      document.getElementById('popup-v3').style.display = 'block';
+  }
+  function FurtherInfoF2() {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+      document.getElementById('popup-f2').style.display = 'block';
   }
  
 
@@ -53,6 +79,36 @@ function FurtherInfoC1() {
     popup.style.display = 'none';
     popupForm.reset();
   }
+
+
+  function closePopupV1() {
+    var popup = document.getElementById("popup-v1");
+    var popupForm = document.getElementById('contact-v1');
+    popup.style.display = 'none';
+    popupForm.reset();
+  }
+
+  function closePopupV2() {
+    var popup = document.getElementById("popup-v2");
+    var popupForm = document.getElementById('contact-v2');
+    popup.style.display = 'none';
+    popupForm.reset();
+  }
+
+  function closePopupV3() {
+    var popup = document.getElementById("popup-v3");
+    var popupForm = document.getElementById('contact-v3');
+    popup.style.display = 'none';
+    popupForm.reset();
+  }
+
+  function closePopupF2() {
+    var popup = document.getElementById("popup-f2");
+    var popupForm = document.getElementById('contact-f2');
+    popup.style.display = 'none';
+    popupForm.reset();
+  }
+
 
   
   function checkPass() {
