@@ -28,10 +28,17 @@ document.addEventListener('DOMContentLoaded', function() {
 function checkPass() {
   var popup = document.getElementById('popup-f1');
   var popupForm = document.getElementById('contact-f1');
+  var z = document.getElementById('old').value;
   var x = document.getElementById('new').value;
   var y = document.getElementById('check').value;
-    if(x==y && x==''){
-      alert('Choose a New Password');
+    if(z==''){
+      alert('Please Enter Old Password');
+    }
+    else if(x==''){
+      alert('Please Enter a New Password');
+    }
+    else if(y==''){
+      alert('Please Verify New Password');
     }
     else if(x==y){
       alert('Password Changed Successfully');
@@ -2084,7 +2091,7 @@ function filterProfit(event) {
 
   document.getElementById('fourteenth-item').style.display = 'none'; 
 
-  document.getElementById('seventeenth-item').style.display = 'none';
+  document.getElementById('seventeenth-item').style.display = 'block';
   if(verifyFirst && !deletedSeventh){
     document.getElementById('seventh-item').style.display = 'block';
   }
@@ -2104,7 +2111,7 @@ function filterProfit(event) {
     document.getElementById('fifteenth-item').style.display = 'none';
   }
   if(verify21 && !deletedSixteenth){
-    document.getElementById('sixteenth-item').style.display = 'none';
+    document.getElementById('sixteenth-item').style.display = 'block';
   }
   checkDeleted();
 }
@@ -2176,7 +2183,7 @@ function performSearch(event) {
   } else if (searchTerm.includes('57357')) {
     secondItem.style.display = 'block';
     nothing.style.display = 'none';
-  } else if (searchTerm.includes('misr el')) {
+  } else if (searchTerm.includes('misr') || searchTerm.includes('kheir')) {
     firstItem.style.display = 'block';
     nothing.style.display = 'none';
   } else if (searchTerm.includes('food bank')) {
@@ -2200,14 +2207,14 @@ function performSearch(event) {
     fourteen.style.display = 'block';
     nothing.style.display = 'none';
   }
-  else if (searchTerm.includes('al-nas')) {
+  else if (searchTerm.includes('nas')) {
     seventeen.style.display = 'block';
     nothing.style.display = 'none';
   }
    else if (verifyFirst && (searchTerm.includes('toy') || searchTerm.includes('marwa'))) {
     seventhItem.style.display = 'block';
     nothing.style.display = 'none';
-  } else if (verifySecond && searchTerm.includes('sawaris')) {
+  } else if (verifySecond && searchTerm.includes('sawiris')) {
     eighthItem.style.display = 'block';
     nothing.style.display = 'none';
   } else if (verifyThird && searchTerm.includes('magdi')) {
@@ -2230,35 +2237,6 @@ function performSearch(event) {
     sixteen.style.display = 'block';
     nothing.style.display = 'none';
   }
-  else if (searchTerm.includes('hospital')) {
-    if (verify21)
-    sixteen.style.display = 'block';
-    seventeen.style.display = 'block';
-    secondItem.style.display = 'block';
-    nothing.style.display = 'none';
-
-  }
-  else if (searchTerm.includes('mosque')) {
-    if (verify18) 
-      tenth.style.display = 'block';
-      eleven.style.display = 'block';
-      nothing.style.display = 'none';
-
-  }
-  else if (searchTerm.includes('school')) {
-    if (verify20) 
-      fifteen.style.display = 'block';
-      fourteen.style.display = 'block';
-      nothing.style.display = 'none';
-  }
-  else if (searchTerm.includes('church')) {
-    if (verify19) 
-      twelve.style.display = 'block';
-    nothing.style.display = 'none';
-      thirteen.style.display = 'block';
-  }
-  
-  
   else {
     nothing.style.display = 'block';
   }

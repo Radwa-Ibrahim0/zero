@@ -298,18 +298,25 @@ function sendHeba(event){
     event.preventDefault();
     var popup = document.getElementById('popup-f1');
     var popupForm = document.getElementById('contact-f1');
-    var x = document.getElementById('new').value;
-    var y = document.getElementById('check').value;
-     
-    if(x==y && x==''){
-      alert('Choose a New Password');
-    }else if(x==y){
-        alert('Password Changed Successfully');
-        popup.style.display = 'none';
-        popupForm.reset();
-      }else{
-        alert('Password Mismatch');
-      }
+    var z = document.getElementById('old').value;
+  var x = document.getElementById('new').value;
+  var y = document.getElementById('check').value;
+    if(z==''){
+      alert('Please Enter Old Password');
+    }
+    else if(x==''){
+      alert('Please Enter a New Password');
+    }
+    else if(y==''){
+      alert('Please Verify New Password');
+    }
+    else if(x==y){
+      alert('Password Changed Successfully');
+      popup.style.display = 'none';
+      popupForm.reset();
+    }else{
+      alert('Password Mismatch');
+    }
       event.preventDefault(); // Prevent form submission
       
       
