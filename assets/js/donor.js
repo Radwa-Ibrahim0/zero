@@ -1070,7 +1070,7 @@ document.addEventListener('DOMContentLoaded', function() {
        seventeen.style.display = 'none';
        nothing.style.display = 'none';
      }
-     else if (searchTerm.includes('misr el')) { 
+     else if (searchTerm.includes('misr')) { 
       firstItem.style.display = 'block';
        secondItem.style.display = 'none';
        thirdItem.style.display = 'none';
