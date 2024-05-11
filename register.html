@@ -491,7 +491,7 @@ https://templatemo.com/tm-565-onix-digital
                                 </div>
                                 <div class="col-lg-6">
                                   <fieldset>
-                                    <input type="text" name="contactNumber" id="contactNumber2" placeholder="Contact Number" autocomplete="on" required>
+                                    <input type="number" name="contactNumber" id="contactNumber2" placeholder="Contact Number" autocomplete="on" required>
                                   </fieldset>
                                 </div>
                                 <div class="col-lg-6">
@@ -647,19 +647,22 @@ https://templatemo.com/tm-565-onix-digital
                         <h3>Submit Your PaperWork</h3>
                         <br>
                         <h5>upload document(s) to prove that you are a part of this organization</h5>
+                        <br>
                       </div>
                       <div class="row">
                         <div class="col-lg-10 offset-lg-1">
                           <form id="subscribeForm-t" action="" method="get">
-                            <div class="main-blue-button">
-                            <br>
-                            <label for="file-upload-t" class= "main-blue-button">Upload Files</label>
-                              <input type="file" id="file-upload-t" multiple>
+                            <div class= "update">
+                            <label for="file-upload-t" class="updateInfo">Upload File(s)</label>
+                            <input type="file" id="file-upload-t" onchange="getFileData(this);" multiple>
                             </div>
-                            
-                              <div>
+                            <div>
                               <br>
-                            <button class= "main-blue-button" id="check-button-org">Submit</button>
+                              <label id="labelwithhtml"></label>
+                            </div>
+                              <div class="update">
+                              <br>
+                            <button class= "updateInfo" id="check-button-org">Submit</button>
                           </div>
                           </form>
                         </div>
@@ -725,10 +728,10 @@ https://templatemo.com/tm-565-onix-digital
           </div>
           <div class="about footer-item">
             <ul>
-              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+              <li><a href="#footer"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="#footer"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#footer"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#footer"><i class="fab fa-youtube"></i></a></li>
             </ul>
             <br>
           </div>
