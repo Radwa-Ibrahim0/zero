@@ -2,9 +2,7 @@
 -------------------Donor Main------------------
 */
 function getFileData(){
-  var file = document.querySelector('file-upload-t');
-  alert(file.files[0].name);
-  document.getElementById("teacherupload").innerHTML = file.files[0].name;
+  
   
 }
 
@@ -123,9 +121,34 @@ function closePopupHospital2() {
 }
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  var button = document.getElementById('check-button-teacher');
+  button.addEventListener('click', function(event) {
+    checkFilesTeacher(event); // Pass the event to the function
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var button = document.getElementById('file-upload-t');
+  button.addEventListener('input', function(event) {
+  document.getElementById("teacherupload").innerHTML = button.files[0].name;
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var button = document.getElementById('file-upload');
+  button.addEventListener('input', function(event) {
+  document.getElementById("doctorupload").innerHTML = button.files[0].name;
+  });
+});
+
+
+
 function checkFilesTeacher(event) {
   // Prevent the default form submission behavior
   event.preventDefault();
+  var input = document.getElementById('file-upload-t');
   // document.getElementById("teacherupload").innerHTML = input.files[0].name;
   if (input.files && input.files.length > 0) {
     // Files were uploaded
@@ -135,26 +158,9 @@ function checkFilesTeacher(event) {
     // No files were uploaded
     alert('No files were uploaded.');
   }
+  
 }
 
-// document.addEventListener('DOMContentLoaded', function() {
-//   var button = document.getElementById('file-upload-t');
-//   button.addEventListener('change', function(event) {
-//     var file = document.querySelector('file-upload-t');
-//         alert(file.files[0].name);
-//         document.getElementById("teacherupload").innerHTML = file.files[0].name;
-    
-//   });
-// });
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-  var button = document.getElementById('check-button-teacher');
-  button.addEventListener('click', function(event) {
-    checkFilesTeacher(event); // Pass the event to the function
-  });
-});
 
 function checkFilesDoctor(event) {
   // Prevent the default form submission behavior
@@ -198,7 +204,9 @@ popupForm.addEventListener('submit', function(event) {
   popup.style.display = 'none';
   popupForm.reset();
   DoctorFlag = true;
-  alert('Thank you for submitting a form!');
+  alert('Thank you for volunteering!');
+  document.getElementById("doctorupload").innerHTML = "You Are Now Verified As A Doctor!";
+
 });
 });
 
@@ -222,7 +230,8 @@ popupForm.addEventListener('submit', function(event) {
   popup.style.display = 'none';
   popupForm.reset();
   TeacherFlag = true;
-  alert('Thank you for submitting a form!');
+  alert('Thank you for volunteering!');
+  document.getElementById("teacherupload").innerHTML = "You Are Now Verified As A Teacher!";
 });
 });
 
@@ -1246,16 +1255,6 @@ function showmore(event) {
 
 }
 
-
-document.addEventListener('DOMContentLoaded', function() {
-  var popupForm = document.getElementById('subscribe');
-
-  popupForm.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form submission
-    popupForm.reset();
-    alert('Thank you for subscribing to our Newsletter!');
-  });
-  });
 
   function showSecondDropdown(event, option) {
     event.preventDefault(); // Prevent default behavior of anchor tag

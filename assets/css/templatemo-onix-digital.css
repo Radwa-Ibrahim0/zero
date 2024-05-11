@@ -1761,6 +1761,7 @@ Subscribe
 .subscribe {
   padding-top: 150px;
   margin-bottom: 100px;
+  z-index: 1000;
 }
 
 .subscribe .inner-content {
@@ -1772,6 +1773,7 @@ Subscribe
   padding: 60px 0px;
   width: 100%;
   position: relative;
+  z-index: 1000;
 }
 
 .subscribe .inner-content:after {
