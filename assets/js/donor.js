@@ -1,6 +1,15 @@
 /*
 -------------------Donor Main------------------
 */
+function getFileData(){
+  var file = document.querySelector('file-upload-t');
+  alert(file.files[0].name);
+  document.getElementById("teacherupload").innerHTML = file.files[0].name;
+  
+}
+
+
+
 var TeacherFlag= false;
 var DoctorFlag= false;
 
@@ -117,7 +126,7 @@ function closePopupHospital2() {
 function checkFilesTeacher(event) {
   // Prevent the default form submission behavior
   event.preventDefault();
-  var input = document.getElementById('file-upload-t');
+  // document.getElementById("teacherupload").innerHTML = input.files[0].name;
   if (input.files && input.files.length > 0) {
     // Files were uploaded
     alert('Files were uploaded successfully! You are now verified as a teacher.');
@@ -127,6 +136,18 @@ function checkFilesTeacher(event) {
     alert('No files were uploaded.');
   }
 }
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   var button = document.getElementById('file-upload-t');
+//   button.addEventListener('change', function(event) {
+//     var file = document.querySelector('file-upload-t');
+//         alert(file.files[0].name);
+//         document.getElementById("teacherupload").innerHTML = file.files[0].name;
+    
+//   });
+// });
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
   var button = document.getElementById('check-button-teacher');
@@ -1018,7 +1039,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   function performSearch() {
-    var searchTerm = document.getElementById('searchBox').value;
+    var searchTerm = document.getElementById('searchBox').value.toLowerCase();
     var firstItem = document.getElementById('first-item');
     var secondItem = document.getElementById('second-item');
     var thirdItem = document.getElementById('third-item');

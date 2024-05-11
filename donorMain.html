@@ -1767,9 +1767,9 @@ https://templatemo.com/tm-565-onix-digital
               <h2>Upload files to verify that you are a Teacher</h2>
               <div class="col-lg-10 offset-lg-1">
                 <form id="subscribeForm-t" action="" method="get">
-                <ins>Please select appropriate documents for verification</ins>
-                  <label for="file-upload-t" class="upload-file-t">Upload Files</label>
-                    <input type="file" id="file-upload-t" multiple>
+                <ins id="teacherupload">Please select appropriate documents for verification</ins>
+                  <label for="file-upload-t" class="upload-file-t" >Upload Files</label>
+                    <input type="file" id="file-upload-t" onclick="getFileData();" multiple>
                   <button class= "main-blue-button" id="check-button-teacher">Submit</button>
                 </form>
               </div>
@@ -1789,9 +1789,9 @@ https://templatemo.com/tm-565-onix-digital
               <h2>Upload files to verify that you are a Doctor</h2>
               <div class="col-lg-10 offset-lg-1">
                 <form id="subscribeForm-d" action="" method="get">
-                <ins>Please select appropriate documents for verification</ins>
+                <ins id="doctorupload">Please select appropriate documents for verification</ins>
                   <label for="file-upload" class="upload-file">Upload Files</label>
-                    <input type="file" id="file-upload" />
+                    <input type="file" id="file-upload" multiple/>
                   <button id="check-button-doctor" class= "main-blue-button">Submit</button>
                 </form>
               </div>
@@ -2396,10 +2396,10 @@ https://templatemo.com/tm-565-onix-digital
           </div>
           <div class="about footer-item">
             <ul>
-              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+              <li><a href="#footer"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="#footer"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#footer"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#footer"><i class="fab fa-youtube"></i></a></li>
             </ul>
             <br>
           </div>

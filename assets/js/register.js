@@ -1,3 +1,10 @@
+function getFileData(myFile){
+  const file = document.querySelector('input[type="file"]');
+  // file.replace ('C:\fakepath\','');
+  document.getElementById('labelwithhtml').innerHTML = file.files[0].name;
+}
+
+
 function MessageAdd(event){
   event.preventDefault();
   closePopupC2();
@@ -227,6 +234,7 @@ function login(event) {
     event.preventDefault();
     alert("Congratulations! You are now registered as a Donor.");
     window.location.href = "donorMain.html";
+    document.getElementById('contact-f2').reset();
   }
 
   function validateFormF3(event) {
@@ -244,6 +252,7 @@ function login(event) {
       // Files were uploaded
       alert('Files were uploaded successfully! You are now verified as an Organization Representative!');
       window.location.href = "organisation.html";
+      document.getElementById('contact-f3').reset();
     } else {
       // No files were uploaded
       alert('No files were uploaded.');
